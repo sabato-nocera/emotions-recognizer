@@ -32,11 +32,12 @@ poco efficace.
 
 
 _"second_augmented_dataset.csv"_ rappresenta il dataset originale senza la feature "Humidity", ampliato attraverso una
-tecnica di data augmentation. Il dataset originale è stato ottenuto campionando emozioni da ogni persona, ottenendo un
-totale di 80 esempi per ciascuna. La regola utilizzata per l'aumento dei dati è stato prendere coppie di esempi relativi
-allo stesso feedback di una stessa persona, suddividere le feature delle due tuple in due parti e creare due nuove tuple
-utilizzando parti alternate (similmente al meccanismo di crossing-over dei cromosomi). Usare tale dataset sembra portare
-a risultati leggermente migliori (sia in termini di accuracy che di loss).
+tecnica di data augmentation (per serie temporali, diversamente dalla prima strategia di data augmentation utilizzata). 
+Il dataset originale è stato ottenuto campionando emozioni da ogni persona, ottenendo un totale di 80 esempi per 
+ciascuna. La regola utilizzata per l'aumento dei dati è stato prendere coppie di esempi relativi allo stesso feedback di 
+una stessa persona, suddividere le feature delle due tuple in due parti e creare due nuove tuple utilizzando parti 
+alternate (similmente al meccanismo di crossing-over dei cromosomi). Usare tale dataset sembra portare a risultati 
+leggermente migliori (sia in termini di accuracy che di loss).
 
 
 • **logs**, al cui interno sono presenti gli output prodotti a seguito del training delle reti neurali, in modo tale da
@@ -48,7 +49,9 @@ poter essere sempre consultati e comparati con facilità.
 • **src**, al cui interno sono presenti le directory denominate con il nome del tipo di rete neurale di cui contengono i
 vari codici sorgenti (ognuno rappresentativo di una diversa configurazione del tipo di rete neurale).
 
+
 ##Osseravazioni
+
 
 Le reti neurali che vengono configurate con la loss function _categorical hinge_ impiegano poco tempo tempo per il 
 training; benché complessivamente l'accuracy raggiunta è sempre stata molto bassa, è risultato essere controproducente 
