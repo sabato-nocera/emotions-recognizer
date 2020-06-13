@@ -1,7 +1,6 @@
 import glob
 import ast
 
-
 # return the content of interest of a file
 def read_file_content(file):
     file_content = "{"
@@ -52,7 +51,7 @@ def print_max_accuracy_test(list_of_dicts):
                 max_accuracy["value"] = tmp["accuracy_test"]
                 max_accuracy["file_name"] = tmp["file_name"]
 
-    print("\nMax accuracy test: ", max_accuracy["file_name"], " with ", max_accuracy["value"], "%")
+    print("\nMax accuracy test: ", max_accuracy["file_name"], " with ", max_accuracy["value"], "%", "(", tmp["date"], ")")
 
 
 def print_min_loss(list_of_dicts):
@@ -64,7 +63,7 @@ def print_min_loss(list_of_dicts):
                 min_loss["value"] = tmp["loss_test"]
                 min_loss["file_name"] = tmp["file_name"]
 
-    print("\nMin loss test: ", min_loss["file_name"], " with ", min_loss["value"])
+    print("\nMin loss test: ", min_loss["file_name"], " with ", min_loss["value"], "(", tmp["date"], ")")
 
 
 def print_sorted_by_name(list_of_dicts):
@@ -74,7 +73,7 @@ def print_sorted_by_name(list_of_dicts):
     rank = 1
     for tmp in sorted_by_name:
         print(rank, ")", tmp["file_name"], " with accuracy test:", tmp["accuracy_test"], "% and accuracy train:",
-              tmp["accuracy_train"], "%")
+              tmp["accuracy_train"], "%", "(", tmp["date"], ")")
         rank += 1
 
 
@@ -84,7 +83,7 @@ def print_sorted_by_accuracy_test(list_of_dicts):
     print("\nSorted by accuracy test:\n")
     rank = 1
     for tmp in sorted_by_accuracy:
-        print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_test"], "%")
+        print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
         rank += 1
 
 
@@ -94,7 +93,7 @@ def print_sorted_by_accuracy_train(list_of_dicts):
     print("\nSorted by accuracy train:\n")
     rank = 1
     for tmp in sorted_by_accuracy:
-        print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_train"], "%")
+        print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_train"], "%", "(", tmp["date"], ")")
         rank += 1
 
 
@@ -109,7 +108,7 @@ def print_sorted_by_loss(list_of_dicts):
     print("\nSorted by loss:\n")
     rank = 1
     for tmp in sorted_by_loss:
-        print(rank, ")", tmp["file_name"], " with ", tmp["loss_test"])
+        print(rank, ")", tmp["file_name"], " with ", tmp["loss_test"], "(", tmp["date"], ")")
         rank += 1
 
 
@@ -159,6 +158,34 @@ def print_above_percentage(list_of_dicts):
     print("\nModels with test accuracy >= 90% :", above_90)
 
 
+
+
+
+def print_by_loss_function(list_of_dicts, loss_function_name):
+    print("\nWhich neural networks use the loss function '", loss_function_name, "' (sorted by accuracy test) ?\n")
+
+    sorted_by_accuracy = []
+    for tmp in list_of_dicts:
+        if loss_function_name in tmp["file_name"]:
+            sorted_by_accuracy.append(tmp)
+
+    sorted_by_accuracy = sorted(sorted_by_accuracy, key=lambda k: k['accuracy_test'])
+    rank = 1
+    for tmp in sorted_by_accuracy:
+        print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
+        rank += 1
+
+
+def print_sorted_by_name_and_accuracy(list_of_dicts):
+    sorted_by_name_and_accuracy = sorted(list_of_dicts, key=lambda k: (k['file_name'], k['accuracy_test']))
+
+    print("\nSorted by name and accuracy:\n")
+    rank = 1
+    for tmp in sorted_by_name_and_accuracy:
+        print(rank, ")", tmp["file_name"], " with accuracy test:", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
+        rank += 1
+
+
 def print_ratio_loss_accuracy(list_of_dicts):
     print("\nLoss / Accuracy Test:\n")
     loss_on_accuracy = []
@@ -179,22 +206,60 @@ def print_ratio_loss_accuracy(list_of_dicts):
     for tmp in sorted_by_ratio:
         print(rank, ")", tmp["file_name"], "\n\t-> Ratio:", tmp["ratio"], "-> Accuracy Test:",
               tmp["accuracy_test"], "% -> Loss Test:", tmp["loss_test"], "-> Accuracy Train:", tmp["accuracy_train"],
-              "%")
+              "%", "(", tmp["date"], ")")
+        rank += 1
+
+def print_ratio_by_max_accuracy_for_each_type_of_neural_network(list_of_dicts):
+    sorted_by_name_and_accuracy = sorted(list_of_dicts, key=lambda k: (k['file_name'], k['accuracy_test']))
+
+    types_of_neural_network = []
+    last_one = sorted_by_name_and_accuracy[0]
+    for tmp in sorted_by_name_and_accuracy:
+        if tmp["file_name"] != last_one["file_name"]:
+            types_of_neural_network.append(last_one)
+        last_one = tmp
+
+    types_of_neural_network.append(last_one)
+
+    for tmp in types_of_neural_network:
+        if "accuracy_test" in tmp and "loss_test" in tmp:
+            tmp["ratio"] = tmp["loss_test"] / tmp["accuracy_test"]
+        else:
+            tmp["loss_test"] = 100
+            tmp["ratio"] = 100
+
+    rank = 1
+    sorted_by_ratio = sorted(types_of_neural_network, key=lambda k: k['ratio'])
+
+
+    print("\nLoss / Accuracy Test (by max accuracy for each type of neural network):\n")
+    rank = 1
+    for tmp in sorted_by_ratio:
+        print(rank, ")", tmp["file_name"], "\n\t-> Ratio:", tmp["ratio"], "-> Accuracy Test:",
+              tmp["accuracy_test"], "% -> Loss Test:", tmp["loss_test"], "-> Accuracy Train:", tmp["accuracy_train"],
+              "%", "(", tmp["date"], ")")
         rank += 1
 
 
-def print_by_loss_function(list_of_dicts, loss_function_name):
-    print("\nWhich neural networks use the loss function '", loss_function_name, "' (sorted by accuracy test) ?\n")
 
-    sorted_by_accuracy = []
-    for tmp in list_of_dicts:
-        if loss_function_name in tmp["file_name"]:
-            sorted_by_accuracy.append(tmp)
+def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
+    sorted_by_name_and_accuracy = sorted(list_of_dicts, key=lambda k: (k['file_name'], k['accuracy_test']))
 
-    sorted_by_accuracy = sorted(sorted_by_accuracy, key=lambda k: k['accuracy_test'])
+    types_of_neural_network = []
+    last_one = sorted_by_name_and_accuracy[0]
+    for tmp in sorted_by_name_and_accuracy:
+        if tmp["file_name"] != last_one["file_name"]:
+            types_of_neural_network.append(last_one)
+        last_one = tmp
+
+    types_of_neural_network.append(last_one)
+
+    sorted_accuracy = sorted(types_of_neural_network, key=lambda k: (k['accuracy_test']))
+
+    print("\nMax accuracy for each type of neural network:\n")
     rank = 1
-    for tmp in sorted_by_accuracy:
-        print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_test"], "%")
+    for tmp in sorted_accuracy:
+        print(rank, ")", tmp["file_name"], " with accuracy test:", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
         rank += 1
 
 
@@ -205,17 +270,26 @@ files_content = "[" + files_content + "]"
 
 file_info = ast.literal_eval(files_content)
 
+for tmp in file_info:
+    i = tmp["file_name"].index("2")
+    tmp["date"] = tmp["file_name"][i:len(tmp["file_name"]) - 4].strip()
+    tmp["file_name"] = tmp["file_name"][0:i - 1].strip()
 print("\nNumber of logs:", len(file_info))
 
-
-print_by_loss_function(file_info, "categoricalcrossentropy")
-# print_sorted_by_name(file_info)
+# print_by_loss_function(file_info, "categoricalcrossentropy")
 # print_sorted_by_accuracy_train(file_info)
 # print_sorted_by_loss(file_info)
 # print_average_accuracy_test(file_info)
 # print_above_percentage(file_info)
-
+#
+# print_sorted_by_name(file_info)
 # print_sorted_by_accuracy_test(file_info)
-# print_ratio_loss_accuracy(file_info)
 # print_max_accuracy_test(file_info)
 # print_min_loss(file_info)
+# print_ratio_loss_accuracy(file_info)
+
+print_sorted_by_name_and_accuracy(file_info)
+
+max_accuracy_for_each_type_of_neural_network(file_info)
+
+print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)

@@ -2,7 +2,7 @@ import matplotlib
 import numpy
 import numpy as np
 import pandas
-from keras.layers import Dense
+from keras.layers import Dense, Dropout
 from keras.models import Sequential
 from keras.utils import np_utils
 from sklearn.model_selection import train_test_split
@@ -76,12 +76,7 @@ def baseline_model():
     # create model
     model = Sequential()
     model.add(Dense(n_header, activation='tanh', input_dim=n_header))
-    model.add(Dense(500, activation='relu'))
-    model.add(Dense(300, activation='relu'))
-    model.add(Dense(200, activation='relu'))
-    model.add(Dense(100, activation='relu'))
-    model.add(Dense(50, activation='relu'))
-    model.add(Dense(20, activation='relu'))
+    model.add(Dense(7, activation='relu'))
     model.add(Dense(n_classes, activation='softmax'))
 
     # compile model

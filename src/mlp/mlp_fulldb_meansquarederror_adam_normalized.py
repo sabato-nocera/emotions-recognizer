@@ -76,12 +76,13 @@ def baseline_model():
     # create model
     model = Sequential()
     model.add(Dense(n_header, activation='tanh', input_dim=n_header))
-    model.add(Dense(500, activation='relu'))
-    model.add(Dense(300, activation='relu'))
-    model.add(Dense(200, activation='relu'))
-    model.add(Dense(100, activation='relu'))
-    model.add(Dense(50, activation='relu'))
-    model.add(Dense(20, activation='relu'))
+    model.add(Dense(256, activation='relu'))
+    model.add(Dense(192, activation='relu'))
+    model.add(Dense(128, activation='relu'))
+    model.add(Dense(64, activation='relu'))
+    model.add(Dense(32, activation='relu'))
+    model.add(Dense(16, activation='relu'))
+    model.add(Dense(8, activation='relu'))
     model.add(Dense(n_classes, activation='softmax'))
 
     # compile model

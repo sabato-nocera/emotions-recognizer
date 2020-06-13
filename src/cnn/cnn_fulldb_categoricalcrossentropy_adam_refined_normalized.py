@@ -115,6 +115,8 @@ def baseline_model():
     model.add(Dense(300, activation='relu'))
     model.add(Dense(200, activation='relu'))
     model.add(Dense(100, activation='relu'))
+    model.add(Dense(50, activation='relu'))
+    model.add(Dense(20, activation='relu'))
     model.add(Dense(n_classes))
     model.add(Activation('softmax'))
 

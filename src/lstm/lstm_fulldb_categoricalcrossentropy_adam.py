@@ -7,7 +7,7 @@ import numpy
 import numpy as np
 import pandas
 from keras.callbacks import EarlyStopping
-from keras.layers import Dense
+from keras.layers import Dense, Dropout
 from keras.layers import LSTM
 from keras.models import Sequential
 from keras.utils import np_utils
@@ -73,10 +73,13 @@ print("Reshaping: ", (X_train.shape, y_train.shape, X_test.shape, y_test.shape),
 def baseline_model():
     # create model
     model = Sequential()
-    model.add(LSTM(256, input_shape=(X_train2.shape[1], X_train2.shape[2])))
+    model.add((LSTM(500, input_shape=(X_train2.shape[1], X_train2.shape[2]))))
+    model.add(Dense(300, activation='relu'))
     model.add(Dense(200, activation='relu'))
     model.add(Dense(100, activation='relu'))
-    model.add(Dense(4, activation='softmax'))
+    model.add(Dense(50, activation='relu'))
+    model.add(Dense(20, activation='relu'))
+    model.add(Dense(n_classes, activation='softmax'))
 
     # compile model
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
@@ -95,9 +98,9 @@ keras_model = baseline_model()
 
 print('\nStart computation...\n')
 
-history = keras_model.fit(X_train2, y_train, epochs=500, batch_size=80, verbose=2, shuffle=False,
+history = keras_model.fit(X_train2, y_train, epochs=100, batch_size=16, verbose=2, shuffle=False,
                           validation_split=0.20,)
-print("\nFit: epochs = 500, batch_size = 80, verbose = 2, shuffle=False, validation_split = 0.20\n")
+print("\nFit: epochs = 100, batch_size = 16, verbose = 2, shuffle=False, validation_split = 0.20\n")
 print(keras_model.summary())
 
 y_score = keras_model.predict(X_test2)
