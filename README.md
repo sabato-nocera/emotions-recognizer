@@ -50,7 +50,7 @@ poter essere sempre consultati e comparati con facilità.
 vari codici sorgenti (ognuno rappresentativo di una diversa configurazione del tipo di rete neurale).
 
 
-##Osseravazioni
+## Osseravazioni
 
 
 Le reti neurali che vengono configurate con la loss function _categorical hinge_ impiegano poco tempo tempo per il 
