@@ -41,7 +41,10 @@ Il dataset originale è stato ottenuto campionando emozioni da ogni persona, ott
 ciascuna. La regola utilizzata per l'aumento dei dati è stato prendere coppie di esempi relativi allo stesso feedback di 
 una stessa persona, suddividere le feature delle due tuple in due parti e creare due nuove tuple utilizzando parti 
 alternate (similmente al meccanismo di crossing-over dei cromosomi). Usare tale dataset sembra portare a risultati 
-leggermente migliori (sia in termini di accuracy che di loss).
+leggermente migliori (sia in termini di accuracy che di loss); i valori di accuracy test ed accuracy train sono vicini.
+La _MLP_ che lo utilizza raggiunge il 90.99% di accuracy test, con un valore di loss basso; ciò è dovuto anche grazie
+all'aumento delle epoche e della batch size (sembra essere una buona strategia aumentare queste ultime due nelle reti
+neurali che utilizzano tale dataset).
 
 
 • **logs**, al cui interno sono presenti gli output prodotti a seguito del training delle reti neurali, in modo tale da
@@ -65,4 +68,12 @@ l'inserimento di molti neuroni e layer intermedi.
 La loss function _categorical categorical cross entropy_ risulta essere, per sua natura, quella più adatta al training
 di una rete neurale atta a riconoscere più classi. Nonostante ci siano state configurazioni con loss function _MSE_ che
 hanno performato meglio, nella realtà il loro utilizzo potrebbe essere non del tutto conveniente, per questo si mantiene
-come riferimento la loss function _categorical categorical cross entropy_.
+come riferimento la loss function _categorical categorical cross entropy_. Una prova di ciò si evince anche dall'
+osservazione della ROC curve nelle reti _MLP_ che utilizzano  _"second_augmented_dataset.csv"_: avendo aumentato il
+numero di esempi, notiamo come i valori di accuracy test ed accuracy train sono simili sia nella rete neurale che
+utilizza come loss function _categorical categorical cross entropy_ che in quella che usa _MSE_; come possiamo ben
+aspettarci, _MSE_ continua ad avere il valore di loss minore, nonostante sia simile a quello di stesse reti neurali che 
+utilizzano diversi dataset, ma quello del _categorical categorical cross entropy_ risulta essere minore rispetto a di 
+stesse reti neurali che utilizzano diversi dataset; inoltre, le ROC curve indicano che il _categorical categorical cross 
+entropy_ ha una probabilità leggermente minore di individuare falsi positivi rispetto al _MSE_ (quindi nella realtà è 
+leggermente più affidabile).

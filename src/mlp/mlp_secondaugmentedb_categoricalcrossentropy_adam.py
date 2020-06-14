@@ -91,8 +91,8 @@ keras_model = baseline_model()
 
 print('\nStart computation...\n')
 
-history = keras_model.fit(X_train, y_train, epochs=500, batch_size=80, verbose=2, shuffle=False, validation_split=0.20)
-print("\nFit: epochs=500, batch_size=80, verbose=2, shuffle=False, validation_split=0.20\n")
+history = keras_model.fit(X_train, y_train, epochs=1455, batch_size=233, verbose=2, shuffle=False, validation_split=0.20)
+print("\nFit: epochs=1455, batch_size=233, verbose=2, shuffle=False, validation_split=0.20\n")
 print(keras_model.summary())
 
 y_score = keras_model.predict(X_test)
