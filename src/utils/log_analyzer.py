@@ -1,6 +1,7 @@
 import glob
 import ast
 
+
 # return the content of interest of a file
 def read_file_content(file):
     file_content = "{"
@@ -51,7 +52,8 @@ def print_max_accuracy_test(list_of_dicts):
                 max_accuracy["value"] = tmp["accuracy_test"]
                 max_accuracy["file_name"] = tmp["file_name"]
 
-    print("\nMax accuracy test: ", max_accuracy["file_name"], " with ", max_accuracy["value"], "%", "(", tmp["date"], ")")
+    print("\nMax accuracy test: ", max_accuracy["file_name"], " with ", max_accuracy["value"], "%", "(", tmp["date"],
+          ")")
 
 
 def print_min_loss(list_of_dicts):
@@ -158,9 +160,6 @@ def print_above_percentage(list_of_dicts):
     print("\nModels with test accuracy >= 90% :", above_90)
 
 
-
-
-
 def print_by_loss_function(list_of_dicts, loss_function_name):
     print("\nWhich neural networks use the loss function '", loss_function_name, "' (sorted by accuracy test) ?\n")
 
@@ -209,6 +208,7 @@ def print_ratio_loss_accuracy(list_of_dicts):
               "%", "(", tmp["date"], ")")
         rank += 1
 
+
 def print_ratio_by_max_accuracy_for_each_type_of_neural_network(list_of_dicts):
     sorted_by_name_and_accuracy = sorted(list_of_dicts, key=lambda k: (k['file_name'], k['accuracy_test']))
 
@@ -231,7 +231,6 @@ def print_ratio_by_max_accuracy_for_each_type_of_neural_network(list_of_dicts):
     rank = 1
     sorted_by_ratio = sorted(types_of_neural_network, key=lambda k: k['ratio'])
 
-
     print("\nLoss / Accuracy Test (by max accuracy for each type of neural network):\n")
     rank = 1
     for tmp in sorted_by_ratio:
@@ -239,7 +238,6 @@ def print_ratio_by_max_accuracy_for_each_type_of_neural_network(list_of_dicts):
               tmp["accuracy_test"], "% -> Loss Test:", tmp["loss_test"], "-> Accuracy Train:", tmp["accuracy_train"],
               "%", "(", tmp["date"], ")")
         rank += 1
-
 
 
 def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
@@ -283,13 +281,13 @@ print("\nNumber of logs:", len(file_info))
 # print_above_percentage(file_info)
 #
 # print_sorted_by_name(file_info)
-# print_sorted_by_accuracy_test(file_info)
+print_sorted_by_accuracy_test(file_info)
 # print_max_accuracy_test(file_info)
 # print_min_loss(file_info)
 # print_ratio_loss_accuracy(file_info)
 
-print_sorted_by_name_and_accuracy(file_info)
+# print_sorted_by_name_and_accuracy(file_info)
 
-max_accuracy_for_each_type_of_neural_network(file_info)
+# max_accuracy_for_each_type_of_neural_network(file_info)
 
-print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)
+# print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)

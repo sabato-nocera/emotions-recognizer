@@ -1,7 +1,7 @@
 # exec(open("../mlp/mlp_augmentedb_categoricalcrossentropy_adam_normalized.py").read())
 # exec(open("../mlp/mlp_fulldb_categoricalcrossentropy_adam.py").read())
 # exec(open("../mlp/mlp_reducedb_categoricalcrossentropy_adam_normalized.py").read())
-# exec(open("../mlp/mlp_fulldb_meansquarederror_adam.py").read())
+# exec(open("../mlp/mlp_fulldb_meansquarederror_adam.py").read())                                              #k-fold
 # exec(open("../mlp/mlp_reducedb_categoricalcrossentropy_adam.py").read())
 # exec(open("../mlp/mlp_reducedb_meansquarederror_sgd.py").read())
 # exec(open("../mlp/mlp_fulldb_categoricalcrossentropy_adam_normalized.py").read())
@@ -13,8 +13,8 @@
 # exec(open("../mlp/mlp_nohumiditydb_meansquarederror_adam_normalized.py").read())
 # exec(open("../mlp/mlp_nohumiditydb_categoricalcrossentropy_adam_normalized.py").read())
 # exec(open("../mlp/mlp_nohumiditydb_meansquarederror_adam.py").read())
-# exec(open("../mlp/mlp_secondaugmentedb_categoricalcrossentropy_adam.py").read())
-# exec(open("../mlp/mlp_secondaugmentedb_meansquarederror_adam.py").read())
+exec(open("../mlp/mlp_secondaugmentedb_categoricalcrossentropy_adam.py").read())                               #k-fold
+exec(open("../mlp/mlp_secondaugmentedb_meansquarederror_adam.py").read())
 #
 # exec(open("../lstm/lstm_fulldb_categoricalcrossentropy_adam.py").read())
 # exec(open("../lstm/lstm_reducedb_categoricalcrossentropy_adam.py").read())
