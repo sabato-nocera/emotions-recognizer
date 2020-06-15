@@ -77,3 +77,17 @@ utilizzano diversi dataset, ma quello del _categorical categorical cross entropy
 stesse reti neurali che utilizzano diversi dataset; inoltre, le ROC curve indicano che il _categorical categorical cross 
 entropy_ ha una probabilità leggermente minore di individuare falsi positivi rispetto al _MSE_ (quindi nella realtà è 
 leggermente più affidabile).
+
+
+Utilizzata la _K-fold Cross Validation_ (convalida incrociata), tecnica statistica che consiste nella suddivisione dell'
+insieme di dati totale in k parti di uguale numerosità e, a ogni passo, la kª parte del'insieme di dati viene a essere 
+quella di convalida, mentre la restante parte costituisce sempre l'insieme di addestramento. Così si allena il modello 
+per ognuna delle k parti, evitando quindi problemi di sovradattamento, ma anche di campionamento asimmetrico (e quindi 
+affetto da distorsione) del campione osservato, tipico della suddivisione dei dati in due sole parti (ossia 
+addestramento/convalida). In altre parole, si suddivide il campione osservato in gruppi di egual numerosità, si esclude 
+iterativamente un gruppo alla volta e si cerca di predirlo coi gruppi non esclusi, al fine di verificare la bontà del 
+modello di predizione utilizzato. Sarà curioso osservare i risultati che produrrà la _K-fold Cross Validation_ per stesse
+reti neurali che utilizzano, però, dataset diversi. Purtroppo, tale tecnica necessità di eseguire il training molte volte,
+portando ad un utilizzo elevato dell'elaboratore; maggiore è il numero dei split e maggiore sarà anche la stima di tale
+tecnica, ma il costo computazionale aumenta considerevolmente. Per ogni reti neurale, è possibile richiamare un'apposita
+funzione che effettua _K-fold Cross Validation_ per tale rete neurale.
