@@ -79,7 +79,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     train_loss_per_fold = []
 
     # Define the K-fold Cross Validator
-    kfold = KFold(n_splits=8, shuffle=True)
+    kfold = KFold(n_splits=5, shuffle=True)
 
     # K-fold Cross Validation model evaluation
     fold_no = 1

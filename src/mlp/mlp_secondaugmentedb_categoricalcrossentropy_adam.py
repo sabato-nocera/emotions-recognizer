@@ -40,7 +40,7 @@ n_header = 10
 numpy.random.seed(7)
 
 
-def baseline_model(just_once=0):
+def baseline_model(just_once = 0):
     # create model
     model = Sequential()
     model.add(Dense(n_header, activation='tanh', input_dim=n_header))
@@ -54,11 +54,6 @@ def baseline_model(just_once=0):
 
     # compile model
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-
-    print("\nLayers:\n")
-    layers = model.layers
-    for x in layers:
-        print(x.get_config(), "\n")
 
     # just once
     if just_once == 0:
@@ -81,7 +76,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     train_loss_per_fold = []
 
     # Define the K-fold Cross Validator
-    kfold = KFold(n_splits=8, shuffle=True)
+    kfold = KFold(n_splits=5, shuffle=True)
 
     # K-fold Cross Validation model evaluation
     fold_no = 1

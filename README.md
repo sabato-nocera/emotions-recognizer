@@ -65,6 +65,7 @@ Le reti neurali che vengono configurate con la loss function _categorical hinge_
 training; benché complessivamente l'accuracy raggiunta è sempre stata molto bassa, è risultato essere controproducente 
 l'inserimento di molti neuroni e layer intermedi.
 
+
 La loss function _categorical categorical cross entropy_ risulta essere, per sua natura, quella più adatta al training
 di una rete neurale atta a riconoscere più classi. Nonostante ci siano state configurazioni con loss function _MSE_ che
 hanno performato meglio, nella realtà il loro utilizzo potrebbe essere non del tutto conveniente, per questo si mantiene

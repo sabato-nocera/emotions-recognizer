@@ -5,7 +5,7 @@ import pandas
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.utils import np_utils
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
@@ -39,7 +39,7 @@ n_header = 10
 numpy.random.seed(7)
 
 
-def baseline_model():
+def baseline_model(just_once=0):
     # create model
     model = Sequential()
     model.add(Dense(n_header, activation='tanh', input_dim=n_header))
@@ -54,14 +54,80 @@ def baseline_model():
     # compile model
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-    print("\nLayers:\n")
-    layers = model.layers
-    for x in layers:
-        print(x.get_config(), "\n")
-
-    print("Compile: loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']")
+    # just once
+    if just_once == 0:
+        print("\nLayers:\n")
+        layers = model.layers
+        for x in layers:
+            print(x.get_config(), "\n")
+        print("Compile: loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']")
 
     return model
+
+
+def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kfold):
+    inputs = np.concatenate((X_train_kfold, X_test_kfold), axis=0)
+    targets = np.concatenate((y_train_kfold, y_test_kfold), axis=0)
+
+    test_acc_per_fold = []
+    test_loss_per_fold = []
+    train_acc_per_fold = []
+    train_loss_per_fold = []
+
+    # Define the K-fold Cross Validator
+    kfold = KFold(n_splits=5, shuffle=True)
+
+    # K-fold Cross Validation model evaluation
+    fold_no = 1
+
+    print('\n\n------------------------------------------------------------------------')
+    print('K-fold Cross Validation')
+    print("\nK-fold_Fit: epochs=500, batch_size=80, verbose=2, shuffle=False, validation_split=0.20")
+    for train, test in kfold.split(inputs, targets):
+        # create model
+        model = baseline_model(just_once=1)
+
+        # Generate a print
+        print('------------------------------------------------------------------------')
+        print(f'Training for fold {fold_no} ...')
+
+        # Fit data to model
+        model.fit(inputs[train], targets[train], epochs=500, batch_size=80, verbose=2, shuffle=False,
+                  validation_split=0.20)
+
+        test_score_kfold = model.evaluate(inputs[test], targets[test], verbose=2)
+        train_score_kfold = model.evaluate(inputs[train], targets[train], verbose=2)
+
+        # Generate generalization metrics
+        test_acc_per_fold.append(test_score_kfold[1] * 100)
+        test_loss_per_fold.append(test_score_kfold[0])
+        train_acc_per_fold.append(train_score_kfold[1] * 100)
+        train_loss_per_fold.append(train_score_kfold[0])
+
+        # Increase fold number
+        fold_no = fold_no + 1
+
+    # == Provide average scores ==
+    print('------------------------------------------------------------------------')
+    print('Score per fold')
+    for i in range(0, len(test_acc_per_fold)):
+        print('------------------------------------------------------------------------')
+        print("Score for fold", i)
+        print("Accuracy_Train: %.2f%%" % (train_acc_per_fold[i]))
+        print("Accuracy_Test: %.2f%%" % (test_acc_per_fold[i]))
+        print("Loss_Train: %.2f" % (train_loss_per_fold[i]))
+        print("Loss_Test: %.2f" % (test_loss_per_fold[i]))
+    print('------------------------------------------------------------------------')
+    print('Average scores for all folds:')
+    print("Average_Accuracy_Train: %.2f%%" % (np.mean(train_acc_per_fold)))
+    print("\t-> (+-", (np.std(train_acc_per_fold)), ")")
+    print("Average_Accuracy_Test: %.2f%%" % (np.mean(test_acc_per_fold)))
+    print("\t-> (+-", (np.std(test_acc_per_fold)), ")")
+    print("Average_Loss_Train: %.2f" % (np.mean(train_loss_per_fold)))
+    print("\t-> (+-", (np.std(train_loss_per_fold)), ")")
+    print("Average_Loss_Test: %.2f" % (np.mean(test_loss_per_fold)))
+    print("\t-> (+-", (np.std(test_loss_per_fold)), ")")
+    print('------------------------------------------------------------------------')
 
 
 dataset_name = "../../datasets/full_dataset_without_humidity.csv"
@@ -263,5 +329,7 @@ plt.legend(loc="lower right")
 # plt.show()
 plt.savefig(output_roc_curve_two)
 plt.clf()
+
+kfold_cross_validation(X_train, X_test, y_train, y_test)
 
 output_file.close()
