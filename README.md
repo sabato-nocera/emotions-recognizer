@@ -47,6 +47,10 @@ all'aumento delle epoche e della batch size (sembra essere una buona strategia a
 neurali che utilizzano tale dataset).
 
 
+_"third_augmented_dataset.csv"_ rappresenta una copia di _"second_augmented_dataset.csv"_, ma con un numero di esempi
+bilanciato per ogni classe.
+
+
 • **logs**, al cui interno sono presenti gli output prodotti a seguito del training delle reti neurali, in modo tale da
 poter essere sempre consultati e comparati con facilità.
 

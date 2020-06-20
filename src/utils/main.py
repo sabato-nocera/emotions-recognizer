@@ -15,6 +15,8 @@ exec(open("../mlp/mlp_nohumiditydb_categoricalcrossentropy_adam_normalized.py").
 exec(open("../mlp/mlp_nohumiditydb_meansquarederror_adam.py").read())
 exec(open("../mlp/mlp_secondaugmentedb_categoricalcrossentropy_adam.py").read())
 exec(open("../mlp/mlp_secondaugmentedb_meansquarederror_adam.py").read())
+exec(open("../mlp/mlp_thirdaugmentedb_categoricalcrossentropy_adam.py").read())
+exec(open("../mlp/mlp_thirdaugmentedb_meansquarederror_adam.py").read())
 
 exec(open("../lstm/lstm_fulldb_categoricalcrossentropy_adam.py").read())
 exec(open("../lstm/lstm_reducedb_categoricalcrossentropy_adam.py").read())
@@ -25,6 +27,8 @@ exec(open("../lstm/lstm_nohumiditydb_categoricalcrossentropy_adam_normalized_bid
 exec(open("../lstm/lstm_reducedb_categoricalcrossentropy_adam_bidirectional.py").read())
 exec(open("../lstm/lstm_secondaugmentedb_categoricalcrossentropy_adam.py").read())
 exec(open("../lstm/lstm_secondaugmentedb_categoricalcrossentropy_adam_bidirectional.py").read())
+exec(open("../lstm/lstm_thirdaugmentedb_categoricalcrossentropy_adam.py").read())
+exec(open("../lstm/lstm_thirdaugmentedb_categoricalcrossentropy_adam_bidirectional.py").read())
 
 exec(open("../cnn/cnn_fulldb_categoricalcrossentropy_adam_refined.py").read())
 exec(open("../cnn/cnn_fulldb_categoricalcrossentropy_adam_refined_normalized.py").read())
@@ -37,7 +41,10 @@ exec(open("../cnn/cnn_augmentedb_categoricalcrossentropy_adam.py").read())
 exec(open("../cnn/cnn_nohumiditydb_meansquarederror_adam_refined_normalized.py").read())
 exec(open("../cnn/cnn_secondaugmentedb_categoricalcrossentropy_adam_refined.py").read())
 exec(open("../cnn/cnn_secondaugmentedb_categoricalcrossentropy_adam.py").read())
+exec(open("../cnn/cnn_thirdaugmentedb_categoricalcrossentropy_adam.py").read())
+exec(open("../cnn/cnn_thirdaugmentedb_categoricalcrossentropy_adam_refined.py").read())
 
 exec(open("../resnet/resnet_fulldb_categoricalcrossentropy_adam.py").read())
 exec(open("../resnet/resnet_fulldb_meansquarederror_adam_refined_normalized.py").read())
 exec(open("../resnet/resnet_secondaugmentedb_categoricalcrossentropy_adam.py").read())
+exec(open("../resnet/resnet_thirdaugmentedb_categoricalcrossentropy_adam.py").read())
