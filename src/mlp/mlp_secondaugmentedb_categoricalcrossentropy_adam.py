@@ -1,21 +1,22 @@
+import sys
+from datetime import datetime
+from itertools import cycle
+
 import matplotlib
+import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.utils import np_utils
+from numpy import interp
+from sklearn.metrics import auc
+from sklearn.metrics import roc_curve
+from sklearn.model_selection import KFold
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import KFold
-import matplotlib.pyplot as plt
-from sklearn.metrics import auc
-from sklearn.metrics import roc_curve
-from numpy import interp
-from itertools import cycle
-from datetime import datetime
-import sys
 
 now = datetime.now()
 output_file_name = "../../logs/log_mlp_secondaugmentedb_categoricalcrossentropy_adam_" + str(now)
@@ -40,7 +41,7 @@ n_header = 10
 numpy.random.seed(7)
 
 
-def baseline_model(just_once = 0):
+def baseline_model(just_once=0):
     # create model
     model = Sequential()
     model.add(Dense(n_header, activation='tanh', input_dim=n_header))
@@ -94,7 +95,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
 
         # Fit data to model
         model.fit(inputs[train], targets[train], epochs=1455, batch_size=233, verbose=2, shuffle=False,
-                              validation_split=0.20)
+                  validation_split=0.20)
 
         test_score_kfold = model.evaluate(inputs[test], targets[test], verbose=2)
         train_score_kfold = model.evaluate(inputs[train], targets[train], verbose=2)
@@ -158,7 +159,8 @@ keras_model = baseline_model()
 
 print('\nStart computation...\n')
 
-history = keras_model.fit(X_train, y_train, epochs=1455, batch_size=233, verbose=2, shuffle=False, validation_split=0.20)
+history = keras_model.fit(X_train, y_train, epochs=1455, batch_size=233, verbose=2, shuffle=False,
+                          validation_split=0.20)
 print("\nFit: epochs=1455, batch_size=233, verbose=2, shuffle=False, validation_split=0.20\n")
 print(keras_model.summary())
 

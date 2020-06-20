@@ -1,13 +1,13 @@
 import sys
 from datetime import datetime
 from itertools import cycle
+
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
-from keras.callbacks import EarlyStopping
-from keras.layers import Dense, Dropout
+from keras.layers import Dense
 from keras.layers import LSTM
 from keras.models import Sequential
 from keras.utils import np_utils
@@ -123,7 +123,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
 
         # Fit data to model
         model.fit(inputs[train], targets[train], epochs=1455, batch_size=233, verbose=2, shuffle=False,
-                          validation_split=0.20)
+                  validation_split=0.20)
 
         test_score_kfold = model.evaluate(inputs[test], targets[test], verbose=2)
         train_score_kfold = model.evaluate(inputs[train], targets[train], verbose=2)
@@ -160,13 +160,12 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('------------------------------------------------------------------------')
 
 
-
 keras_model = baseline_model()
 
 print('\nStart computation...\n')
 
 history = keras_model.fit(X_train2, y_train, epochs=1455, batch_size=233, verbose=2, shuffle=False,
-                          validation_split=0.20,)
+                          validation_split=0.20, )
 print("\nFit: epochs = 1455, batch_size = 233, verbose = 2, shuffle=False, validation_split = 0.20\n")
 print(keras_model.summary())
 

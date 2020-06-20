@@ -1,6 +1,7 @@
 import sys
 from datetime import datetime
 from itertools import cycle
+
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy
@@ -72,7 +73,6 @@ print("Reshaping: ", (X_train.shape, y_train.shape, X_test.shape, y_test.shape),
 
 
 def baseline_model(just_once=0):
-
     # create model
     model = Sequential()
     model.add(Convolution1D(nb_filter=500, filter_length=1, input_shape=(n_header, 1)))
@@ -130,7 +130,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
 
         # Fit data to model
         model.fit(inputs[train], targets[train], epochs=192, batch_size=32, verbose=2, shuffle=False,
-                          validation_split=0.20)
+                  validation_split=0.20)
 
         test_score_kfold = model.evaluate(inputs[test], targets[test], verbose=2)
         train_score_kfold = model.evaluate(inputs[train], targets[train], verbose=2)
@@ -165,8 +165,6 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print("Average_Loss_Test: %.2f" % (np.mean(test_loss_per_fold)))
     print("\t-> (+-", (np.std(test_loss_per_fold)), ")")
     print('------------------------------------------------------------------------')
-
-
 
 
 keras_model = baseline_model()

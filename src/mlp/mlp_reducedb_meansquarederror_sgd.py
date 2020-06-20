@@ -1,20 +1,21 @@
+import sys
+from datetime import datetime
+from itertools import cycle
+
 import matplotlib
+import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.utils import np_utils
+from numpy import interp
+from sklearn.metrics import auc
+from sklearn.metrics import roc_curve
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
-from sklearn.metrics import auc
-from sklearn.metrics import roc_curve
-from numpy import interp
-from itertools import cycle
-from datetime import datetime
-import sys
 
 now = datetime.now()
 output_file_name = "../../logs/log_mlp_reducedb_meansquarederror_sgd_" + str(now)
@@ -128,7 +129,6 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print("Average_Loss_Test: %.2f" % (np.mean(test_loss_per_fold)))
     print("\t-> (+-", (np.std(test_loss_per_fold)), ")")
     print('------------------------------------------------------------------------')
-
 
 
 dataset_name = "../../datasets/reduced_dataset.csv"

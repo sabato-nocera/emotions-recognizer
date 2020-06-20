@@ -3,6 +3,7 @@
 import sys
 from datetime import datetime
 from itertools import cycle
+
 import keras
 import matplotlib
 import matplotlib.pyplot as plt
@@ -104,7 +105,7 @@ def resnet_layer(inputs,
     return x
 
 
-def resnet_v1(input_shape, depth, num_classes=n_classes, just_once = 0):
+def resnet_v1(input_shape, depth, num_classes=n_classes, just_once=0):
     if (depth - 2) % 6 != 0:
         raise ValueError('depth should be 6n+2 (eg 20, 32, 44 in [a])')
 
@@ -186,7 +187,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
 
         # Fit data to model
         model.fit(inputs[train], targets[train], epochs=1455, batch_size=233, verbose=2, shuffle=False,
-                              validation_split=0.20)
+                  validation_split=0.20)
 
         test_score_kfold = model.evaluate(inputs[test], targets[test], verbose=2)
         train_score_kfold = model.evaluate(inputs[train], targets[train], verbose=2)

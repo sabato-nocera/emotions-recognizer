@@ -1,13 +1,13 @@
 import sys
 from datetime import datetime
 from itertools import cycle
+
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
-from keras.callbacks import EarlyStopping
-from keras.layers import Dense, Embedding, Bidirectional, Dropout
+from keras.layers import Dense, Bidirectional, Dropout
 from keras.layers import LSTM
 from keras.models import Sequential
 from keras.utils import np_utils
@@ -158,7 +158,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
 
         # Fit data to model
         model.fit(inputs[train], targets[train], epochs=500, batch_size=80, verbose=2, shuffle=False,
-                          validation_split=0.20)
+                  validation_split=0.20)
 
         test_score_kfold = model.evaluate(inputs[test], targets[test], verbose=2)
         train_score_kfold = model.evaluate(inputs[train], targets[train], verbose=2)
@@ -193,7 +193,6 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print("Average_Loss_Test: %.2f" % (np.mean(test_loss_per_fold)))
     print("\t-> (+-", (np.std(test_loss_per_fold)), ")")
     print('------------------------------------------------------------------------')
-
 
 
 keras_model = baseline_model()

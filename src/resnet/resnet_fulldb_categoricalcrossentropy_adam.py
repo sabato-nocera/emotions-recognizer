@@ -3,6 +3,7 @@
 import sys
 from datetime import datetime
 from itertools import cycle
+
 import keras
 import matplotlib
 import matplotlib.pyplot as plt

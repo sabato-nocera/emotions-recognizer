@@ -1,12 +1,12 @@
 import sys
 from datetime import datetime
 from itertools import cycle
+
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
-from keras.callbacks import EarlyStopping
 from keras.layers import Dense
 from keras.layers import LSTM
 from keras.models import Sequential
@@ -60,7 +60,6 @@ encoder.fit(Y)
 encoded_Y = encoder.transform(Y)
 # convert integers to dummy variables (i.e. one hot encoded)
 dummy_y = np_utils.to_categorical(encoded_Y)
-
 
 X_train, X_test, y_train, y_test = train_test_split(dummy_x, dummy_y, test_size=0.2)
 
@@ -121,7 +120,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
 
         # Fit data to model
         model.fit(inputs[train], targets[train], epochs=500, batch_size=80, verbose=2, shuffle=False,
-                          validation_split=0.20)
+                  validation_split=0.20)
 
         test_score_kfold = model.evaluate(inputs[test], targets[test], verbose=2)
         train_score_kfold = model.evaluate(inputs[train], targets[train], verbose=2)
@@ -158,13 +157,12 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('------------------------------------------------------------------------')
 
 
-
 keras_model = baseline_model()
 
 print('\nStart computation...\n')
 
 history = keras_model.fit(X_train2, y_train, epochs=500, batch_size=80, verbose=2, shuffle=False,
-                          validation_split=0.20,)
+                          validation_split=0.20, )
 print("\nFit: epochs = 500, batch_size = 80, verbose = 2, shuffle=False, validation_split = 0.20\n")
 print(keras_model.summary())
 

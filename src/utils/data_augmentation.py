@@ -1,5 +1,5 @@
-import pandas
 import numpy
+import pandas
 
 n_header = 10
 

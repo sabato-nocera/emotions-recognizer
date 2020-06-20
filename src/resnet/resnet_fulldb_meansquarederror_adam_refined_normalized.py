@@ -3,6 +3,7 @@
 import sys
 from datetime import datetime
 from itertools import cycle
+
 import keras
 import matplotlib
 import matplotlib.pyplot as plt
@@ -254,7 +255,6 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print("Average_Loss_Test: %.2f" % (np.mean(test_loss_per_fold)))
     print("\t-> (+-", (np.std(test_loss_per_fold)), ")")
     print('------------------------------------------------------------------------')
-
 
 
 keras_model = resnet_v1(input_shape=(n_header, 1), depth=20)

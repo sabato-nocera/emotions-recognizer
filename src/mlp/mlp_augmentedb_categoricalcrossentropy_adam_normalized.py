@@ -1,20 +1,21 @@
+import sys
+from datetime import datetime
+from itertools import cycle
+
 import matplotlib
+import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.utils import np_utils
+from numpy import interp
+from sklearn.metrics import auc
+from sklearn.metrics import roc_curve
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
-from sklearn.metrics import auc
-from sklearn.metrics import roc_curve
-from numpy import interp
-from itertools import cycle
-from datetime import datetime
-import sys
 
 
 def calculate(x, i, j):
@@ -163,7 +164,6 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('------------------------------------------------------------------------')
 
 
-
 dataset_name = "../../datasets/sorted_dataset.csv"
 dataframe = pandas.read_csv(dataset_name, header=0, sep=";", skiprows=0)
 print("Dataset used:", dataset_name, "\n")
@@ -195,7 +195,7 @@ tmp_array = dummy_x[0]
 i = 0
 k = 0
 
-print("avg_samples:",avg_samples)
+print("avg_samples:", avg_samples)
 
 while k < len(dummy_x):
     if k == len(dummy_x):

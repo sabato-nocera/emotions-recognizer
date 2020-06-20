@@ -1,20 +1,21 @@
+import sys
+from datetime import datetime
+from itertools import cycle
+
 import matplotlib
+import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.utils import np_utils
+from numpy import interp
+from sklearn.metrics import auc
+from sklearn.metrics import roc_curve
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
-from sklearn.metrics import auc
-from sklearn.metrics import roc_curve
-from numpy import interp
-from itertools import cycle
-from datetime import datetime
-import sys
 
 now = datetime.now()
 output_file_name = "../../logs/log_mlp_secondaugmentedb_meansquarederror_adam_" + str(now)
@@ -130,7 +131,6 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('------------------------------------------------------------------------')
 
 
-
 dataset_name = "../../datasets/second_augmented_dataset.csv"
 dataframe = pandas.read_csv(dataset_name, header=0, sep=",", skiprows=0)
 print("Dataset used:", dataset_name, "\n")
@@ -158,7 +158,8 @@ keras_model = baseline_model()
 
 print('\nStart computation...\n')
 
-history = keras_model.fit(X_train, y_train, epochs=1455, batch_size=233, verbose=2, shuffle=False, validation_split=0.20)
+history = keras_model.fit(X_train, y_train, epochs=1455, batch_size=233, verbose=2, shuffle=False,
+                          validation_split=0.20)
 print("\nFit: epochs=1455, batch_size=233, verbose=2, shuffle=False, validation_split=0.20\n")
 print(keras_model.summary())
 

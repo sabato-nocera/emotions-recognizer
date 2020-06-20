@@ -1,20 +1,21 @@
+import sys
+from datetime import datetime
+from itertools import cycle
+
 import matplotlib
+import matplotlib.pyplot as plt
 import numpy
 import numpy as np
 import pandas
 from keras.layers import Dense, Dropout
 from keras.models import Sequential
 from keras.utils import np_utils
+from numpy import interp
+from sklearn.metrics import auc
+from sklearn.metrics import roc_curve
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
-from sklearn.metrics import auc
-from sklearn.metrics import roc_curve
-from numpy import interp
-from itertools import cycle
-from datetime import datetime
-import sys
 
 
 def calculate(x, i, j):
