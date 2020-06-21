@@ -41,7 +41,7 @@ n_header = 10
 
 numpy.random.seed(7)
 
-max_depth_value = 2**13
+max_depth_value = 2 ** 13
 
 
 def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kfold):

@@ -276,7 +276,7 @@ def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
     rank = 1
     for tmp in sorted_accuracy:
         print(rank, ")", tmp["file_name"], " with accuracy test:", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
-        print("\t",tmp)
+        print("\t", tmp)
         rank += 1
 
 
