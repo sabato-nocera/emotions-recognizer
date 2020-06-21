@@ -96,3 +96,21 @@ reti neurali che utilizzano, però, dataset diversi. Purtroppo, tale tecnica nec
 portando ad un utilizzo elevato dell'elaboratore; maggiore è il numero dei split e maggiore sarà anche la stima di tale
 tecnica, ma il costo computazionale aumenta considerevolmente. Per ogni reti neurale, è possibile richiamare un'apposita
 funzione che effettua _K-fold Cross Validation_ per tale rete neurale.
+
+
+I _Decision Tree_ (in questo caso, _Classification Tree_), sono risultati essere il miglior modello utilizzato. Per il 
+loro training non è necessario specificare parametri come epoche o batch size, né necessitano di essere compilate (quindi
+non viene specificata nemmeno una loss function ed il valore di loss non è contemplato), ma è decisiva la scelta della 
+massima profondità dell'albero decisionale; si è osservato che, man mano che si aumenta tale parametro, arriviamo ad un
+punto dove non ha più senso aumentarlo ulteriormente, in quanto il modello non è più in grado di migliorare la propria
+accuracy. Rispetto alle reti neurali utilizzate, i Decision Tree sono risultati essere dei modelli che richiedono pochissimo
+tempo per il training e più "deterministici", in quanto, definiti i parametri di input e il dataset di riferimento, 
+giungono sempre alle stesse conclusioni e alla stessa accuracy; a prova di ciò, la curva di ROC è risulta assumere la 
+forma di un angolo retto (ad indicare che il modello risulta essere davvero "sicuro di sé" nelle scelte che compie). Una 
+volta raggiunto il cap per la profondità dell' albero decisionale, i risultati migliori si sono avuti utilizzando il 
+_"second_augmented_dataset.csv"_ e il _"third_augmented_dataset.csv"_, probabilmente perchè sono quelli con il maggior 
+numero di esempi; seppur con il _"second_augmented_dataset.csv"_ si è raggiunti una accuracy leggermente maggiore 
+rispetto al _"third_augmented_dataset.csv"_, confrontando le ROC curve si osserva come quella del 
+_"third_augmented_dataset.csv"_ sia più "equilibrata" rispetto a quella del  _"second_augmented_dataset.csv"_,
+probabilmente perchè il numero di esempi per classi è lo stesso, quindi risulterebbe una scelta migliore utilizzare, 
+come modello, il Decision Tree allenato con il _"third_augmented_dataset.csv"_.

@@ -26,6 +26,24 @@ def read_file_content(file):
                 file_content += ","
                 file_content += "'loss_test':" + line[-5:].rstrip("\n") + ""
 
+            if "Average_Accuracy_Train" in line:
+                file_content += ","
+                file_content += "'average_accuracy_train':" + line[-7:].rstrip("\n") + ""
+                file_content = file_content[:-1]
+
+            if "Average_Accuracy_Test" in line:
+                file_content += ","
+                file_content += "'average_accuracy_test':" + line[-7:].rstrip("\n") + ""
+                file_content = file_content[:-1]
+
+            if "Average_Loss_Train" in line:
+                file_content += ","
+                file_content += "'average_loss_train':" + line[-5:].rstrip("\n") + ""
+
+            if "Average_Loss_Test" in line:
+                file_content += ","
+                file_content += "'average_loss_test':" + line[-5:].rstrip("\n") + ""
+
     file_content += "},"
     return file_content. \
         strip()
@@ -258,6 +276,7 @@ def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
     rank = 1
     for tmp in sorted_accuracy:
         print(rank, ")", tmp["file_name"], " with accuracy test:", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
+        print("\t",tmp)
         rank += 1
 
 
@@ -281,13 +300,13 @@ print("\nNumber of logs:", len(file_info))
 # print_above_percentage(file_info)
 #
 # print_sorted_by_name(file_info)
-print_sorted_by_accuracy_test(file_info)
+# print_sorted_by_accuracy_test(file_info)
 # print_max_accuracy_test(file_info)
 # print_min_loss(file_info)
 # print_ratio_loss_accuracy(file_info)
 
 # print_sorted_by_name_and_accuracy(file_info)
 
-# max_accuracy_for_each_type_of_neural_network(file_info)
+max_accuracy_for_each_type_of_neural_network(file_info)
 
 # print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)

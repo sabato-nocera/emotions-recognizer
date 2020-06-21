@@ -48,3 +48,7 @@ exec(open("../resnet/resnet_fulldb_categoricalcrossentropy_adam.py").read())
 exec(open("../resnet/resnet_fulldb_meansquarederror_adam_refined_normalized.py").read())
 exec(open("../resnet/resnet_secondaugmentedb_categoricalcrossentropy_adam.py").read())
 exec(open("../resnet/resnet_thirdaugmentedb_categoricalcrossentropy_adam.py").read())
+
+exec(open("../decisiontree/decisiontree_nohumiditydb.py").read())
+exec(open("../decisiontree/decisiontree_secondaugmentedb.py").read())
+exec(open("../decisiontree/decisiontree_thirdaugmentedb.py").read())
