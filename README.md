@@ -51,6 +51,16 @@ _"third_augmented_dataset.csv"_ rappresenta una copia di _"second_augmented_data
 bilanciato per ogni classe.
 
 
+_"second_reduced_dataset.csv"_ risulta essere un dataset formato dalle prime prime 47 * 80 osservazioni ( = 3760) del 
+_full_dataset_without_humidity_, non prende in esame la feature dell'umidità e la data augmentation. In generale, 
+dai risultati si può facilmente osservare come la riduzione di osservazioni del dataset abbia portato ad un peggioramento 
+delle prestazioni di ogni rete neurale (drastica riduzione della test accuracy, aumento della loss nelle reti neurali 
+che utilizzano la categorical crossentropy come loss function); in particolare, si evidenzia in tutte le reti neurali 
+(ad eccezione delle CNN) un'evidente overfitting, che aumenta all'aumentare del numero di epoche; per questo motivo, 
+utilizzare lo stesso numero di epoche e batch size per stessi modelli ma con diversi dataset è controproducente, quindi 
+ho riproporzionato tali valori. 
+
+
 • **logs**, al cui interno sono presenti gli output prodotti a seguito del training delle reti neurali, in modo tale da
 poter essere sempre consultati e comparati con facilità.
 
