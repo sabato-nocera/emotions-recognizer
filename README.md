@@ -59,3 +59,25 @@ Utilizzata la K-fold Cross Validation (convalida incrociata), tecnica statistica
 <p>
 I Decision Tree (in questo caso, più appropriatamente Classification Tree), sono risultati essere il miglior modello utilizzato. Per il loro training è decisiva la scelta della massima profondità dell'albero; si è osservato che, man mano che si aumenta tale parametro, arriviamo ad un punto in cui non ha più senso aumentarlo ulteriormente, in quanto il modello non è più in grado di migliorare la propria accuracy. Rispetto alle reti neurali utilizzate, i Decision Tree sono risultati essere dei modelli che richiedono pochissimo tempo per il training e sicuri nelle predizioni che compiono (a prova di ciò, la curva di ROC è risulta assumere la forma di un angolo retto per ogni classe). 
 </p> 
+
+<h4>
+    Punti d'interesse
+</h4>
+
+<ul>
+    <li>
+        Per ogni tipologia di rete neurale e per ogni dataset creato, è stato implementato un relativo modello. Lo scopo è confrontare in che modo stesse tipologie di reti neurali si comportano su diversi dataset e come diversi dataset vengono trattati da diverse tipologie di reti neurali. In questo modo, sarà anche possibile evidenziare l'importanza della quantità e della qualità degli esempi di un dataset ed approfondire il discorso circa la data augmentation.
+    </li>
+    <li>
+        Confronto nell'utilizzo della K-Cross Validation con split pari a 5 e pari 10 tra i modelli implementati.
+    </li>
+    <li>
+        Preso in considerazione il dataset originale senza la feature dell'umidità, ho implementato reti neurali MLP, LSTM, CNN e ResNet, tutte che utilizzano come loss function la Categorical Cross Entropy e come optimizer Adam, e le ho allenate utilizzando 4 diversi tipi di normalizzazione e senza normalizzazione. Lo scopo è studiare in che modo la normalizzazione "locale" dei dati campionati dai sensori risulta impattare sulle prestazioni delle reti neurali.
+    </li>
+    <li>
+        Per la tipologia di rete neurale LSTM, sono stati implementati due modelli per ogni dataset, uno rappresentativo della LSTM bidirezionale e l'altro rappresentativo della LSTM non bidirezionale, al fine di confrontare le prestazioni delle due tipologie di LSTM su dati sensoristici come quelli che abbiamo a disposizione.
+    </li>
+    <li>
+        Per la tipologia di rete neurale MLP, sono stati implementati due modelli per ogni dataset, uno che utilizza come loss function la Categorical Cross Entropy e l'altro che utilizza la Mean Squared Error, al fine di confrontare le prestazioni e l'affidabilità dei due modelli.
+    </li>
+</ul>
