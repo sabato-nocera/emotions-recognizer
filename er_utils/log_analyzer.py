@@ -281,7 +281,7 @@ def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
         rank += 1
 
 now = datetime.now()
-output_file_name = "../../logs/log_analyzer_" + str(now)
+output_file_name = "../logs/log_analyzer_" + str(now)
 i = output_file_name.rindex(".")
 output_file_name = output_file_name[0:i]
 output_file_name = output_file_name.replace(":", ".")
@@ -290,7 +290,6 @@ output_file_name = output_file_name + ".txt"
 output_file = open(output_file_name, "w")
 
 sys.stdout = output_file
-
 
 files_content = merge_per_folder("../../logs/past")
 
