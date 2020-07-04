@@ -1,0 +1,85 @@
+Dataset used: ../../datasets/third_augmented_dataset.csv 
+
+      Temperature  Sound  Heartbeat   X1  ...  Y2  Z2  Classification  Feedback
+9999           -1     -1         48   -1  ...  -1  -1             200     Angry
+9998           35     -1         48  808  ...  -1  -1             150     Angry
+9997           35     -1         48  860  ...  -1  -1             150     Angry
+9996           -1     -1         48   -1  ...  -1  -1             150     Angry
+9995           -1     -1         48   -1  ...  -1  -1             150     Angry
+
+[5 rows x 11 columns]
+
+Objservations: 20888
+
+Max depth: 16
+
+Start computation...
+
+Fitted estimator:
+ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=16, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=None, splitter='best')
+Classes:
+	 [0. 1.]
+	 [0. 1.]
+	 [0. 1.]
+	 [0. 1.]
+Feature importances: [0.03074826 0.00945629 0.13397989 0.08031169 0.0657831  0.07428798
+ 0.06157742 0.05482962 0.04606615 0.4429596 ]
+The inferred value of max_features: None
+The number of classes: [2 2 2 2]
+The number of features: 10
+The number of outputs: 4
+The underlying Tree object: <sklearn.tree._tree.Tree object at 0x000001F9F4845E30>
+
+Accuracy Train: 95.24%
+Accuracy Test: 93.78%
+Numero dati esaminati: 4178
+True Positive 3918
+False Positive 240
+
+
+------------------------------------------------------------------------
+K-fold Cross Validation
+------------------------------------------------------------------------
+Training for fold 1 ...
+------------------------------------------------------------------------
+Training for fold 2 ...
+------------------------------------------------------------------------
+Training for fold 3 ...
+------------------------------------------------------------------------
+Training for fold 4 ...
+------------------------------------------------------------------------
+Training for fold 5 ...
+------------------------------------------------------------------------
+Score per fold
+------------------------------------------------------------------------
+Score for fold 0
+Accuracy_Train: 96.10%
+Accuracy_Test: 93.97%
+------------------------------------------------------------------------
+Score for fold 1
+Accuracy_Train: 95.57%
+Accuracy_Test: 93.75%
+------------------------------------------------------------------------
+Score for fold 2
+Accuracy_Train: 95.55%
+Accuracy_Test: 94.06%
+------------------------------------------------------------------------
+Score for fold 3
+Accuracy_Train: 95.91%
+Accuracy_Test: 94.04%
+------------------------------------------------------------------------
+Score for fold 4
+Accuracy_Train: 95.68%
+Accuracy_Test: 93.85%
+------------------------------------------------------------------------
+Average scores for all folds:
+Average_Accuracy_Train: 95.76%
+	-> (+- 0.21275678680328275 )
+Average_Accuracy_Test: 93.93%
+	-> (+- 0.11780386499277384 )
+------------------------------------------------------------------------
