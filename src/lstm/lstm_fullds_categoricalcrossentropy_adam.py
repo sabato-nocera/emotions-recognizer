@@ -36,12 +36,14 @@ matplotlib.use('TkAgg')
 n_classes = 4
 n_header = 11
 number_of_splits = 5
-n_epochs = 1024
-n_batch_size = 128
+n_epochs = 128
+n_batch_size = 32
 verbose_value = 2
 shuffle_value = False
 validation_split_value = 0.2
 test_size_value = 0.2
+
+dropout_value = 0.2
 
 numpy.random.seed(7)
 
@@ -79,7 +81,7 @@ def baseline_model(print_description=True):
     # create model
     model = Sequential()
     model.add(LSTM(500, input_shape=(X_train2.shape[1], X_train2.shape[2])))
-    model.add(Dropout(0.4))
+    model.add(Dropout(dropout_value))
     model.add(Dense(300, activation='relu'))
     model.add(Dense(200, activation='relu'))
     model.add(Dense(100, activation='relu'))
@@ -333,6 +335,6 @@ plt.legend(loc="lower right")
 plt.savefig(output_roc_curve_two)
 plt.clf()
 
-kfold_cross_validation(X_train2, X_test2, y_train, y_test)
+# kfold_cross_validation(X_train2, X_test2, y_train, y_test)
 
 output_file.close()
