@@ -36,8 +36,8 @@ matplotlib.use('TkAgg')
 n_classes = 4
 n_header = 10
 number_of_splits = 5
-n_epochs = 128
-n_batch_size = 32
+n_epochs = 1024
+n_batch_size = 128
 verbose_value = 2
 shuffle_value = False
 validation_split_value = 0.2
@@ -337,6 +337,6 @@ plt.legend(loc="lower right")
 plt.savefig(output_roc_curve_two)
 plt.clf()
 
-# kfold_cross_validation(X_train2, X_test2, y_train, y_test)
+kfold_cross_validation(X_train2, X_test2, y_train, y_test)
 
 output_file.close()
