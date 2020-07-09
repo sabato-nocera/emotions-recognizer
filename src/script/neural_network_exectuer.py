@@ -12,8 +12,8 @@ from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 
 from er_utils import utils
 
-h5_name = "../models/mlp_secondaugmentedb_categoricalcrossentropy_adam_model_2020-06-14_22.17.34.h5"
-json_name = "../models/mlp_secondaugmentedb_categoricalcrossentropy_adam_model_2020-06-14_22.17.34.json"
+h5_name = "../../models/mlp_for_augmentation_model_2020-07-08_21.48.25.h5"
+json_name = "../../models/mlp_for_augmentation_model_2020-07-08_21.48.25.json"
 
 # Loading Keras model
 neural_network_json_file = open(json_name)
@@ -28,7 +28,7 @@ neural_network.compile(loss='categorical_crossentropy',
                        optimizer='adam',
                        metrics=['accuracy'])
 
-dataset_name = "../datasets/full_dataset_without_humidity.csv"
+dataset_name = "../../datasets/test_dataset_for_augmentation.csv"
 dataframe = pandas.read_csv(dataset_name, header=0, sep=";", skiprows=0)
 print("Dataset used:", dataset_name, "\n")
 print(dataframe.head())

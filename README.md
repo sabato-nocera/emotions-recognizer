@@ -78,6 +78,9 @@ I Decision Tree (in questo caso, più appropriatamente Classification Tree), son
         Per la tipologia di rete neurale LSTM, sono stati implementati due modelli per ogni dataset, uno rappresentativo della LSTM bidirezionale e l'altro rappresentativo della LSTM non bidirezionale, al fine di confrontare le prestazioni delle due tipologie di LSTM su dati sensoristici come quelli che abbiamo a disposizione.
     </li>
     <li>
+        Per la tipologia di rete neurale LSTM utilizzante il dataset senza umidità e la loss function Categorical Cross Entropy, sono stati implementati due modelli, uno rappresentativo della 1-layer LSTM ed uno della 3-layer LSTM, al fine di confrontare le prestazioni delle LSTM (non bidirezionali) con uno e tre layer su dati sensoristici come quelli che abbiamo a disposizione.
+    </li>
+    <li>
         Per la tipologia di rete neurale MLP, sono stati implementati due modelli per ogni dataset, uno che utilizza come loss function la Categorical Cross Entropy e l'altro che utilizza la Mean Squared Error, al fine di confrontare le prestazioni e l'affidabilità dei due modelli.
     </li>
 </ul>

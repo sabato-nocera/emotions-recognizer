@@ -27,7 +27,7 @@ def tuples_crossover(first_tuple, second_tuple):
 
 
 # loading dataset
-dataset_name = "../../datasets/full_dataset_without_humidity.csv"
+dataset_name = "../../datasets/to_augment.csv"
 dataframe = pandas.read_csv(dataset_name, header=0, sep=";", skiprows=0)
 print("\nDataset used:", dataset_name, "\n")
 print(dataframe.head())
@@ -46,6 +46,17 @@ for k in range(number_of_users):
     i += 80
 
 new_tuples = numpy.array([])
+
+# for tmp_list in grouped_by_user:
+#     last_list = []
+#     for j in range(len(tmp_list) - 1):
+#         first_tuple = dataset[j]
+#         second_tuple = dataset[j + 1]
+#
+#         if first_tuple[10] == second_tuple[10]:
+#             tmp_new_tuples = tuples_crossover(first_tuple, second_tuple)
+#             new_tuples = numpy.concatenate((new_tuples, tmp_new_tuples[0]), axis=0)
+#             new_tuples = numpy.concatenate((new_tuples, tmp_new_tuples[1]), axis=0)
 
 for tmp_list in grouped_by_user:
     last_list = []
@@ -74,4 +85,4 @@ print(len(dataframe))
 
 print(dataframe)
 
-dataframe.to_csv("../../datasets/full_dataset_without_humidity_augmented.csv")
+dataframe.to_csv("../../datasets/train_dataset_for_augmentation.csv")

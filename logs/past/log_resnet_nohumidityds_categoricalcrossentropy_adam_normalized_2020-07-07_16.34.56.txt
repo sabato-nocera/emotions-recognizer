@@ -1,0 +1,596 @@
+Dataset used: ../../datasets/full_dataset_without_humidity.csv 
+
+   Temperature  Sound  Heartbeat   X1  ...    Y2     Z2  Classification  Feedback
+0           32      1         60 -680  ... -7424 -15596             100     Happy
+1           32      1         60 -780  ... -7408 -15628             100     Happy
+2           -1      1         60   -1  ... -7276 -15612             100     Happy
+3           -1     -1         60   -1  ...    -1     -1             100     Happy
+4           32      1         60 -860  ... -7340 -15720             100     Happy
+
+[5 rows x 11 columns]
+
+Objservations: 8560
+Reshaping:  ((6848, 10), (6848, 4), (1712, 10), (1712, 4))  -> ((6848, 10, 1), (6848, 4), (1712, 10, 1), (1712, 4))
+
+Layers:
+
+{'batch_input_shape': (None, 10, 1), 'dtype': 'float32', 'sparse': False, 'name': 'input_8'} 
+
+{'name': 'conv1d_148', 'trainable': True, 'dtype': 'float32', 'filters': 16, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_134', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_134', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_149', 'trainable': True, 'dtype': 'float32', 'filters': 16, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_135', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_135', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_150', 'trainable': True, 'dtype': 'float32', 'filters': 16, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_136', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_64', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_136', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_151', 'trainable': True, 'dtype': 'float32', 'filters': 16, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_137', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_137', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_152', 'trainable': True, 'dtype': 'float32', 'filters': 16, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_138', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_65', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_138', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_153', 'trainable': True, 'dtype': 'float32', 'filters': 16, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_139', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_139', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_154', 'trainable': True, 'dtype': 'float32', 'filters': 16, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_140', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_66', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_140', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_155', 'trainable': True, 'dtype': 'float32', 'filters': 32, 'kernel_size': (3,), 'strides': (2,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_141', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_141', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_156', 'trainable': True, 'dtype': 'float32', 'filters': 32, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'conv1d_157', 'trainable': True, 'dtype': 'float32', 'filters': 32, 'kernel_size': (1,), 'strides': (2,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_142', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_67', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_142', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_158', 'trainable': True, 'dtype': 'float32', 'filters': 32, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_143', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_143', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_159', 'trainable': True, 'dtype': 'float32', 'filters': 32, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_144', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_68', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_144', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_160', 'trainable': True, 'dtype': 'float32', 'filters': 32, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_145', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_145', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_161', 'trainable': True, 'dtype': 'float32', 'filters': 32, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_146', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_69', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_146', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_162', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3,), 'strides': (2,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_147', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_147', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_163', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'conv1d_164', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (1,), 'strides': (2,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_148', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_70', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_148', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_165', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_149', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_149', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_166', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_150', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_71', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_150', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_167', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_151', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'activation_151', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'conv1d_168', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3,), 'strides': (1,), 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': {'class_name': 'L1L2', 'config': {'l1': 0.0, 'l2': 9.999999747378752e-05}}, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'batch_normalization_152', 'trainable': True, 'dtype': 'float32', 'axis': -1, 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None} 
+
+{'name': 'add_72', 'trainable': True, 'dtype': 'float32'} 
+
+{'name': 'activation_152', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'average_pooling1d_8', 'trainable': True, 'dtype': 'float32', 'strides': (1,), 'pool_size': (1,), 'padding': 'valid', 'data_format': 'channels_last'} 
+
+{'name': 'flatten_8', 'trainable': True, 'dtype': 'float32', 'data_format': 'channels_last'} 
+
+{'name': 'dense_8', 'trainable': True, 'dtype': 'float32', 'units': 4, 'activation': 'softmax', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 2.0, 'mode': 'fan_in', 'distribution': 'normal', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+Compile: loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']
+
+Start computation...
+
+Train on 5478 samples, validate on 1370 samples
+Epoch 1/128
+ - 10s - loss: 1.1502 - accuracy: 0.6307 - val_loss: 1.1343 - val_accuracy: 0.6226
+Epoch 2/128
+ - 3s - loss: 0.7806 - accuracy: 0.7656 - val_loss: 0.8129 - val_accuracy: 0.7584
+Epoch 3/128
+ - 3s - loss: 0.6749 - accuracy: 0.8019 - val_loss: 0.7790 - val_accuracy: 0.7642
+Epoch 4/128
+ - 3s - loss: 0.6050 - accuracy: 0.8304 - val_loss: 0.7745 - val_accuracy: 0.7803
+Epoch 5/128
+ - 3s - loss: 0.5762 - accuracy: 0.8436 - val_loss: 0.7500 - val_accuracy: 0.7752
+Epoch 6/128
+ - 3s - loss: 0.5433 - accuracy: 0.8549 - val_loss: 0.8064 - val_accuracy: 0.7745
+Epoch 7/128
+ - 3s - loss: 0.5270 - accuracy: 0.8585 - val_loss: 0.7980 - val_accuracy: 0.7818
+Epoch 8/128
+ - 3s - loss: 0.5192 - accuracy: 0.8631 - val_loss: 0.8510 - val_accuracy: 0.7642
+Epoch 9/128
+ - 3s - loss: 0.5065 - accuracy: 0.8604 - val_loss: 0.8910 - val_accuracy: 0.7642
+Epoch 10/128
+ - 3s - loss: 0.4842 - accuracy: 0.8709 - val_loss: 0.8799 - val_accuracy: 0.7715
+Epoch 11/128
+ - 3s - loss: 0.4848 - accuracy: 0.8709 - val_loss: 0.9162 - val_accuracy: 0.7562
+Epoch 12/128
+ - 3s - loss: 0.4656 - accuracy: 0.8830 - val_loss: 0.9640 - val_accuracy: 0.7372
+Epoch 13/128
+ - 3s - loss: 0.4669 - accuracy: 0.8821 - val_loss: 1.0348 - val_accuracy: 0.7533
+Epoch 14/128
+ - 3s - loss: 0.4606 - accuracy: 0.8802 - val_loss: 0.9551 - val_accuracy: 0.7401
+Epoch 15/128
+ - 4s - loss: 0.4378 - accuracy: 0.8917 - val_loss: 0.8722 - val_accuracy: 0.7628
+Epoch 16/128
+ - 3s - loss: 0.4496 - accuracy: 0.8877 - val_loss: 0.8862 - val_accuracy: 0.7839
+Epoch 17/128
+ - 3s - loss: 0.4379 - accuracy: 0.8938 - val_loss: 0.8161 - val_accuracy: 0.8073
+Epoch 18/128
+ - 3s - loss: 0.4080 - accuracy: 0.9005 - val_loss: 0.8755 - val_accuracy: 0.7869
+Epoch 19/128
+ - 3s - loss: 0.3964 - accuracy: 0.9093 - val_loss: 0.8365 - val_accuracy: 0.8146
+Epoch 20/128
+ - 3s - loss: 0.3938 - accuracy: 0.9115 - val_loss: 0.8950 - val_accuracy: 0.7898
+Epoch 21/128
+ - 3s - loss: 0.3906 - accuracy: 0.9095 - val_loss: 0.8784 - val_accuracy: 0.7949
+Epoch 22/128
+ - 3s - loss: 0.3910 - accuracy: 0.9071 - val_loss: 0.9286 - val_accuracy: 0.7927
+Epoch 23/128
+ - 3s - loss: 0.3650 - accuracy: 0.9204 - val_loss: 0.8941 - val_accuracy: 0.7920
+Epoch 24/128
+ - 3s - loss: 0.3582 - accuracy: 0.9222 - val_loss: 0.9584 - val_accuracy: 0.7803
+Epoch 25/128
+ - 3s - loss: 0.3701 - accuracy: 0.9200 - val_loss: 0.9571 - val_accuracy: 0.7781
+Epoch 26/128
+ - 3s - loss: 0.3688 - accuracy: 0.9210 - val_loss: 0.9181 - val_accuracy: 0.7942
+Epoch 27/128
+ - 3s - loss: 0.3478 - accuracy: 0.9255 - val_loss: 0.9127 - val_accuracy: 0.7985
+Epoch 28/128
+ - 3s - loss: 0.3614 - accuracy: 0.9222 - val_loss: 0.8686 - val_accuracy: 0.8015
+Epoch 29/128
+ - 3s - loss: 0.3661 - accuracy: 0.9217 - val_loss: 0.8748 - val_accuracy: 0.8088
+Epoch 30/128
+ - 3s - loss: 0.3419 - accuracy: 0.9306 - val_loss: 0.9254 - val_accuracy: 0.8015
+Epoch 31/128
+ - 3s - loss: 0.3283 - accuracy: 0.9385 - val_loss: 0.9181 - val_accuracy: 0.7825
+Epoch 32/128
+ - 3s - loss: 0.3743 - accuracy: 0.9222 - val_loss: 0.9027 - val_accuracy: 0.7869
+Epoch 33/128
+ - 3s - loss: 0.3378 - accuracy: 0.9361 - val_loss: 0.9646 - val_accuracy: 0.7861
+Epoch 34/128
+ - 3s - loss: 0.3094 - accuracy: 0.9454 - val_loss: 0.9426 - val_accuracy: 0.7905
+Epoch 35/128
+ - 3s - loss: 0.3202 - accuracy: 0.9419 - val_loss: 1.1155 - val_accuracy: 0.7693
+Epoch 36/128
+ - 3s - loss: 0.3248 - accuracy: 0.9403 - val_loss: 0.9959 - val_accuracy: 0.7861
+Epoch 37/128
+ - 3s - loss: 0.3095 - accuracy: 0.9461 - val_loss: 1.0212 - val_accuracy: 0.8015
+Epoch 38/128
+ - 3s - loss: 0.3227 - accuracy: 0.9440 - val_loss: 0.9751 - val_accuracy: 0.7912
+Epoch 39/128
+ - 3s - loss: 0.3290 - accuracy: 0.9392 - val_loss: 1.0114 - val_accuracy: 0.8022
+Epoch 40/128
+ - 3s - loss: 0.3182 - accuracy: 0.9419 - val_loss: 0.9696 - val_accuracy: 0.8036
+Epoch 41/128
+ - 3s - loss: 0.3231 - accuracy: 0.9421 - val_loss: 0.9769 - val_accuracy: 0.7985
+Epoch 42/128
+ - 3s - loss: 0.3109 - accuracy: 0.9456 - val_loss: 0.9405 - val_accuracy: 0.8080
+Epoch 43/128
+ - 3s - loss: 0.2750 - accuracy: 0.9593 - val_loss: 0.9969 - val_accuracy: 0.8036
+Epoch 44/128
+ - 3s - loss: 0.2854 - accuracy: 0.9558 - val_loss: 1.0736 - val_accuracy: 0.7664
+Epoch 45/128
+ - 3s - loss: 0.3074 - accuracy: 0.9494 - val_loss: 1.0653 - val_accuracy: 0.7927
+Epoch 46/128
+ - 3s - loss: 0.3088 - accuracy: 0.9505 - val_loss: 1.1288 - val_accuracy: 0.7869
+Epoch 47/128
+ - 3s - loss: 0.3156 - accuracy: 0.9476 - val_loss: 0.9984 - val_accuracy: 0.7934
+Epoch 48/128
+ - 3s - loss: 0.2855 - accuracy: 0.9555 - val_loss: 0.9890 - val_accuracy: 0.8109
+Epoch 49/128
+ - 3s - loss: 0.2750 - accuracy: 0.9615 - val_loss: 1.0607 - val_accuracy: 0.7898
+Epoch 50/128
+ - 3s - loss: 0.3065 - accuracy: 0.9525 - val_loss: 1.0266 - val_accuracy: 0.8000
+Epoch 51/128
+ - 3s - loss: 0.2832 - accuracy: 0.9598 - val_loss: 1.0307 - val_accuracy: 0.8029
+Epoch 52/128
+ - 3s - loss: 0.2960 - accuracy: 0.9520 - val_loss: 1.2623 - val_accuracy: 0.7701
+Epoch 53/128
+ - 3s - loss: 0.2876 - accuracy: 0.9573 - val_loss: 1.0776 - val_accuracy: 0.7956
+Epoch 54/128
+ - 3s - loss: 0.2707 - accuracy: 0.9648 - val_loss: 1.1359 - val_accuracy: 0.7825
+Epoch 55/128
+ - 3s - loss: 0.2980 - accuracy: 0.9538 - val_loss: 1.0033 - val_accuracy: 0.8007
+Epoch 56/128
+ - 3s - loss: 0.2898 - accuracy: 0.9569 - val_loss: 1.0185 - val_accuracy: 0.8051
+Epoch 57/128
+ - 3s - loss: 0.2848 - accuracy: 0.9580 - val_loss: 1.0558 - val_accuracy: 0.8036
+Epoch 58/128
+ - 3s - loss: 0.2701 - accuracy: 0.9675 - val_loss: 1.0345 - val_accuracy: 0.8022
+Epoch 59/128
+ - 3s - loss: 0.2664 - accuracy: 0.9640 - val_loss: 1.0298 - val_accuracy: 0.8029
+Epoch 60/128
+ - 3s - loss: 0.2933 - accuracy: 0.9551 - val_loss: 1.0918 - val_accuracy: 0.7788
+Epoch 61/128
+ - 3s - loss: 0.2834 - accuracy: 0.9597 - val_loss: 1.0198 - val_accuracy: 0.8153
+Epoch 62/128
+ - 3s - loss: 0.2817 - accuracy: 0.9586 - val_loss: 1.0195 - val_accuracy: 0.8000
+Epoch 63/128
+ - 3s - loss: 0.2705 - accuracy: 0.9611 - val_loss: 1.0692 - val_accuracy: 0.7956
+Epoch 64/128
+ - 3s - loss: 0.2703 - accuracy: 0.9660 - val_loss: 1.0626 - val_accuracy: 0.8044
+Epoch 65/128
+ - 3s - loss: 0.2897 - accuracy: 0.9578 - val_loss: 0.9699 - val_accuracy: 0.8109
+Epoch 66/128
+ - 3s - loss: 0.2892 - accuracy: 0.9564 - val_loss: 1.0778 - val_accuracy: 0.7978
+Epoch 67/128
+ - 3s - loss: 0.2701 - accuracy: 0.9633 - val_loss: 1.0859 - val_accuracy: 0.8022
+Epoch 68/128
+ - 3s - loss: 0.2762 - accuracy: 0.9606 - val_loss: 0.9956 - val_accuracy: 0.8102
+Epoch 69/128
+ - 3s - loss: 0.2563 - accuracy: 0.9690 - val_loss: 1.0278 - val_accuracy: 0.8051
+Epoch 70/128
+ - 3s - loss: 0.2683 - accuracy: 0.9666 - val_loss: 1.0783 - val_accuracy: 0.8066
+Epoch 71/128
+ - 3s - loss: 0.2615 - accuracy: 0.9682 - val_loss: 1.0159 - val_accuracy: 0.8248
+Epoch 72/128
+ - 3s - loss: 0.2665 - accuracy: 0.9640 - val_loss: 1.0851 - val_accuracy: 0.8015
+Epoch 73/128
+ - 3s - loss: 0.2791 - accuracy: 0.9604 - val_loss: 0.9966 - val_accuracy: 0.8226
+Epoch 74/128
+ - 3s - loss: 0.2994 - accuracy: 0.9567 - val_loss: 0.9416 - val_accuracy: 0.8197
+Epoch 75/128
+ - 3s - loss: 0.2666 - accuracy: 0.9681 - val_loss: 1.0935 - val_accuracy: 0.7788
+Epoch 76/128
+ - 3s - loss: 0.2503 - accuracy: 0.9746 - val_loss: 1.0056 - val_accuracy: 0.8131
+Epoch 77/128
+ - 3s - loss: 0.2648 - accuracy: 0.9673 - val_loss: 1.1008 - val_accuracy: 0.8080
+Epoch 78/128
+ - 3s - loss: 0.2782 - accuracy: 0.9635 - val_loss: 1.0571 - val_accuracy: 0.8146
+Epoch 79/128
+ - 3s - loss: 0.2718 - accuracy: 0.9644 - val_loss: 0.9070 - val_accuracy: 0.8226
+Epoch 80/128
+ - 3s - loss: 0.2342 - accuracy: 0.9781 - val_loss: 0.9732 - val_accuracy: 0.8168
+Epoch 81/128
+ - 3s - loss: 0.2592 - accuracy: 0.9695 - val_loss: 1.1010 - val_accuracy: 0.8044
+Epoch 82/128
+ - 3s - loss: 0.2520 - accuracy: 0.9715 - val_loss: 0.9601 - val_accuracy: 0.8204
+Epoch 83/128
+ - 3s - loss: 0.2588 - accuracy: 0.9662 - val_loss: 0.9939 - val_accuracy: 0.8234
+Epoch 84/128
+ - 3s - loss: 0.2644 - accuracy: 0.9691 - val_loss: 0.9642 - val_accuracy: 0.8146
+Epoch 85/128
+ - 4s - loss: 0.2473 - accuracy: 0.9697 - val_loss: 1.1378 - val_accuracy: 0.8073
+Epoch 86/128
+ - 3s - loss: 0.2658 - accuracy: 0.9673 - val_loss: 1.1523 - val_accuracy: 0.8058
+Epoch 87/128
+ - 4s - loss: 0.2640 - accuracy: 0.9670 - val_loss: 0.9737 - val_accuracy: 0.8117
+Epoch 88/128
+ - 3s - loss: 0.2783 - accuracy: 0.9620 - val_loss: 0.9362 - val_accuracy: 0.8343
+Epoch 89/128
+ - 3s - loss: 0.2546 - accuracy: 0.9695 - val_loss: 0.9365 - val_accuracy: 0.8423
+Epoch 90/128
+ - 3s - loss: 0.2481 - accuracy: 0.9735 - val_loss: 1.0801 - val_accuracy: 0.8182
+Epoch 91/128
+ - 3s - loss: 0.2534 - accuracy: 0.9677 - val_loss: 1.0587 - val_accuracy: 0.8168
+Epoch 92/128
+ - 3s - loss: 0.2644 - accuracy: 0.9677 - val_loss: 1.0334 - val_accuracy: 0.8234
+Epoch 93/128
+ - 3s - loss: 0.2449 - accuracy: 0.9723 - val_loss: 0.9133 - val_accuracy: 0.8292
+Epoch 94/128
+ - 3s - loss: 0.2342 - accuracy: 0.9783 - val_loss: 1.0249 - val_accuracy: 0.8226
+Epoch 95/128
+ - 3s - loss: 0.2621 - accuracy: 0.9662 - val_loss: 0.9861 - val_accuracy: 0.8277
+Epoch 96/128
+ - 3s - loss: 0.2575 - accuracy: 0.9723 - val_loss: 0.8959 - val_accuracy: 0.8445
+Epoch 97/128
+ - 3s - loss: 0.2580 - accuracy: 0.9681 - val_loss: 1.0354 - val_accuracy: 0.8241
+Epoch 98/128
+ - 3s - loss: 0.2590 - accuracy: 0.9701 - val_loss: 0.9810 - val_accuracy: 0.8307
+Epoch 99/128
+ - 3s - loss: 0.2366 - accuracy: 0.9768 - val_loss: 0.9464 - val_accuracy: 0.8365
+Epoch 100/128
+ - 3s - loss: 0.2261 - accuracy: 0.9805 - val_loss: 1.0102 - val_accuracy: 0.8358
+Epoch 101/128
+ - 3s - loss: 0.2232 - accuracy: 0.9812 - val_loss: 1.0800 - val_accuracy: 0.8350
+Epoch 102/128
+ - 3s - loss: 0.2674 - accuracy: 0.9677 - val_loss: 1.0393 - val_accuracy: 0.8248
+Epoch 103/128
+ - 3s - loss: 0.2604 - accuracy: 0.9673 - val_loss: 0.9767 - val_accuracy: 0.8102
+Epoch 104/128
+ - 3s - loss: 0.2582 - accuracy: 0.9708 - val_loss: 0.9217 - val_accuracy: 0.8292
+Epoch 105/128
+ - 4s - loss: 0.2403 - accuracy: 0.9763 - val_loss: 0.9170 - val_accuracy: 0.8460
+Epoch 106/128
+ - 3s - loss: 0.2280 - accuracy: 0.9803 - val_loss: 0.9348 - val_accuracy: 0.8401
+Epoch 107/128
+ - 3s - loss: 0.2150 - accuracy: 0.9843 - val_loss: 0.9583 - val_accuracy: 0.8365
+Epoch 108/128
+ - 3s - loss: 0.2534 - accuracy: 0.9721 - val_loss: 0.9557 - val_accuracy: 0.8401
+Epoch 109/128
+ - 4s - loss: 0.2461 - accuracy: 0.9744 - val_loss: 1.0732 - val_accuracy: 0.8241
+Epoch 110/128
+ - 3s - loss: 0.2514 - accuracy: 0.9733 - val_loss: 0.9404 - val_accuracy: 0.8511
+Epoch 111/128
+ - 3s - loss: 0.2299 - accuracy: 0.9801 - val_loss: 0.9627 - val_accuracy: 0.8409
+Epoch 112/128
+ - 3s - loss: 0.2301 - accuracy: 0.9783 - val_loss: 1.0169 - val_accuracy: 0.8358
+Epoch 113/128
+ - 3s - loss: 0.2479 - accuracy: 0.9723 - val_loss: 1.1048 - val_accuracy: 0.8197
+Epoch 114/128
+ - 3s - loss: 0.2463 - accuracy: 0.9724 - val_loss: 0.9958 - val_accuracy: 0.8168
+Epoch 115/128
+ - 3s - loss: 0.2510 - accuracy: 0.9688 - val_loss: 1.0217 - val_accuracy: 0.8299
+Epoch 116/128
+ - 3s - loss: 0.2201 - accuracy: 0.9828 - val_loss: 0.9840 - val_accuracy: 0.8328
+Epoch 117/128
+ - 3s - loss: 0.2330 - accuracy: 0.9741 - val_loss: 1.0694 - val_accuracy: 0.8263
+Epoch 118/128
+ - 3s - loss: 0.2625 - accuracy: 0.9682 - val_loss: 0.9767 - val_accuracy: 0.8343
+Epoch 119/128
+ - 3s - loss: 0.2308 - accuracy: 0.9754 - val_loss: 1.0379 - val_accuracy: 0.8299
+Epoch 120/128
+ - 3s - loss: 0.2415 - accuracy: 0.9757 - val_loss: 1.0546 - val_accuracy: 0.8431
+Epoch 121/128
+ - 3s - loss: 0.2238 - accuracy: 0.9788 - val_loss: 1.0251 - val_accuracy: 0.8307
+Epoch 122/128
+ - 5s - loss: 0.2196 - accuracy: 0.9803 - val_loss: 1.0293 - val_accuracy: 0.8409
+Epoch 123/128
+ - 4s - loss: 0.2117 - accuracy: 0.9838 - val_loss: 0.9706 - val_accuracy: 0.8533
+Epoch 124/128
+ - 4s - loss: 0.2091 - accuracy: 0.9845 - val_loss: 0.9645 - val_accuracy: 0.8526
+Epoch 125/128
+ - 4s - loss: 0.2208 - accuracy: 0.9816 - val_loss: 1.0699 - val_accuracy: 0.8453
+Epoch 126/128
+ - 3s - loss: 0.2555 - accuracy: 0.9732 - val_loss: 1.0391 - val_accuracy: 0.8343
+Epoch 127/128
+ - 3s - loss: 0.2549 - accuracy: 0.9708 - val_loss: 0.8806 - val_accuracy: 0.8642
+Epoch 128/128
+ - 3s - loss: 0.1977 - accuracy: 0.9872 - val_loss: 0.8815 - val_accuracy: 0.8489
+
+Number of filters: 16 , Kernel Size: 3 , Strides: 1 Batch Normalization: True , Conv_First: True , Depth Value: 20
+
+Fit: epochs= 128 , batch_size= 32 , verbose= 2 , shuffle= False , validation_split= 0.2 
+
+Model: "model_8"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_8 (InputLayer)            (None, 10, 1)        0                                            
+__________________________________________________________________________________________________
+conv1d_148 (Conv1D)             (None, 10, 16)       64          input_8[0][0]                    
+__________________________________________________________________________________________________
+batch_normalization_134 (BatchN (None, 10, 16)       64          conv1d_148[0][0]                 
+__________________________________________________________________________________________________
+activation_134 (Activation)     (None, 10, 16)       0           batch_normalization_134[0][0]    
+__________________________________________________________________________________________________
+conv1d_149 (Conv1D)             (None, 10, 16)       784         activation_134[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_135 (BatchN (None, 10, 16)       64          conv1d_149[0][0]                 
+__________________________________________________________________________________________________
+activation_135 (Activation)     (None, 10, 16)       0           batch_normalization_135[0][0]    
+__________________________________________________________________________________________________
+conv1d_150 (Conv1D)             (None, 10, 16)       784         activation_135[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_136 (BatchN (None, 10, 16)       64          conv1d_150[0][0]                 
+__________________________________________________________________________________________________
+add_64 (Add)                    (None, 10, 16)       0           activation_134[0][0]             
+                                                                 batch_normalization_136[0][0]    
+__________________________________________________________________________________________________
+activation_136 (Activation)     (None, 10, 16)       0           add_64[0][0]                     
+__________________________________________________________________________________________________
+conv1d_151 (Conv1D)             (None, 10, 16)       784         activation_136[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_137 (BatchN (None, 10, 16)       64          conv1d_151[0][0]                 
+__________________________________________________________________________________________________
+activation_137 (Activation)     (None, 10, 16)       0           batch_normalization_137[0][0]    
+__________________________________________________________________________________________________
+conv1d_152 (Conv1D)             (None, 10, 16)       784         activation_137[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_138 (BatchN (None, 10, 16)       64          conv1d_152[0][0]                 
+__________________________________________________________________________________________________
+add_65 (Add)                    (None, 10, 16)       0           activation_136[0][0]             
+                                                                 batch_normalization_138[0][0]    
+__________________________________________________________________________________________________
+activation_138 (Activation)     (None, 10, 16)       0           add_65[0][0]                     
+__________________________________________________________________________________________________
+conv1d_153 (Conv1D)             (None, 10, 16)       784         activation_138[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_139 (BatchN (None, 10, 16)       64          conv1d_153[0][0]                 
+__________________________________________________________________________________________________
+activation_139 (Activation)     (None, 10, 16)       0           batch_normalization_139[0][0]    
+__________________________________________________________________________________________________
+conv1d_154 (Conv1D)             (None, 10, 16)       784         activation_139[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_140 (BatchN (None, 10, 16)       64          conv1d_154[0][0]                 
+__________________________________________________________________________________________________
+add_66 (Add)                    (None, 10, 16)       0           activation_138[0][0]             
+                                                                 batch_normalization_140[0][0]    
+__________________________________________________________________________________________________
+activation_140 (Activation)     (None, 10, 16)       0           add_66[0][0]                     
+__________________________________________________________________________________________________
+conv1d_155 (Conv1D)             (None, 5, 32)        1568        activation_140[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_141 (BatchN (None, 5, 32)        128         conv1d_155[0][0]                 
+__________________________________________________________________________________________________
+activation_141 (Activation)     (None, 5, 32)        0           batch_normalization_141[0][0]    
+__________________________________________________________________________________________________
+conv1d_156 (Conv1D)             (None, 5, 32)        3104        activation_141[0][0]             
+__________________________________________________________________________________________________
+conv1d_157 (Conv1D)             (None, 5, 32)        544         activation_140[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_142 (BatchN (None, 5, 32)        128         conv1d_156[0][0]                 
+__________________________________________________________________________________________________
+add_67 (Add)                    (None, 5, 32)        0           conv1d_157[0][0]                 
+                                                                 batch_normalization_142[0][0]    
+__________________________________________________________________________________________________
+activation_142 (Activation)     (None, 5, 32)        0           add_67[0][0]                     
+__________________________________________________________________________________________________
+conv1d_158 (Conv1D)             (None, 5, 32)        3104        activation_142[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_143 (BatchN (None, 5, 32)        128         conv1d_158[0][0]                 
+__________________________________________________________________________________________________
+activation_143 (Activation)     (None, 5, 32)        0           batch_normalization_143[0][0]    
+__________________________________________________________________________________________________
+conv1d_159 (Conv1D)             (None, 5, 32)        3104        activation_143[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_144 (BatchN (None, 5, 32)        128         conv1d_159[0][0]                 
+__________________________________________________________________________________________________
+add_68 (Add)                    (None, 5, 32)        0           activation_142[0][0]             
+                                                                 batch_normalization_144[0][0]    
+__________________________________________________________________________________________________
+activation_144 (Activation)     (None, 5, 32)        0           add_68[0][0]                     
+__________________________________________________________________________________________________
+conv1d_160 (Conv1D)             (None, 5, 32)        3104        activation_144[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_145 (BatchN (None, 5, 32)        128         conv1d_160[0][0]                 
+__________________________________________________________________________________________________
+activation_145 (Activation)     (None, 5, 32)        0           batch_normalization_145[0][0]    
+__________________________________________________________________________________________________
+conv1d_161 (Conv1D)             (None, 5, 32)        3104        activation_145[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_146 (BatchN (None, 5, 32)        128         conv1d_161[0][0]                 
+__________________________________________________________________________________________________
+add_69 (Add)                    (None, 5, 32)        0           activation_144[0][0]             
+                                                                 batch_normalization_146[0][0]    
+__________________________________________________________________________________________________
+activation_146 (Activation)     (None, 5, 32)        0           add_69[0][0]                     
+__________________________________________________________________________________________________
+conv1d_162 (Conv1D)             (None, 3, 64)        6208        activation_146[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_147 (BatchN (None, 3, 64)        256         conv1d_162[0][0]                 
+__________________________________________________________________________________________________
+activation_147 (Activation)     (None, 3, 64)        0           batch_normalization_147[0][0]    
+__________________________________________________________________________________________________
+conv1d_163 (Conv1D)             (None, 3, 64)        12352       activation_147[0][0]             
+__________________________________________________________________________________________________
+conv1d_164 (Conv1D)             (None, 3, 64)        2112        activation_146[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_148 (BatchN (None, 3, 64)        256         conv1d_163[0][0]                 
+__________________________________________________________________________________________________
+add_70 (Add)                    (None, 3, 64)        0           conv1d_164[0][0]                 
+                                                                 batch_normalization_148[0][0]    
+__________________________________________________________________________________________________
+activation_148 (Activation)     (None, 3, 64)        0           add_70[0][0]                     
+__________________________________________________________________________________________________
+conv1d_165 (Conv1D)             (None, 3, 64)        12352       activation_148[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_149 (BatchN (None, 3, 64)        256         conv1d_165[0][0]                 
+__________________________________________________________________________________________________
+activation_149 (Activation)     (None, 3, 64)        0           batch_normalization_149[0][0]    
+__________________________________________________________________________________________________
+conv1d_166 (Conv1D)             (None, 3, 64)        12352       activation_149[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_150 (BatchN (None, 3, 64)        256         conv1d_166[0][0]                 
+__________________________________________________________________________________________________
+add_71 (Add)                    (None, 3, 64)        0           activation_148[0][0]             
+                                                                 batch_normalization_150[0][0]    
+__________________________________________________________________________________________________
+activation_150 (Activation)     (None, 3, 64)        0           add_71[0][0]                     
+__________________________________________________________________________________________________
+conv1d_167 (Conv1D)             (None, 3, 64)        12352       activation_150[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_151 (BatchN (None, 3, 64)        256         conv1d_167[0][0]                 
+__________________________________________________________________________________________________
+activation_151 (Activation)     (None, 3, 64)        0           batch_normalization_151[0][0]    
+__________________________________________________________________________________________________
+conv1d_168 (Conv1D)             (None, 3, 64)        12352       activation_151[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_152 (BatchN (None, 3, 64)        256         conv1d_168[0][0]                 
+__________________________________________________________________________________________________
+add_72 (Add)                    (None, 3, 64)        0           activation_150[0][0]             
+                                                                 batch_normalization_152[0][0]    
+__________________________________________________________________________________________________
+activation_152 (Activation)     (None, 3, 64)        0           add_72[0][0]                     
+__________________________________________________________________________________________________
+average_pooling1d_8 (AveragePoo (None, 3, 64)        0           activation_152[0][0]             
+__________________________________________________________________________________________________
+flatten_8 (Flatten)             (None, 192)          0           average_pooling1d_8[0][0]        
+__________________________________________________________________________________________________
+dense_8 (Dense)                 (None, 4)            772         flatten_8[0][0]                  
+==================================================================================================
+Total params: 96,004
+Trainable params: 94,628
+Non-trainable params: 1,376
+__________________________________________________________________________________________________
+None
+
+Accuracy Train: 89.49%
+Accuracy Test: 84.70%
+Loss Train: 0.55
+Loss Test: 0.89
+Numero dati esaminati: 1712
+True Positive 1450
+False Positive 262

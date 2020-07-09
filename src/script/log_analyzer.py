@@ -107,6 +107,17 @@ def print_sorted_by_accuracy_test(list_of_dicts):
         print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
         rank += 1
 
+def print_sorted_by_accuracy_test_without_augmented(list_of_dicts):
+    sorted_by_accuracy = sorted(list_of_dicts, key=lambda k: k['accuracy_test'])
+
+    print("\nSorted by accuracy test:\n")
+    rank = 1
+    for tmp in sorted_by_accuracy:
+        if "augmented" in tmp["file_name"]:
+            continue
+        print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
+        rank += 1
+
 
 def print_sorted_by_accuracy_train(list_of_dicts):
     sorted_by_accuracy = sorted(list_of_dicts, key=lambda k: k['accuracy_train'])
@@ -280,16 +291,16 @@ def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
         print("\t", tmp)
         rank += 1
 
-now = datetime.now()
-output_file_name = "../../logs/log_analyzer_" + str(now)
-i = output_file_name.rindex(".")
-output_file_name = output_file_name[0:i]
-output_file_name = output_file_name.replace(":", ".")
-output_file_name = output_file_name.replace(" ", "_")
-output_file_name = output_file_name + ".txt"
-output_file = open(output_file_name, "w")
-
-sys.stdout = output_file
+# now = datetime.now()
+# output_file_name = "../../logs/log_analyzer_" + str(now)
+# i = output_file_name.rindex(".")
+# output_file_name = output_file_name[0:i]
+# output_file_name = output_file_name.replace(":", ".")
+# output_file_name = output_file_name.replace(" ", "_")
+# output_file_name = output_file_name + ".txt"
+# output_file = open(output_file_name, "w")
+#
+# sys.stdout = output_file
 
 files_content = merge_per_folder("../../logs/past")
 
@@ -304,22 +315,25 @@ for tmp in file_info:
     tmp["file_name"] = tmp["file_name"][0:i - 1].strip()
 print("\nNumber of logs:", len(file_info))
 
-print_by_loss_function(file_info, "categoricalcrossentropy")
-print_sorted_by_accuracy_train(file_info)
-print_sorted_by_loss(file_info)
-print_average_accuracy_test(file_info)
-print_above_percentage(file_info)
+# print_by_loss_function(file_info, "categoricalcrossentropy")
+# print_sorted_by_accuracy_train(file_info)
+# print_sorted_by_loss(file_info)
+# print_average_accuracy_test(file_info)
+# print_above_percentage(file_info)
+#
+# print_sorted_by_name(file_info)
+# print_max_accuracy_test(file_info)
+# print_min_loss(file_info)
+# print_ratio_loss_accuracy(file_info)
+#
+# print_sorted_by_name_and_accuracy(file_info)
+#
+# max_accuracy_for_each_type_of_neural_network(file_info)
+#
+# print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)
 
-print_sorted_by_name(file_info)
-print_sorted_by_accuracy_test(file_info)
-print_max_accuracy_test(file_info)
-print_min_loss(file_info)
-print_ratio_loss_accuracy(file_info)
+# print_sorted_by_accuracy_test(file_info)
 
-print_sorted_by_name_and_accuracy(file_info)
+print_sorted_by_accuracy_test_without_augmented(file_info)
 
-max_accuracy_for_each_type_of_neural_network(file_info)
-
-print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)
-
-output_file.close()
+# output_file.close()
