@@ -28,6 +28,7 @@
 # exec(open("../lstm/lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization.py").read())
 # exec(open("../lstm/lstm_nohumidityds_categoricalcrossentropy_adam_normalized.py").read())
 # exec(open("../lstm/lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization.py").read())
+# exec(open("../lstm/lstm_nohumidityds_categoricalcrossentropy_adam_three_layer.py").read())
 
 # exec(open("../mlp/mlp_fullds_categoricalcrossentropy_adam.py").read())
 # exec(open("../mlp/mlp_fullds_meansquarederror_adam.py").read())
