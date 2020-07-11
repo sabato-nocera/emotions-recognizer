@@ -20,7 +20,9 @@ La directory del progetto è stata suddivisa nel seguente modo:
 			<li>
 				<i><b>full_dataset.csv</b></i>, il quale rappresenta il dataset originale, ricavato sulla base delle misure fisiologiche e comportamentali del campione che si è sottoposto all'esperimento.
 			</li>
+			<li>
 				<i><b>full_dataset_without_humidity.csv</b></i>, il quale rappresenta il dataset originale senza la feature "Humidity", in quanto è stata evidenziata l'inaccuratezza del sensore utilizzato per il campionamento dell'umidità. Rispetto al <i> full_dataset.csv </i>, non sono stati riscontrati miglioramenti.			
+			</li>
 			<li>
 				<i><b>full_dataset_without_humidity_augmented.csv</b></i>, il quale rappresenta una copia del dataset <i> full_dataset_without_humidity.csv </i> ampliato attraverso una tecnica di data augmentation per serie temporali. Il dataset originale è stato ottenuto campionando emozioni da ogni persona, ottenendo un totale di 80 esempi per ciascuna. La regola utilizzata per l'aumento dei dati è stato prendere coppie di esempi relativi allo stesso feedback di una stessa persona, suddividere le feature delle due tuple in due parti e creare due nuove tuple utilizzando parti alternate (similmente al meccanismo di crossing-over dei cromosomi). Usare tale dataset sembra portare a risultati leggermente migliori (sia in termini di accuracy che di loss); i valori di accuracy test ed accuracy train sono vicini, quindi l'aumento degli esempi porta ad una riduzione dell'overfitting.
 			</li>

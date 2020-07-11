@@ -302,7 +302,7 @@ def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
 #
 # sys.stdout = output_file
 
-files_content = merge_per_folder("../../logs/past")
+files_content = merge_per_folder("../../logs/past-128.32.noKFCV")
 
 files_content = files_content[:-1]
 files_content = "[" + files_content + "]"

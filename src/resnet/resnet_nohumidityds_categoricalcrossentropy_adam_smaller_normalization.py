@@ -47,7 +47,7 @@ shuffle_value = False
 validation_split_value = 0.2
 test_size_value = 0.2
 
-number_of_filters = 16
+number_of_filters = 500
 kernel_size_value = 3
 strides_value = 1
 batch_normalization_value = True
