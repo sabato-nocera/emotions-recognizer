@@ -35,7 +35,7 @@ matplotlib.use('TkAgg')
 
 n_classes = 4
 n_header = 10
-number_of_splits = 5
+number_of_splits = 10
 n_epochs = 110
 n_batch_size = 64
 verbose_value = 2
