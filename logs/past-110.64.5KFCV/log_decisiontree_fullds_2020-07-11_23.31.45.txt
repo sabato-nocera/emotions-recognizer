@@ -1,0 +1,80 @@
+Dataset used: ../../datasets/full_dataset.csv 
+
+   Temperature  Humidity  Sound  ...     Z2  Classification  Feedback
+0           32        95      1  ... -15596             100     Happy
+1           32        86      1  ... -15628             100     Happy
+2           -1        -1      1  ... -15612             100     Happy
+3           -1        -1     -1  ...     -1             100     Happy
+4           32        75      1  ... -15720             100     Happy
+
+[5 rows x 12 columns]
+
+Objservations: 8560
+
+Max depth: 4194304
+
+Start computation...
+
+Fitted estimator:
+ DecisionTreeClassifier(max_depth=4194304)
+Classes:
+	 [0. 1.]
+	 [0. 1.]
+	 [0. 1.]
+	 [0. 1.]
+Feature importances: [0.01954953 0.0142236  0.00341123 0.11358118 0.09215298 0.09460536
+ 0.09131479 0.06879414 0.07004867 0.06819986 0.36411865]
+The inferred value of max_features: None
+The number of classes: [2 2 2 2]
+The number of features: 11
+The number of outputs: 4
+The underlying Tree object: <sklearn.tree._tree.Tree object at 0x194aad5e0>
+
+Accuracy Train: 95.84%
+Accuracy Test: 91.18%
+Numero dati esaminati: 1712
+True Positive 1561
+False Positive 116
+
+
+------------------------------------------------------------------------
+K-fold Cross Validation
+------------------------------------------------------------------------
+Training for fold 1 ...
+------------------------------------------------------------------------
+Training for fold 2 ...
+------------------------------------------------------------------------
+Training for fold 3 ...
+------------------------------------------------------------------------
+Training for fold 4 ...
+------------------------------------------------------------------------
+Training for fold 5 ...
+------------------------------------------------------------------------
+Score per fold
+------------------------------------------------------------------------
+Score for fold 1
+Accuracy_Train: 95.72%
+Accuracy_Test: 91.71%
+------------------------------------------------------------------------
+Score for fold 2
+Accuracy_Train: 95.85%
+Accuracy_Test: 91.36%
+------------------------------------------------------------------------
+Score for fold 3
+Accuracy_Train: 95.49%
+Accuracy_Test: 91.82%
+------------------------------------------------------------------------
+Score for fold 4
+Accuracy_Train: 95.74%
+Accuracy_Test: 90.48%
+------------------------------------------------------------------------
+Score for fold 5
+Accuracy_Train: 96.07%
+Accuracy_Test: 91.71%
+------------------------------------------------------------------------
+Average scores for all folds:
+Average_Accuracy_Train: 95.77%
+	-> (+- 0.19030764670145642 )
+Average_Accuracy_Test: 91.41%
+	-> (+- 0.49287437172263704 )
+------------------------------------------------------------------------
