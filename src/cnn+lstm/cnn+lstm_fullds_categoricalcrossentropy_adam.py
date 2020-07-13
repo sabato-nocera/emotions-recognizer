@@ -38,9 +38,9 @@ matplotlib.use('TkAgg')
 n_classes = 4
 n_header = 11
 dropout_value = 0.2
-number_of_splits = 2
-n_epochs = 1
-n_batch_size = 641111111
+number_of_splits = 5
+n_epochs = 512
+n_batch_size = 64
 verbose_value = 2
 shuffle_value = False
 validation_split_value = 0.2
@@ -85,7 +85,7 @@ def baseline_model(print_description=True):
     model = Sequential()
     model.add(Convolution1D(nb_filter=number_of_filters, filter_length=filter_length_value, input_shape=(n_header, 1)))
     model.add(Activation('relu'))
-    model.add(LSTM(500, input_shape=(X_train2.shape[1], X_train2.shape[2])))
+    model.add(LSTM(400, input_shape=(X_train2.shape[1], X_train2.shape[2])))
     model.add(Dropout(dropout_value))
     model.add(Dense(300, activation='relu'))
     model.add(Dense(200, activation='relu'))
