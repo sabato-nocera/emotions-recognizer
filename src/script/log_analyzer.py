@@ -313,7 +313,7 @@ sys.stdout = output_file
 
 files_content = merge_per_folder("../../logs/past")
 
-print("past-128.32.noKFCV")
+print("past-512.64.5KFCV")
 
 files_content = files_content[:-1]
 files_content = "[" + files_content + "]"
@@ -326,26 +326,26 @@ for tmp in file_info:
     tmp["file_name"] = tmp["file_name"][0:i - 1].strip()
 print("\nNumber of logs:", len(file_info))
 
-# print_by_loss_function(file_info, "categoricalcrossentropy")
-# print_sorted_by_accuracy_train(file_info)
-# print_sorted_by_loss(file_info)
-# print_average_accuracy_test(file_info)
-# print_above_percentage(file_info)
-#
-# print_sorted_by_name(file_info)
-# print_max_accuracy_test(file_info)
-# print_min_loss(file_info)
-# print_ratio_loss_accuracy(file_info)
-#
-# print_sorted_by_name_and_accuracy(file_info)
-#
-# max_accuracy_for_each_type_of_neural_network(file_info)
-#
-# print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)
-#
-print_sorted_by_accuracy_test_without_augmented(file_info)
+print_by_loss_function(file_info, "categoricalcrossentropy")
+print_sorted_by_accuracy_train(file_info)
+print_sorted_by_loss(file_info)
+print_average_accuracy_test(file_info)
+print_above_percentage(file_info)
 
-# print_sorted_by_accuracy_test(file_info)
-# print_sorted_by_average_accuracy_test(file_info)
+print_sorted_by_name(file_info)
+print_max_accuracy_test(file_info)
+print_min_loss(file_info)
+print_ratio_loss_accuracy(file_info)
+
+print_sorted_by_name_and_accuracy(file_info)
+
+max_accuracy_for_each_type_of_neural_network(file_info)
+
+print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)
+
+print_sorted_by_accuracy_test(file_info)
+print_sorted_by_average_accuracy_test(file_info)
+
+# print_sorted_by_accuracy_test_without_augmented(file_info)
 
 output_file.close()
