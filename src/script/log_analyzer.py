@@ -291,18 +291,29 @@ def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
         print("\t", tmp)
         rank += 1
 
-# now = datetime.now()
-# output_file_name = "../../logs/log_analyzer_" + str(now)
-# i = output_file_name.rindex(".")
-# output_file_name = output_file_name[0:i]
-# output_file_name = output_file_name.replace(":", ".")
-# output_file_name = output_file_name.replace(" ", "_")
-# output_file_name = output_file_name + ".txt"
-# output_file = open(output_file_name, "w")
-#
-# sys.stdout = output_file
+def print_sorted_by_average_accuracy_test(list_of_dicts):
+    sorted_by_accuracy = sorted(list_of_dicts, key=lambda k: k['average_accuracy_test'])
 
-files_content = merge_per_folder("../../logs/past-128.32.noKFCV")
+    print("\nSorted by accuracy average accuracy test:\n")
+    rank = 1
+    for tmp in sorted_by_accuracy:
+        print(rank, ")", tmp["file_name"], " with ", tmp["average_accuracy_test"], "%", "(", tmp["date"], ")")
+        rank += 1
+
+now = datetime.now()
+output_file_name = "../../logs/log_analyzer_" + str(now)
+i = output_file_name.rindex(".")
+output_file_name = output_file_name[0:i]
+output_file_name = output_file_name.replace(":", ".")
+output_file_name = output_file_name.replace(" ", "_")
+output_file_name = output_file_name + ".txt"
+output_file = open(output_file_name, "w")
+
+sys.stdout = output_file
+
+files_content = merge_per_folder("../../logs/past")
+
+print("past-128.32.noKFCV")
 
 files_content = files_content[:-1]
 files_content = "[" + files_content + "]"
@@ -331,9 +342,10 @@ print("\nNumber of logs:", len(file_info))
 # max_accuracy_for_each_type_of_neural_network(file_info)
 #
 # print_ratio_by_max_accuracy_for_each_type_of_neural_network(file_info)
-
-# print_sorted_by_accuracy_test(file_info)
-
+#
 print_sorted_by_accuracy_test_without_augmented(file_info)
 
-# output_file.close()
+# print_sorted_by_accuracy_test(file_info)
+# print_sorted_by_average_accuracy_test(file_info)
+
+output_file.close()
