@@ -1,0 +1,122 @@
+Dataset used: ../../datasets/full_dataset.csv 
+
+   Temperature  Humidity  Sound  ...     Z2  Classification  Feedback
+0           32        95      1  ... -15596             100     Happy
+1           32        86      1  ... -15628             100     Happy
+2           -1        -1      1  ... -15612             100     Happy
+3           -1        -1     -1  ...     -1             100     Happy
+4           32        75      1  ... -15720             100     Happy
+
+[5 rows x 12 columns]
+
+Objservations: 8560
+Reshaping:  ((6848, 11), (6848, 4), (1712, 11), (1712, 4))  -> ((6848, 11, 1), (6848, 4), (1712, 11, 1), (1712, 4))
+
+Layers:
+
+{'name': 'conv1d_1', 'trainable': True, 'batch_input_shape': (None, 11, 1), 'dtype': 'float32', 'filters': 500, 'kernel_size': (1,), 'strides': (1,), 'padding': 'valid', 'data_format': 'channels_last', 'dilation_rate': (1,), 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'activation_1', 'trainable': True, 'dtype': 'float32', 'activation': 'relu'} 
+
+{'name': 'lstm_1', 'trainable': True, 'batch_input_shape': (None, 11, 1), 'dtype': 'float32', 'return_sequences': False, 'return_state': False, 'go_backwards': False, 'stateful': False, 'unroll': False, 'units': 500, 'activation': 'tanh', 'recurrent_activation': 'sigmoid', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'recurrent_initializer': {'class_name': 'Orthogonal', 'config': {'gain': 1.0, 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'unit_forget_bias': True, 'kernel_regularizer': None, 'recurrent_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'recurrent_constraint': None, 'bias_constraint': None, 'dropout': 0.0, 'recurrent_dropout': 0.0, 'implementation': 2} 
+
+{'name': 'dropout_1', 'trainable': True, 'dtype': 'float32', 'rate': 0.2, 'noise_shape': None, 'seed': None} 
+
+{'name': 'dense_1', 'trainable': True, 'dtype': 'float32', 'units': 300, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'dense_2', 'trainable': True, 'dtype': 'float32', 'units': 200, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'dense_3', 'trainable': True, 'dtype': 'float32', 'units': 100, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'dense_4', 'trainable': True, 'dtype': 'float32', 'units': 50, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'dense_5', 'trainable': True, 'dtype': 'float32', 'units': 20, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+{'name': 'dense_6', 'trainable': True, 'dtype': 'float32', 'units': 4, 'activation': 'softmax', 'use_bias': True, 'kernel_initializer': {'class_name': 'VarianceScaling', 'config': {'scale': 1.0, 'mode': 'fan_avg', 'distribution': 'uniform', 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None} 
+
+Compile: loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']
+
+Start computation...
+
+Train on 5478 samples, validate on 1370 samples
+Epoch 1/1
+ - 16s - loss: 1.3861 - accuracy: 0.2322 - val_loss: 1.3772 - val_accuracy: 0.3635
+
+Fit: epochs= 1 , batch_size= 641111111 , verbose= 2 , shuffle= False , validation_split= 0.2 
+
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv1d_1 (Conv1D)            (None, 11, 500)           1000      
+_________________________________________________________________
+activation_1 (Activation)    (None, 11, 500)           0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 500)               2002000   
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 500)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 300)               150300    
+_________________________________________________________________
+dense_2 (Dense)              (None, 200)               60200     
+_________________________________________________________________
+dense_3 (Dense)              (None, 100)               20100     
+_________________________________________________________________
+dense_4 (Dense)              (None, 50)                5050      
+_________________________________________________________________
+dense_5 (Dense)              (None, 20)                1020      
+_________________________________________________________________
+dense_6 (Dense)              (None, 4)                 84        
+=================================================================
+Total params: 2,239,754
+Trainable params: 2,239,754
+Non-trainable params: 0
+_________________________________________________________________
+None
+
+Accuracy Train: 36.49%
+Accuracy Test: 36.97%
+Loss Train: 1.38
+Loss Test: 1.38
+Numero dati esaminati: 1712
+True Positive 633
+False Positive 1079
+
+
+------------------------------------------------------------------------
+K-fold Cross Validation
+------------------------------------------------------------------------
+Training for fold 1 ...
+Train on 3424 samples, validate on 856 samples
+Epoch 1/1
+ - 12s - loss: 1.3867 - accuracy: 0.2336 - val_loss: 1.3829 - val_accuracy: 0.3318
+------------------------------------------------------------------------
+Training for fold 2 ...
+Train on 3424 samples, validate on 856 samples
+Epoch 1/1
+ - 13s - loss: 1.3861 - accuracy: 0.2745 - val_loss: 1.3809 - val_accuracy: 0.3540
+------------------------------------------------------------------------
+Score per fold
+------------------------------------------------------------------------
+Score for fold 1
+Accuracy_Train: 33.36%
+Accuracy_Test: 32.03%
+Loss_Train: 1.38
+Loss_Test: 1.38
+------------------------------------------------------------------------
+Score for fold 2
+Accuracy_Train: 35.05%
+Accuracy_Test: 35.02%
+Loss_Train: 1.38
+Loss_Test: 1.38
+------------------------------------------------------------------------
+Average scores for all folds:
+Average_Accuracy_Train: 34.21%
+	-> (+- 0.8411213755607605 )
+Average_Accuracy_Test: 33.53%
+	-> (+- 1.4953270554542542 )
+Average_Loss_Train: 1.38
+	-> (+- 0.0013758429857058108 )
+Average_Loss_Test: 1.38
+	-> (+- 0.0019250336094437381 )
+------------------------------------------------------------------------
