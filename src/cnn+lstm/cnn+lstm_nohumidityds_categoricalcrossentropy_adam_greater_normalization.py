@@ -82,12 +82,12 @@ print("Reshaping: ", (X_train.shape, y_train.shape, X_test.shape, y_test.shape),
 
 def baseline_model(print_description=True):
     # create model
-    # create model
     model = Sequential()
     model.add(Convolution1D(nb_filter=number_of_filters, filter_length=filter_length_value, input_shape=(n_header, 1)))
     model.add(Activation('relu'))
-    model.add(LSTM(400, input_shape=(X_train2.shape[1], X_train2.shape[2])))
+    model.add(LSTM(500, input_shape=(X_train2.shape[1], X_train2.shape[2])))
     model.add(Dropout(dropout_value))
+    model.add(Dense(400, activation='relu'))
     model.add(Dense(300, activation='relu'))
     model.add(Dense(200, activation='relu'))
     model.add(Dense(100, activation='relu'))
