@@ -1,5 +1,6 @@
 import numpy
 import pandas
+import random
 
 n_header = 10
 
@@ -27,7 +28,7 @@ def tuples_crossover(first_tuple, second_tuple):
 
 
 # loading dataset
-dataset_name = "../../datasets/to_augment.csv"
+dataset_name = "../../datasets/other/to_augment.csv"
 dataframe = pandas.read_csv(dataset_name, header=0, sep=";", skiprows=0)
 print("\nDataset used:", dataset_name, "\n")
 print(dataframe.head())
@@ -35,6 +36,8 @@ print(dataframe.head())
 print("\nObjservations: {}".format(len(dataframe)))
 dataset = dataframe.values
 
+# CROSSING-OVER
+#
 # we consider tuples linked to the same feedback from the same person
 number_of_users = int(len(dataset) / 80)
 
@@ -47,16 +50,11 @@ for k in range(number_of_users):
 
 new_tuples = numpy.array([])
 
-# for tmp_list in grouped_by_user:
-#     last_list = []
-#     for j in range(len(tmp_list) - 1):
-#         first_tuple = dataset[j]
-#         second_tuple = dataset[j + 1]
-#
-#         if first_tuple[10] == second_tuple[10]:
-#             tmp_new_tuples = tuples_crossover(first_tuple, second_tuple)
-#             new_tuples = numpy.concatenate((new_tuples, tmp_new_tuples[0]), axis=0)
-#             new_tuples = numpy.concatenate((new_tuples, tmp_new_tuples[1]), axis=0)
+feature_temperature = 0
+feature_heartbeat = 2
+
+range_temperature = 0.803827
+range_heartbeat = 0.643367
 
 for tmp_list in grouped_by_user:
     last_list = []
@@ -66,9 +64,17 @@ for tmp_list in grouped_by_user:
             continue
         if tmp_array[10] == last_list[10]:
             tmp_new_tuples = tuples_crossover(tmp_array, last_list)
+            new_tuple_one = numpy.array(tmp_new_tuples[0])
+            new_tuple_two = numpy.array(tmp_new_tuples[1])
 
-            new_tuples = numpy.concatenate((new_tuples, tmp_new_tuples[0]), axis=0)
-            new_tuples = numpy.concatenate((new_tuples, tmp_new_tuples[1]), axis=0)
+            new_tuple_one[feature_temperature] += random.uniform(-range_temperature, +range_temperature)
+            new_tuple_one[feature_heartbeat] += random.uniform(-range_heartbeat, +range_heartbeat)
+
+            new_tuple_two[feature_temperature] += random.uniform(-range_temperature, +range_temperature)
+            new_tuple_two[feature_heartbeat] += random.uniform(-range_heartbeat, +range_heartbeat)
+
+            new_tuples = numpy.concatenate((new_tuples, new_tuple_one), axis=0)
+            new_tuples = numpy.concatenate((new_tuples, new_tuple_two), axis=0)
         last_list = tmp_array
 
 new_tuples = new_tuples.reshape((int(len(new_tuples) / 11), 11))
@@ -85,4 +91,4 @@ print(len(dataframe))
 
 print(dataframe)
 
-dataframe.to_csv("../../datasets/train_dataset_for_augmentation.csv")
+dataframe.to_csv("../../datasets/other/train_dataset_for_augmentation.csv")

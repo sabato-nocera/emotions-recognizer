@@ -135,13 +135,13 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('------------------------------------------------------------------------')
 
 
-train_dataset_name = "../../datasets/train_dataset_for_augmentation.csv"
+train_dataset_name = "../../datasets/other/train_dataset_for_augmentation.csv"
 train_dataframe = pandas.read_csv(train_dataset_name, header=0, sep=",", skiprows=0)
 print("Dataset used:", train_dataset_name, "\n")
 print(train_dataframe.head())
 print("\nObjservations: {}".format(len(train_dataframe)))
 
-test_dataset_name = "../../datasets/test_dataset_for_augmentation.csv"
+test_dataset_name = "../../datasets/other/test_dataset_for_augmentation.csv"
 test_dataframe = pandas.read_csv(test_dataset_name, header=0, sep=";", skiprows=0)
 print("Dataset used:", test_dataset_name, "\n")
 print(test_dataframe.head())
