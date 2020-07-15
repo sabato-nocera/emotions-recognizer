@@ -41,11 +41,11 @@
 # exec(open("../resnet/resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization.py").read())
 # exec(open("../resnet/resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization.py").read())
 
-# exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam.py").read())
-# exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized.py").read())
-# exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization.py").read())
-# exec(open("../cnn+lstm/cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam.py").read())
-# exec(open("../cnn+lstm/cnn+lstm_fullds_categoricalcrossentropy_adam.py").read())
+exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam.py").read())
+exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized.py").read())
+exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization.py").read())
+exec(open("../cnn+lstm/cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam.py").read())
+exec(open("../cnn+lstm/cnn+lstm_fullds_categoricalcrossentropy_adam.py").read())
 exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization.py").read())
 exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization.py").read())
 
