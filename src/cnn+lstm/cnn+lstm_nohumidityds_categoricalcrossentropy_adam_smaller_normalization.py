@@ -38,8 +38,8 @@ matplotlib.use('TkAgg')
 n_classes = 4
 n_header = 10
 dropout_value = 0.2
-number_of_splits = 5
-n_epochs = 512
+number_of_splits = 10
+n_epochs = 110
 n_batch_size = 64
 verbose_value = 2
 shuffle_value = False
