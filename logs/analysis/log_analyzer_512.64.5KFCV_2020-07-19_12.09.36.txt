@@ -1,0 +1,623 @@
+past-512.64.5KFCV
+
+Number of logs: 45
+
+Which neural networks use the loss function ' categoricalcrossentropy ' (sorted by accuracy test) ?
+
+1 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  72.78 % ( 2020-07-11_17.04.35 )
+2 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with  75.4 % ( 2020-07-11_09.12.45 )
+3 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  76.52 % ( 2020-07-10_20.36.11 )
+4 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  78.1 % ( 2020-07-11_03.21.57 )
+5 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  79.44 % ( 2020-07-10_00.35.17 )
+6 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  81.83 % ( 2020-07-17_00.26.30 )
+7 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with  81.91 % ( 2020-07-11_04.23.34 )
+8 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  82.18 % ( 2020-07-10_13.37.55 )
+9 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with  82.45 % ( 2020-07-10_02.45.45 )
+10 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with  82.71 % ( 2020-07-10_14.25.29 )
+11 ) log_resnet_fullds_categoricalcrossentropy_adam  with  83.59 % ( 2020-07-11_04.34.43 )
+12 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  83.78 % ( 2020-07-17_17.12.37 )
+13 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with  85.46 % ( 2020-07-11_06.59.40 )
+14 ) log_cnn_fullds_categoricalcrossentropy_adam  with  85.86 % ( 2020-07-10_03.42.09 )
+15 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  85.92 % ( 2020-07-11_10.12.30 )
+16 ) log_lstm_fullds_categoricalcrossentropy_adam  with  86.33 % ( 2020-07-10_06.39.01 )
+17 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  86.33 % ( 2020-07-11_12.28.16 )
+18 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with  86.33 % ( 2020-07-11_14.46.19 )
+19 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with  86.45 % ( 2020-07-11_03.46.35 )
+20 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with  86.57 % ( 2020-07-10_08.20.49 )
+21 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  86.86 % ( 2020-07-10_15.35.54 )
+22 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with  86.92 % ( 2020-07-10_22.10.19 )
+23 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with  87.03 % ( 2020-07-11_03.09.32 )
+24 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  87.09 % ( 2020-07-18_15.50.54 )
+25 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with  87.09 % ( 2020-07-09_15.38.19 )
+26 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with  87.15 % ( 2020-07-18_00.55.13 )
+27 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  87.15 % ( 2020-07-10_17.17.42 )
+28 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  87.15 % ( 2020-07-11_03.34.19 )
+29 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with  87.21 % ( 2020-07-10_04.54.58 )
+30 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with  87.44 % ( 2020-07-10_10.59.38 )
+31 ) log_mlp_fullds_categoricalcrossentropy_adam  with  87.44 % ( 2020-07-11_02.44.46 )
+32 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with  88.14 % ( 2020-07-15_16.57.41 )
+33 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  88.2 % ( 2020-07-09_20.09.36 )
+34 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  88.38 % ( 2020-07-09_17.53.36 )
+35 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  88.43 % ( 2020-07-19_02.25.02 )
+36 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  89.31 % ( 2020-07-10_18.55.29 )
+37 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with  89.66 % ( 2020-07-11_03.58.58 )
+38 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with  90.3 % ( 2020-07-09_22.23.52 )
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  90.36 % ( 2020-07-16_08.09.41 )
+
+Sorted by accuracy train:
+
+1 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  80.64 % ( 2020-07-11_17.04.35 )
+2 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with  82.48 % ( 2020-07-11_09.12.45 )
+3 ) log_resnet_fullds_categoricalcrossentropy_adam  with  85.67 % ( 2020-07-11_04.34.43 )
+4 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with  86.93 % ( 2020-07-11_06.59.40 )
+5 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  87.97 % ( 2020-07-11_03.21.57 )
+6 ) log_mlp_fullds_meansquarederror_adam  with  88.46 % ( 2020-07-11_02.57.02 )
+7 ) log_cnn_fullds_categoricalcrossentropy_adam  with  88.49 % ( 2020-07-10_03.42.09 )
+8 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  88.57 % ( 2020-07-10_20.36.11 )
+9 ) log_lstm_fullds_categoricalcrossentropy_adam  with  88.6 % ( 2020-07-10_06.39.01 )
+10 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with  88.62 % ( 2020-07-10_08.20.49 )
+11 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with  88.71 % ( 2020-07-10_04.54.58 )
+12 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  88.86 % ( 2020-07-10_13.37.55 )
+13 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with  89.02 % ( 2020-07-09_15.38.19 )
+14 ) log_mlp_nohumidityds_meansquarederror_adam  with  89.18 % ( 2020-07-11_04.11.14 )
+15 ) log_mlp_fullds_categoricalcrossentropy_adam  with  89.21 % ( 2020-07-11_02.44.46 )
+16 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with  89.38 % ( 2020-07-10_22.10.19 )
+17 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with  89.57 % ( 2020-07-10_10.59.38 )
+18 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with  89.65 % ( 2020-07-18_00.55.13 )
+19 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with  89.86 % ( 2020-07-10_14.25.29 )
+20 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  90.16 % ( 2020-07-17_17.12.37 )
+21 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with  90.26 % ( 2020-07-11_04.23.34 )
+22 ) log_mlp_nohumiditydsreduced_meansquarederror_adam  with  90.39 % ( 2020-07-11_04.29.09 )
+23 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with  90.43 % ( 2020-07-10_02.45.45 )
+24 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with  90.46 % ( 2020-07-15_16.57.41 )
+25 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with  90.6 % ( 2020-07-11_03.09.32 )
+26 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  91.12 % ( 2020-07-11_10.12.30 )
+27 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  91.19 % ( 2020-07-11_12.28.16 )
+28 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with  91.57 % ( 2020-07-11_14.46.19 )
+29 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  91.9 % ( 2020-07-10_00.35.17 )
+30 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  92.63 % ( 2020-07-17_00.26.30 )
+31 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  93.27 % ( 2020-07-10_15.35.54 )
+32 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  93.41 % ( 2020-07-10_17.17.42 )
+33 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with  93.52 % ( 2020-07-11_03.46.35 )
+34 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  94.06 % ( 2020-07-09_20.09.36 )
+35 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  94.16 % ( 2020-07-11_03.34.19 )
+36 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  94.22 % ( 2020-07-19_02.25.02 )
+37 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  94.61 % ( 2020-07-09_17.53.36 )
+38 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  94.89 % ( 2020-07-10_18.55.29 )
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  95.11 % ( 2020-07-18_15.50.54 )
+40 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with  95.14 % ( 2020-07-11_03.58.58 )
+41 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with  95.84 % ( 2020-07-09_22.23.52 )
+42 ) log_decisiontree_fullds  with  95.84 % ( 2020-07-10_04.54.57 )
+43 ) log_decisiontree_nohumidityds  with  95.84 % ( 2020-07-10_04.54.57 )
+44 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  96.19 % ( 2020-07-16_08.09.41 )
+45 ) log_decisiontree_nohumiditydsreduced  with  97.47 % ( 2020-07-10_04.54.58 )
+
+Sorted by loss:
+
+1 ) log_mlp_fullds_meansquarederror_adam  with  0.05 ( 2020-07-11_02.57.02 )
+2 ) log_mlp_nohumidityds_meansquarederror_adam  with  0.05 ( 2020-07-11_04.11.14 )
+3 ) log_mlp_nohumiditydsreduced_meansquarederror_adam  with  0.07 ( 2020-07-11_04.29.09 )
+4 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with  0.38 ( 2020-07-10_08.20.49 )
+5 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with  0.4 ( 2020-07-10_10.59.38 )
+6 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with  0.41 ( 2020-07-10_04.54.58 )
+7 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with  0.42 ( 2020-07-09_15.38.19 )
+8 ) log_lstm_fullds_categoricalcrossentropy_adam  with  0.42 ( 2020-07-10_06.39.01 )
+9 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with  0.44 ( 2020-07-10_22.10.19 )
+10 ) log_mlp_fullds_categoricalcrossentropy_adam  with  0.44 ( 2020-07-11_02.44.46 )
+11 ) log_cnn_fullds_categoricalcrossentropy_adam  with  0.46 ( 2020-07-10_03.42.09 )
+12 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with  0.46 ( 2020-07-11_03.09.32 )
+13 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with  0.5 ( 2020-07-18_00.55.13 )
+14 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with  0.54 ( 2020-07-15_16.57.41 )
+15 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  0.61 ( 2020-07-10_18.55.29 )
+16 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with  0.64 ( 2020-07-09_22.23.52 )
+17 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with  0.65 ( 2020-07-11_06.59.40 )
+18 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  0.66 ( 2020-07-10_15.35.54 )
+19 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  0.7 ( 2020-07-09_17.53.36 )
+20 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  0.73 ( 2020-07-09_20.09.36 )
+21 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with  0.74 ( 2020-07-11_03.58.58 )
+22 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  0.75 ( 2020-07-11_10.12.30 )
+23 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  0.76 ( 2020-07-10_17.17.42 )
+24 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with  0.76 ( 2020-07-10_14.25.29 )
+25 ) log_resnet_fullds_categoricalcrossentropy_adam  with  0.77 ( 2020-07-11_04.34.43 )
+26 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  0.78 ( 2020-07-10_13.37.55 )
+27 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  0.78 ( 2020-07-11_12.28.16 )
+28 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with  0.79 ( 2020-07-11_14.46.19 )
+29 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  0.81 ( 2020-07-16_08.09.41 )
+30 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with  0.85 ( 2020-07-11_03.46.35 )
+31 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with  0.86 ( 2020-07-11_04.23.34 )
+32 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with  0.9 ( 2020-07-10_02.45.45 )
+33 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  0.91 ( 2020-07-11_03.34.19 )
+34 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  0.95 ( 2020-07-19_02.25.02 )
+35 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  0.96 ( 2020-07-18_15.50.54 )
+36 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  1.01 ( 2020-07-17_17.12.37 )
+37 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  1.19 ( 2020-07-10_00.35.17 )
+38 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  1.35 ( 2020-07-10_20.36.11 )
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  1.48 ( 2020-07-17_00.26.30 )
+40 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  1.5 ( 2020-07-11_03.21.57 )
+41 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with  1.56 ( 2020-07-11_09.12.45 )
+42 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  1.71 ( 2020-07-11_17.04.35 )
+
+Average accuracy test of logs: 85.45 %
+
+Models with test accuracy >= 80% : 40
+
+Models with test accuracy >= 85% : 32
+
+Models with test accuracy >= 86% : 28
+
+Models with test accuracy >= 87% : 19
+
+Models with test accuracy >= 88% : 10
+
+Models with test accuracy >= 89% : 6
+
+Models with test accuracy >= 90% : 4
+
+Sorted by name:
+
+1 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with accuracy test: 87.15 % and accuracy train: 89.65 % ( 2020-07-18_00.55.13 )
+2 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 88.14 % and accuracy train: 90.46 % ( 2020-07-15_16.57.41 )
+3 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 87.09 % and accuracy train: 95.11 % ( 2020-07-18_15.50.54 )
+4 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 88.43 % and accuracy train: 94.22 % ( 2020-07-19_02.25.02 )
+5 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 90.36 % and accuracy train: 96.19 % ( 2020-07-16_08.09.41 )
+6 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 81.83 % and accuracy train: 92.63 % ( 2020-07-17_00.26.30 )
+7 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 83.78 % and accuracy train: 90.16 % ( 2020-07-17_17.12.37 )
+8 ) log_cnn_fullds_categoricalcrossentropy_adam  with accuracy test: 85.86 % and accuracy train: 88.49 % ( 2020-07-10_03.42.09 )
+9 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.09 % and accuracy train: 89.02 % ( 2020-07-09_15.38.19 )
+10 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 88.38 % and accuracy train: 94.61 % ( 2020-07-09_17.53.36 )
+11 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 88.2 % and accuracy train: 94.06 % ( 2020-07-09_20.09.36 )
+12 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 90.3 % and accuracy train: 95.84 % ( 2020-07-09_22.23.52 )
+13 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 79.44 % and accuracy train: 91.9 % ( 2020-07-10_00.35.17 )
+14 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 82.45 % and accuracy train: 90.43 % ( 2020-07-10_02.45.45 )
+15 ) log_decisiontree_fullds  with accuracy test: 91.18 % and accuracy train: 95.84 % ( 2020-07-10_04.54.57 )
+16 ) log_decisiontree_nohumidityds  with accuracy test: 91.65 % and accuracy train: 95.84 % ( 2020-07-10_04.54.57 )
+17 ) log_decisiontree_nohumiditydsreduced  with accuracy test: 85.9 % and accuracy train: 97.47 % ( 2020-07-10_04.54.58 )
+18 ) log_lstm_fullds_categoricalcrossentropy_adam  with accuracy test: 86.33 % and accuracy train: 88.6 % ( 2020-07-10_06.39.01 )
+19 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with accuracy test: 86.57 % and accuracy train: 88.62 % ( 2020-07-10_08.20.49 )
+20 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.21 % and accuracy train: 88.71 % ( 2020-07-10_04.54.58 )
+21 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with accuracy test: 87.44 % and accuracy train: 89.57 % ( 2020-07-10_10.59.38 )
+22 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 86.86 % and accuracy train: 93.27 % ( 2020-07-10_15.35.54 )
+23 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 87.15 % and accuracy train: 93.41 % ( 2020-07-10_17.17.42 )
+24 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 89.31 % and accuracy train: 94.89 % ( 2020-07-10_18.55.29 )
+25 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 76.52 % and accuracy train: 88.57 % ( 2020-07-10_20.36.11 )
+26 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with accuracy test: 86.92 % and accuracy train: 89.38 % ( 2020-07-10_22.10.19 )
+27 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 82.18 % and accuracy train: 88.86 % ( 2020-07-10_13.37.55 )
+28 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with accuracy test: 82.71 % and accuracy train: 89.86 % ( 2020-07-10_14.25.29 )
+29 ) log_mlp_fullds_categoricalcrossentropy_adam  with accuracy test: 87.44 % and accuracy train: 89.21 % ( 2020-07-11_02.44.46 )
+30 ) log_mlp_fullds_meansquarederror_adam  with accuracy test: 86.74 % and accuracy train: 88.46 % ( 2020-07-11_02.57.02 )
+31 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.03 % and accuracy train: 90.6 % ( 2020-07-11_03.09.32 )
+32 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 87.15 % and accuracy train: 94.16 % ( 2020-07-11_03.34.19 )
+33 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 89.66 % and accuracy train: 95.14 % ( 2020-07-11_03.58.58 )
+34 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 78.1 % and accuracy train: 87.97 % ( 2020-07-11_03.21.57 )
+35 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with accuracy test: 86.45 % and accuracy train: 93.52 % ( 2020-07-11_03.46.35 )
+36 ) log_mlp_nohumidityds_meansquarederror_adam  with accuracy test: 86.27 % and accuracy train: 89.18 % ( 2020-07-11_04.11.14 )
+37 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 81.91 % and accuracy train: 90.26 % ( 2020-07-11_04.23.34 )
+38 ) log_mlp_nohumiditydsreduced_meansquarederror_adam  with accuracy test: 82.18 % and accuracy train: 90.39 % ( 2020-07-11_04.29.09 )
+39 ) log_resnet_fullds_categoricalcrossentropy_adam  with accuracy test: 83.59 % and accuracy train: 85.67 % ( 2020-07-11_04.34.43 )
+40 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 85.46 % and accuracy train: 86.93 % ( 2020-07-11_06.59.40 )
+41 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 85.92 % and accuracy train: 91.12 % ( 2020-07-11_10.12.30 )
+42 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 86.33 % and accuracy train: 91.19 % ( 2020-07-11_12.28.16 )
+43 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 86.33 % and accuracy train: 91.57 % ( 2020-07-11_14.46.19 )
+44 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 72.78 % and accuracy train: 80.64 % ( 2020-07-11_17.04.35 )
+45 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 75.4 % and accuracy train: 82.48 % ( 2020-07-11_09.12.45 )
+
+Max accuracy test:  log_decisiontree_nohumidityds  with  91.65 % ( 2020-07-11_09.12.45 )
+
+Min loss test:  log_mlp_fullds_meansquarederror_adam  with  0.05 ( 2020-07-11_09.12.45 )
+
+Loss / Accuracy Test:
+
+1 ) log_mlp_fullds_meansquarederror_adam 
+	-> Ratio: 0.0005764353239566521 -> Accuracy Test: 86.74 % -> Loss Test: 0.05 -> Accuracy Train: 88.46 % ( 2020-07-11_02.57.02 )
+2 ) log_mlp_nohumidityds_meansquarederror_adam 
+	-> Ratio: 0.0005795757505505971 -> Accuracy Test: 86.27 % -> Loss Test: 0.05 -> Accuracy Train: 89.18 % ( 2020-07-11_04.11.14 )
+3 ) log_mlp_nohumiditydsreduced_meansquarederror_adam 
+	-> Ratio: 0.0008517887563884157 -> Accuracy Test: 82.18 % -> Loss Test: 0.07 -> Accuracy Train: 90.39 % ( 2020-07-11_04.29.09 )
+4 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional 
+	-> Ratio: 0.004389511378075546 -> Accuracy Test: 86.57 % -> Loss Test: 0.38 -> Accuracy Train: 88.62 % ( 2020-07-10_08.20.49 )
+5 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional 
+	-> Ratio: 0.004574565416285453 -> Accuracy Test: 87.44 % -> Loss Test: 0.4 -> Accuracy Train: 89.57 % ( 2020-07-10_10.59.38 )
+6 ) log_lstm_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.00470129572296755 -> Accuracy Test: 87.21 % -> Loss Test: 0.41 -> Accuracy Train: 88.71 % ( 2020-07-10_04.54.58 )
+7 ) log_cnn_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.004822597313124353 -> Accuracy Test: 87.09 % -> Loss Test: 0.42 -> Accuracy Train: 89.02 % ( 2020-07-09_15.38.19 )
+8 ) log_lstm_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.0048650527047376345 -> Accuracy Test: 86.33 % -> Loss Test: 0.42 -> Accuracy Train: 88.6 % ( 2020-07-10_06.39.01 )
+9 ) log_mlp_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005032021957913998 -> Accuracy Test: 87.44 % -> Loss Test: 0.44 -> Accuracy Train: 89.21 % ( 2020-07-11_02.44.46 )
+10 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam 
+	-> Ratio: 0.0050621260929590425 -> Accuracy Test: 86.92 % -> Loss Test: 0.44 -> Accuracy Train: 89.38 % ( 2020-07-10_22.10.19 )
+11 ) log_mlp_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005285533724003218 -> Accuracy Test: 87.03 % -> Loss Test: 0.46 -> Accuracy Train: 90.6 % ( 2020-07-11_03.09.32 )
+12 ) log_cnn_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005357558816678314 -> Accuracy Test: 85.86 % -> Loss Test: 0.46 -> Accuracy Train: 88.49 % ( 2020-07-10_03.42.09 )
+13 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005737234652897303 -> Accuracy Test: 87.15 % -> Loss Test: 0.5 -> Accuracy Train: 89.65 % ( 2020-07-18_00.55.13 )
+14 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.006126616746085773 -> Accuracy Test: 88.14 % -> Loss Test: 0.54 -> Accuracy Train: 90.46 % ( 2020-07-15_16.57.41 )
+15 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.00683014220132124 -> Accuracy Test: 89.31 % -> Loss Test: 0.61 -> Accuracy Train: 94.89 % ( 2020-07-10_18.55.29 )
+16 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.0070874861572535995 -> Accuracy Test: 90.3 % -> Loss Test: 0.64 -> Accuracy Train: 95.84 % ( 2020-07-09_22.23.52 )
+17 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.007598434262030855 -> Accuracy Test: 86.86 % -> Loss Test: 0.66 -> Accuracy Train: 93.27 % ( 2020-07-10_15.35.54 )
+18 ) log_resnet_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.0076058974959045175 -> Accuracy Test: 85.46 % -> Loss Test: 0.65 -> Accuracy Train: 86.93 % ( 2020-07-11_06.59.40 )
+19 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.007920343969223807 -> Accuracy Test: 88.38 % -> Loss Test: 0.7 -> Accuracy Train: 94.61 % ( 2020-07-09_17.53.36 )
+20 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.008253401739906314 -> Accuracy Test: 89.66 % -> Loss Test: 0.74 -> Accuracy Train: 95.14 % ( 2020-07-11_03.58.58 )
+21 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.008276643990929705 -> Accuracy Test: 88.2 % -> Loss Test: 0.73 -> Accuracy Train: 94.06 % ( 2020-07-09_20.09.36 )
+22 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.0087205966724039 -> Accuracy Test: 87.15 % -> Loss Test: 0.76 -> Accuracy Train: 93.41 % ( 2020-07-10_17.17.42 )
+23 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.008729050279329608 -> Accuracy Test: 85.92 % -> Loss Test: 0.75 -> Accuracy Train: 91.12 % ( 2020-07-11_10.12.30 )
+24 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.008964143426294821 -> Accuracy Test: 90.36 % -> Loss Test: 0.81 -> Accuracy Train: 96.19 % ( 2020-07-16_08.09.41 )
+25 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.009035097880227036 -> Accuracy Test: 86.33 % -> Loss Test: 0.78 -> Accuracy Train: 91.19 % ( 2020-07-11_12.28.16 )
+26 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.009150932468435076 -> Accuracy Test: 86.33 % -> Loss Test: 0.79 -> Accuracy Train: 91.57 % ( 2020-07-11_14.46.19 )
+27 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional 
+	-> Ratio: 0.009188731713214849 -> Accuracy Test: 82.71 % -> Loss Test: 0.76 -> Accuracy Train: 89.86 % ( 2020-07-10_14.25.29 )
+28 ) log_resnet_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.009211628185189617 -> Accuracy Test: 83.59 % -> Loss Test: 0.77 -> Accuracy Train: 85.67 % ( 2020-07-11_04.34.43 )
+29 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.00949136042832806 -> Accuracy Test: 82.18 % -> Loss Test: 0.78 -> Accuracy Train: 88.86 % ( 2020-07-10_13.37.55 )
+30 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam 
+	-> Ratio: 0.009832272990167727 -> Accuracy Test: 86.45 % -> Loss Test: 0.85 -> Accuracy Train: 93.52 % ( 2020-07-11_03.46.35 )
+31 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.010441767068273091 -> Accuracy Test: 87.15 % -> Loss Test: 0.91 -> Accuracy Train: 94.16 % ( 2020-07-11_03.34.19 )
+32 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.010499328531314859 -> Accuracy Test: 81.91 % -> Loss Test: 0.86 -> Accuracy Train: 90.26 % ( 2020-07-11_04.23.34 )
+33 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.010742960533755511 -> Accuracy Test: 88.43 % -> Loss Test: 0.95 -> Accuracy Train: 94.22 % ( 2020-07-19_02.25.02 )
+34 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.010915706488781079 -> Accuracy Test: 82.45 % -> Loss Test: 0.9 -> Accuracy Train: 90.43 % ( 2020-07-10_02.45.45 )
+35 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.011023079572855666 -> Accuracy Test: 87.09 % -> Loss Test: 0.96 -> Accuracy Train: 95.11 % ( 2020-07-18_15.50.54 )
+36 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.012055383146335641 -> Accuracy Test: 83.78 % -> Loss Test: 1.01 -> Accuracy Train: 90.16 % ( 2020-07-17_17.12.37 )
+37 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.01497985901309164 -> Accuracy Test: 79.44 % -> Loss Test: 1.19 -> Accuracy Train: 91.9 % ( 2020-07-10_00.35.17 )
+38 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.017642446419236804 -> Accuracy Test: 76.52 % -> Loss Test: 1.35 -> Accuracy Train: 88.57 % ( 2020-07-10_20.36.11 )
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.018086276426738362 -> Accuracy Test: 81.83 % -> Loss Test: 1.48 -> Accuracy Train: 92.63 % ( 2020-07-17_00.26.30 )
+40 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.01920614596670935 -> Accuracy Test: 78.1 % -> Loss Test: 1.5 -> Accuracy Train: 87.97 % ( 2020-07-11_03.21.57 )
+41 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.020689655172413793 -> Accuracy Test: 75.4 % -> Loss Test: 1.56 -> Accuracy Train: 82.48 % ( 2020-07-11_09.12.45 )
+42 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.023495465787304205 -> Accuracy Test: 72.78 % -> Loss Test: 1.71 -> Accuracy Train: 80.64 % ( 2020-07-11_17.04.35 )
+
+Sorted by name and accuracy:
+
+1 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with accuracy test: 87.15 % ( 2020-07-18_00.55.13 )
+2 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 88.14 % ( 2020-07-15_16.57.41 )
+3 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 87.09 % ( 2020-07-18_15.50.54 )
+4 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 88.43 % ( 2020-07-19_02.25.02 )
+5 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 90.36 % ( 2020-07-16_08.09.41 )
+6 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 81.83 % ( 2020-07-17_00.26.30 )
+7 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 83.78 % ( 2020-07-17_17.12.37 )
+8 ) log_cnn_fullds_categoricalcrossentropy_adam  with accuracy test: 85.86 % ( 2020-07-10_03.42.09 )
+9 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.09 % ( 2020-07-09_15.38.19 )
+10 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 88.38 % ( 2020-07-09_17.53.36 )
+11 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 88.2 % ( 2020-07-09_20.09.36 )
+12 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 90.3 % ( 2020-07-09_22.23.52 )
+13 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 79.44 % ( 2020-07-10_00.35.17 )
+14 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 82.45 % ( 2020-07-10_02.45.45 )
+15 ) log_decisiontree_fullds  with accuracy test: 91.18 % ( 2020-07-10_04.54.57 )
+16 ) log_decisiontree_nohumidityds  with accuracy test: 91.65 % ( 2020-07-10_04.54.57 )
+17 ) log_decisiontree_nohumiditydsreduced  with accuracy test: 85.9 % ( 2020-07-10_04.54.58 )
+18 ) log_lstm_fullds_categoricalcrossentropy_adam  with accuracy test: 86.33 % ( 2020-07-10_06.39.01 )
+19 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with accuracy test: 86.57 % ( 2020-07-10_08.20.49 )
+20 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.21 % ( 2020-07-10_04.54.58 )
+21 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with accuracy test: 87.44 % ( 2020-07-10_10.59.38 )
+22 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 86.86 % ( 2020-07-10_15.35.54 )
+23 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 87.15 % ( 2020-07-10_17.17.42 )
+24 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 89.31 % ( 2020-07-10_18.55.29 )
+25 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 76.52 % ( 2020-07-10_20.36.11 )
+26 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with accuracy test: 86.92 % ( 2020-07-10_22.10.19 )
+27 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 82.18 % ( 2020-07-10_13.37.55 )
+28 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with accuracy test: 82.71 % ( 2020-07-10_14.25.29 )
+29 ) log_mlp_fullds_categoricalcrossentropy_adam  with accuracy test: 87.44 % ( 2020-07-11_02.44.46 )
+30 ) log_mlp_fullds_meansquarederror_adam  with accuracy test: 86.74 % ( 2020-07-11_02.57.02 )
+31 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.03 % ( 2020-07-11_03.09.32 )
+32 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 87.15 % ( 2020-07-11_03.34.19 )
+33 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 89.66 % ( 2020-07-11_03.58.58 )
+34 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 78.1 % ( 2020-07-11_03.21.57 )
+35 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with accuracy test: 86.45 % ( 2020-07-11_03.46.35 )
+36 ) log_mlp_nohumidityds_meansquarederror_adam  with accuracy test: 86.27 % ( 2020-07-11_04.11.14 )
+37 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 81.91 % ( 2020-07-11_04.23.34 )
+38 ) log_mlp_nohumiditydsreduced_meansquarederror_adam  with accuracy test: 82.18 % ( 2020-07-11_04.29.09 )
+39 ) log_resnet_fullds_categoricalcrossentropy_adam  with accuracy test: 83.59 % ( 2020-07-11_04.34.43 )
+40 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 85.46 % ( 2020-07-11_06.59.40 )
+41 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 85.92 % ( 2020-07-11_10.12.30 )
+42 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 86.33 % ( 2020-07-11_12.28.16 )
+43 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 86.33 % ( 2020-07-11_14.46.19 )
+44 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 72.78 % ( 2020-07-11_17.04.35 )
+45 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 75.4 % ( 2020-07-11_09.12.45 )
+
+Max accuracy for each type of neural network:
+
+1 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 72.78 % ( 2020-07-11_17.04.35 )
+	 {'file_name': 'log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization', 'accuracy_train': 80.64, 'accuracy_test': 72.78, 'loss_test': 1.71, 'average_accuracy_train': 23.07, 'average_accuracy_test': 23.21, 'average_loss_train': 7.8, 'average_loss_test': 7.85, 'date': '2020-07-11_17.04.35', 'ratio': 0.023495465787304205}
+2 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 75.4 % ( 2020-07-11_09.12.45 )
+	 {'file_name': 'log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam', 'accuracy_train': 82.48, 'accuracy_test': 75.4, 'loss_test': 1.56, 'average_accuracy_train': 25.7, 'average_accuracy_test': 26.2, 'average_loss_train': 5.04, 'average_loss_test': 4.55, 'date': '2020-07-11_09.12.45', 'ratio': 0.020689655172413793}
+3 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 76.52 % ( 2020-07-10_20.36.11 )
+	 {'file_name': 'log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization', 'accuracy_train': 88.57, 'accuracy_test': 76.52, 'loss_test': 1.35, 'average_accuracy_train': 87.73, 'average_accuracy_test': 77.66, 'average_loss_train': 0.44, 'average_loss_test': 1.17, 'date': '2020-07-10_20.36.11', 'ratio': 0.017642446419236804}
+4 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 78.1 % ( 2020-07-11_03.21.57 )
+	 {'file_name': 'log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization', 'accuracy_train': 87.97, 'accuracy_test': 78.1, 'loss_test': 1.5, 'average_accuracy_train': 88.57, 'average_accuracy_test': 77.57, 'average_loss_train': 0.47, 'average_loss_test': 1.38, 'date': '2020-07-11_03.21.57', 'ratio': 0.01920614596670935}
+5 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 79.44 % ( 2020-07-10_00.35.17 )
+	 {'file_name': 'log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization', 'accuracy_train': 91.9, 'accuracy_test': 79.44, 'loss_test': 1.19, 'average_accuracy_train': 91.15, 'average_accuracy_test': 81.37, 'average_loss_train': 0.37, 'average_loss_test': 1.16, 'date': '2020-07-10_00.35.17', 'ratio': 0.01497985901309164}
+6 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with accuracy test: 81.83 % ( 2020-07-17_00.26.30 )
+	 {'file_name': 'log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization', 'accuracy_train': 92.63, 'accuracy_test': 81.83, 'loss_test': 1.48, 'average_accuracy_train': 92.0, 'average_accuracy_test': 82.0, 'average_loss_train': 0.36, 'average_loss_test': 1.12, 'date': '2020-07-17_00.26.30', 'ratio': 0.018086276426738362}
+7 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 81.91 % ( 2020-07-11_04.23.34 )
+	 {'file_name': 'log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam', 'accuracy_train': 90.26, 'accuracy_test': 81.91, 'loss_test': 0.86, 'average_accuracy_train': 89.59, 'average_accuracy_test': 83.7, 'average_loss_train': 0.32, 'average_loss_test': 0.87, 'date': '2020-07-11_04.23.34', 'ratio': 0.010499328531314859}
+8 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 82.18 % ( 2020-07-10_13.37.55 )
+	 {'file_name': 'log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam', 'accuracy_train': 88.86, 'accuracy_test': 82.18, 'loss_test': 0.78, 'average_accuracy_train': 89.34, 'average_accuracy_test': 83.91, 'average_loss_train': 0.31, 'average_loss_test': 0.76, 'date': '2020-07-10_13.37.55', 'ratio': 0.00949136042832806}
+9 ) log_mlp_nohumiditydsreduced_meansquarederror_adam  with accuracy test: 82.18 % ( 2020-07-11_04.29.09 )
+	 {'file_name': 'log_mlp_nohumiditydsreduced_meansquarederror_adam', 'accuracy_train': 90.39, 'accuracy_test': 82.18, 'loss_test': 0.07, 'average_accuracy_train': 89.59, 'average_accuracy_test': 83.96, 'average_loss_train': 0.04, 'average_loss_test': 0.06, 'date': '2020-07-11_04.29.09', 'ratio': 0.0008517887563884157}
+10 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 82.45 % ( 2020-07-10_02.45.45 )
+	 {'file_name': 'log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam', 'accuracy_train': 90.43, 'accuracy_test': 82.45, 'loss_test': 0.9, 'average_accuracy_train': 88.94, 'average_accuracy_test': 83.86, 'average_loss_train': 0.33, 'average_loss_test': 0.84, 'date': '2020-07-10_02.45.45', 'ratio': 0.010915706488781079}
+11 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with accuracy test: 82.71 % ( 2020-07-10_14.25.29 )
+	 {'file_name': 'log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional', 'accuracy_train': 89.86, 'accuracy_test': 82.71, 'loss_test': 0.76, 'average_accuracy_train': 89.51, 'average_accuracy_test': 83.43, 'average_loss_train': 0.32, 'average_loss_test': 0.84, 'date': '2020-07-10_14.25.29', 'ratio': 0.009188731713214849}
+12 ) log_resnet_fullds_categoricalcrossentropy_adam  with accuracy test: 83.59 % ( 2020-07-11_04.34.43 )
+	 {'file_name': 'log_resnet_fullds_categoricalcrossentropy_adam', 'accuracy_train': 85.67, 'accuracy_test': 83.59, 'loss_test': 0.77, 'average_accuracy_train': 24.09, 'average_accuracy_test': 24.18, 'average_loss_train': 8.73, 'average_loss_test': 8.5, 'date': '2020-07-11_04.34.43', 'ratio': 0.009211628185189617}
+13 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with accuracy test: 83.78 % ( 2020-07-17_17.12.37 )
+	 {'file_name': 'log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam', 'accuracy_train': 90.16, 'accuracy_test': 83.78, 'loss_test': 1.01, 'average_accuracy_train': 90.49, 'average_accuracy_test': 83.59, 'average_loss_train': 0.33, 'average_loss_test': 1.03, 'date': '2020-07-17_17.12.37', 'ratio': 0.012055383146335641}
+14 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 85.46 % ( 2020-07-11_06.59.40 )
+	 {'file_name': 'log_resnet_nohumidityds_categoricalcrossentropy_adam', 'accuracy_train': 86.93, 'accuracy_test': 85.46, 'loss_test': 0.65, 'average_accuracy_train': 26.67, 'average_accuracy_test': 26.8, 'average_loss_train': 2.5, 'average_loss_test': 2.53, 'date': '2020-07-11_06.59.40', 'ratio': 0.0076058974959045175}
+15 ) log_cnn_fullds_categoricalcrossentropy_adam  with accuracy test: 85.86 % ( 2020-07-10_03.42.09 )
+	 {'file_name': 'log_cnn_fullds_categoricalcrossentropy_adam', 'accuracy_train': 88.49, 'accuracy_test': 85.86, 'loss_test': 0.46, 'average_accuracy_train': 88.52, 'average_accuracy_test': 86.09, 'average_loss_train': 0.29, 'average_loss_test': 0.48, 'date': '2020-07-10_03.42.09', 'ratio': 0.005357558816678314}
+16 ) log_decisiontree_nohumiditydsreduced  with accuracy test: 85.9 % ( 2020-07-10_04.54.58 )
+	 {'file_name': 'log_decisiontree_nohumiditydsreduced', 'accuracy_train': 97.47, 'accuracy_test': 85.9, 'average_accuracy_train': 97.69, 'average_accuracy_test': 84.41, 'date': '2020-07-10_04.54.58'}
+17 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 85.92 % ( 2020-07-11_10.12.30 )
+	 {'file_name': 'log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization', 'accuracy_train': 91.12, 'accuracy_test': 85.92, 'loss_test': 0.75, 'average_accuracy_train': 23.24, 'average_accuracy_test': 23.36, 'average_loss_train': 4.65, 'average_loss_test': 4.42, 'date': '2020-07-11_10.12.30', 'ratio': 0.008729050279329608}
+18 ) log_mlp_nohumidityds_meansquarederror_adam  with accuracy test: 86.27 % ( 2020-07-11_04.11.14 )
+	 {'file_name': 'log_mlp_nohumidityds_meansquarederror_adam', 'accuracy_train': 89.18, 'accuracy_test': 86.27, 'loss_test': 0.05, 'average_accuracy_train': 88.78, 'average_accuracy_test': 86.33, 'average_loss_train': 0.04, 'average_loss_test': 0.05, 'date': '2020-07-11_04.11.14', 'ratio': 0.0005795757505505971}
+19 ) log_lstm_fullds_categoricalcrossentropy_adam  with accuracy test: 86.33 % ( 2020-07-10_06.39.01 )
+	 {'file_name': 'log_lstm_fullds_categoricalcrossentropy_adam', 'accuracy_train': 88.6, 'accuracy_test': 86.33, 'loss_test': 0.42, 'average_accuracy_train': 88.57, 'average_accuracy_test': 85.84, 'average_loss_train': 0.29, 'average_loss_test': 0.47, 'date': '2020-07-10_06.39.01', 'ratio': 0.0048650527047376345}
+20 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 86.33 % ( 2020-07-11_12.28.16 )
+	 {'file_name': 'log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization', 'accuracy_train': 91.19, 'accuracy_test': 86.33, 'loss_test': 0.78, 'average_accuracy_train': 26.39, 'average_accuracy_test': 26.64, 'average_loss_train': 7.76, 'average_loss_test': 7.32, 'date': '2020-07-11_12.28.16', 'ratio': 0.009035097880227036}
+21 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 86.33 % ( 2020-07-11_14.46.19 )
+	 {'file_name': 'log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized', 'accuracy_train': 91.57, 'accuracy_test': 86.33, 'loss_test': 0.79, 'average_accuracy_train': 26.57, 'average_accuracy_test': 26.27, 'average_loss_train': 4.96, 'average_loss_test': 4.91, 'date': '2020-07-11_14.46.19', 'ratio': 0.009150932468435076}
+22 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with accuracy test: 86.45 % ( 2020-07-11_03.46.35 )
+	 {'file_name': 'log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam', 'accuracy_train': 93.52, 'accuracy_test': 86.45, 'loss_test': 0.85, 'average_accuracy_train': 93.81, 'average_accuracy_test': 87.15, 'average_loss_train': 0.25, 'average_loss_test': 0.86, 'date': '2020-07-11_03.46.35', 'ratio': 0.009832272990167727}
+23 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with accuracy test: 86.57 % ( 2020-07-10_08.20.49 )
+	 {'file_name': 'log_lstm_fullds_categoricalcrossentropy_adam_bidirectional', 'accuracy_train': 88.62, 'accuracy_test': 86.57, 'loss_test': 0.38, 'average_accuracy_train': 89.1, 'average_accuracy_test': 86.32, 'average_loss_train': 0.28, 'average_loss_test': 0.48, 'date': '2020-07-10_08.20.49', 'ratio': 0.004389511378075546}
+24 ) log_mlp_fullds_meansquarederror_adam  with accuracy test: 86.74 % ( 2020-07-11_02.57.02 )
+	 {'file_name': 'log_mlp_fullds_meansquarederror_adam', 'accuracy_train': 88.46, 'accuracy_test': 86.74, 'loss_test': 0.05, 'average_accuracy_train': 89.19, 'average_accuracy_test': 86.61, 'average_loss_train': 0.04, 'average_loss_test': 0.05, 'date': '2020-07-11_02.57.02', 'ratio': 0.0005764353239566521}
+25 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 86.86 % ( 2020-07-10_15.35.54 )
+	 {'file_name': 'log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization', 'accuracy_train': 93.27, 'accuracy_test': 86.86, 'loss_test': 0.66, 'average_accuracy_train': 93.57, 'average_accuracy_test': 86.69, 'average_loss_train': 0.24, 'average_loss_test': 0.77, 'date': '2020-07-10_15.35.54', 'ratio': 0.007598434262030855}
+26 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with accuracy test: 86.92 % ( 2020-07-10_22.10.19 )
+	 {'file_name': 'log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam', 'accuracy_train': 89.38, 'accuracy_test': 86.92, 'loss_test': 0.44, 'average_accuracy_train': 89.21, 'average_accuracy_test': 86.81, 'average_loss_train': 0.27, 'average_loss_test': 0.44, 'date': '2020-07-10_22.10.19', 'ratio': 0.0050621260929590425}
+27 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.03 % ( 2020-07-11_03.09.32 )
+	 {'file_name': 'log_mlp_nohumidityds_categoricalcrossentropy_adam', 'accuracy_train': 90.6, 'accuracy_test': 87.03, 'loss_test': 0.46, 'average_accuracy_train': 89.01, 'average_accuracy_test': 86.75, 'average_loss_train': 0.28, 'average_loss_test': 0.48, 'date': '2020-07-11_03.09.32', 'ratio': 0.005285533724003218}
+28 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 87.09 % ( 2020-07-18_15.50.54 )
+	 {'file_name': 'log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization', 'accuracy_train': 95.11, 'accuracy_test': 87.09, 'loss_test': 0.96, 'average_accuracy_train': 95.11, 'average_accuracy_test': 86.86, 'average_loss_train': 0.26, 'average_loss_test': 1.13, 'date': '2020-07-18_15.50.54', 'ratio': 0.011023079572855666}
+29 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.09 % ( 2020-07-09_15.38.19 )
+	 {'file_name': 'log_cnn_nohumidityds_categoricalcrossentropy_adam', 'accuracy_train': 89.02, 'accuracy_test': 87.09, 'loss_test': 0.42, 'average_accuracy_train': 88.42, 'average_accuracy_test': 86.03, 'average_loss_train': 0.29, 'average_loss_test': 0.51, 'date': '2020-07-09_15.38.19', 'ratio': 0.004822597313124353}
+30 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with accuracy test: 87.15 % ( 2020-07-18_00.55.13 )
+	 {'file_name': 'log_cnn+lstm_fullds_categoricalcrossentropy_adam', 'accuracy_train': 89.65, 'accuracy_test': 87.15, 'loss_test': 0.5, 'average_accuracy_train': 89.72, 'average_accuracy_test': 87.11, 'average_loss_train': 0.29, 'average_loss_test': 0.6, 'date': '2020-07-18_00.55.13', 'ratio': 0.005737234652897303}
+31 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 87.15 % ( 2020-07-10_17.17.42 )
+	 {'file_name': 'log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization', 'accuracy_train': 93.41, 'accuracy_test': 87.15, 'loss_test': 0.76, 'average_accuracy_train': 93.27, 'average_accuracy_test': 87.15, 'average_loss_train': 0.24, 'average_loss_test': 0.8, 'date': '2020-07-10_17.17.42', 'ratio': 0.0087205966724039}
+32 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 87.15 % ( 2020-07-11_03.34.19 )
+	 {'file_name': 'log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization', 'accuracy_train': 94.16, 'accuracy_test': 87.15, 'loss_test': 0.91, 'average_accuracy_train': 93.57, 'average_accuracy_test': 86.95, 'average_loss_train': 0.26, 'average_loss_test': 0.86, 'date': '2020-07-11_03.34.19', 'ratio': 0.010441767068273091}
+33 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 87.21 % ( 2020-07-10_04.54.58 )
+	 {'file_name': 'log_lstm_nohumidityds_categoricalcrossentropy_adam', 'accuracy_train': 88.71, 'accuracy_test': 87.21, 'loss_test': 0.41, 'average_accuracy_train': 89.15, 'average_accuracy_test': 86.36, 'average_loss_train': 0.27, 'average_loss_test': 0.46, 'date': '2020-07-10_04.54.58', 'ratio': 0.00470129572296755}
+34 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with accuracy test: 87.44 % ( 2020-07-10_10.59.38 )
+	 {'file_name': 'log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional', 'accuracy_train': 89.57, 'accuracy_test': 87.44, 'loss_test': 0.4, 'average_accuracy_train': 89.33, 'average_accuracy_test': 86.94, 'average_loss_train': 0.27, 'average_loss_test': 0.47, 'date': '2020-07-10_10.59.38', 'ratio': 0.004574565416285453}
+35 ) log_mlp_fullds_categoricalcrossentropy_adam  with accuracy test: 87.44 % ( 2020-07-11_02.44.46 )
+	 {'file_name': 'log_mlp_fullds_categoricalcrossentropy_adam', 'accuracy_train': 89.21, 'accuracy_test': 87.44, 'loss_test': 0.44, 'average_accuracy_train': 89.52, 'average_accuracy_test': 86.68, 'average_loss_train': 0.27, 'average_loss_test': 0.47, 'date': '2020-07-11_02.44.46', 'ratio': 0.005032021957913998}
+36 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with accuracy test: 88.14 % ( 2020-07-15_16.57.41 )
+	 {'file_name': 'log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam', 'accuracy_train': 90.46, 'accuracy_test': 88.14, 'loss_test': 0.54, 'average_accuracy_train': 89.38, 'average_accuracy_test': 86.87, 'average_loss_train': 0.29, 'average_loss_test': 0.6, 'date': '2020-07-15_16.57.41', 'ratio': 0.006126616746085773}
+37 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 88.2 % ( 2020-07-09_20.09.36 )
+	 {'file_name': 'log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization', 'accuracy_train': 94.06, 'accuracy_test': 88.2, 'loss_test': 0.73, 'average_accuracy_train': 94.27, 'average_accuracy_test': 87.71, 'average_loss_train': 0.23, 'average_loss_test': 0.79, 'date': '2020-07-09_20.09.36', 'ratio': 0.008276643990929705}
+38 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with accuracy test: 88.38 % ( 2020-07-09_17.53.36 )
+	 {'file_name': 'log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization', 'accuracy_train': 94.61, 'accuracy_test': 88.38, 'loss_test': 0.7, 'average_accuracy_train': 94.87, 'average_accuracy_test': 87.58, 'average_loss_train': 0.24, 'average_loss_test': 0.9, 'date': '2020-07-09_17.53.36', 'ratio': 0.007920343969223807}
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with accuracy test: 88.43 % ( 2020-07-19_02.25.02 )
+	 {'file_name': 'log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization', 'accuracy_train': 94.22, 'accuracy_test': 88.43, 'loss_test': 0.95, 'average_accuracy_train': 94.67, 'average_accuracy_test': 87.79, 'average_loss_train': 0.24, 'average_loss_test': 1.07, 'date': '2020-07-19_02.25.02', 'ratio': 0.010742960533755511}
+40 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 89.31 % ( 2020-07-10_18.55.29 )
+	 {'file_name': 'log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized', 'accuracy_train': 94.89, 'accuracy_test': 89.31, 'loss_test': 0.61, 'average_accuracy_train': 94.81, 'average_accuracy_test': 89.22, 'average_loss_train': 0.2, 'average_loss_test': 0.55, 'date': '2020-07-10_18.55.29', 'ratio': 0.00683014220132124}
+41 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 89.66 % ( 2020-07-11_03.58.58 )
+	 {'file_name': 'log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized', 'accuracy_train': 95.14, 'accuracy_test': 89.66, 'loss_test': 0.74, 'average_accuracy_train': 94.82, 'average_accuracy_test': 89.0, 'average_loss_train': 0.23, 'average_loss_test': 0.7, 'date': '2020-07-11_03.58.58', 'ratio': 0.008253401739906314}
+42 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 90.3 % ( 2020-07-09_22.23.52 )
+	 {'file_name': 'log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized', 'accuracy_train': 95.84, 'accuracy_test': 90.3, 'loss_test': 0.64, 'average_accuracy_train': 95.96, 'average_accuracy_test': 90.79, 'average_loss_train': 0.19, 'average_loss_test': 0.64, 'date': '2020-07-09_22.23.52', 'ratio': 0.0070874861572535995}
+43 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with accuracy test: 90.36 % ( 2020-07-16_08.09.41 )
+	 {'file_name': 'log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized', 'accuracy_train': 96.19, 'accuracy_test': 90.36, 'loss_test': 0.81, 'average_accuracy_train': 95.91, 'average_accuracy_test': 90.75, 'average_loss_train': 0.19, 'average_loss_test': 0.66, 'date': '2020-07-16_08.09.41', 'ratio': 0.008964143426294821}
+44 ) log_decisiontree_fullds  with accuracy test: 91.18 % ( 2020-07-10_04.54.57 )
+	 {'file_name': 'log_decisiontree_fullds', 'accuracy_train': 95.84, 'accuracy_test': 91.18, 'average_accuracy_train': 95.77, 'average_accuracy_test': 91.41, 'date': '2020-07-10_04.54.57'}
+45 ) log_decisiontree_nohumidityds  with accuracy test: 91.65 % ( 2020-07-10_04.54.57 )
+	 {'file_name': 'log_decisiontree_nohumidityds', 'accuracy_train': 95.84, 'accuracy_test': 91.65, 'average_accuracy_train': 95.77, 'average_accuracy_test': 91.47, 'date': '2020-07-10_04.54.57'}
+
+Loss / Accuracy Test (by max accuracy for each type of neural network):
+
+1 ) log_mlp_fullds_meansquarederror_adam 
+	-> Ratio: 0.0005764353239566521 -> Accuracy Test: 86.74 % -> Loss Test: 0.05 -> Accuracy Train: 88.46 % ( 2020-07-11_02.57.02 )
+2 ) log_mlp_nohumidityds_meansquarederror_adam 
+	-> Ratio: 0.0005795757505505971 -> Accuracy Test: 86.27 % -> Loss Test: 0.05 -> Accuracy Train: 89.18 % ( 2020-07-11_04.11.14 )
+3 ) log_mlp_nohumiditydsreduced_meansquarederror_adam 
+	-> Ratio: 0.0008517887563884157 -> Accuracy Test: 82.18 % -> Loss Test: 0.07 -> Accuracy Train: 90.39 % ( 2020-07-11_04.29.09 )
+4 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional 
+	-> Ratio: 0.004389511378075546 -> Accuracy Test: 86.57 % -> Loss Test: 0.38 -> Accuracy Train: 88.62 % ( 2020-07-10_08.20.49 )
+5 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional 
+	-> Ratio: 0.004574565416285453 -> Accuracy Test: 87.44 % -> Loss Test: 0.4 -> Accuracy Train: 89.57 % ( 2020-07-10_10.59.38 )
+6 ) log_lstm_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.00470129572296755 -> Accuracy Test: 87.21 % -> Loss Test: 0.41 -> Accuracy Train: 88.71 % ( 2020-07-10_04.54.58 )
+7 ) log_cnn_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.004822597313124353 -> Accuracy Test: 87.09 % -> Loss Test: 0.42 -> Accuracy Train: 89.02 % ( 2020-07-09_15.38.19 )
+8 ) log_lstm_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.0048650527047376345 -> Accuracy Test: 86.33 % -> Loss Test: 0.42 -> Accuracy Train: 88.6 % ( 2020-07-10_06.39.01 )
+9 ) log_mlp_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005032021957913998 -> Accuracy Test: 87.44 % -> Loss Test: 0.44 -> Accuracy Train: 89.21 % ( 2020-07-11_02.44.46 )
+10 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam 
+	-> Ratio: 0.0050621260929590425 -> Accuracy Test: 86.92 % -> Loss Test: 0.44 -> Accuracy Train: 89.38 % ( 2020-07-10_22.10.19 )
+11 ) log_mlp_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005285533724003218 -> Accuracy Test: 87.03 % -> Loss Test: 0.46 -> Accuracy Train: 90.6 % ( 2020-07-11_03.09.32 )
+12 ) log_cnn_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005357558816678314 -> Accuracy Test: 85.86 % -> Loss Test: 0.46 -> Accuracy Train: 88.49 % ( 2020-07-10_03.42.09 )
+13 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.005737234652897303 -> Accuracy Test: 87.15 % -> Loss Test: 0.5 -> Accuracy Train: 89.65 % ( 2020-07-18_00.55.13 )
+14 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.006126616746085773 -> Accuracy Test: 88.14 % -> Loss Test: 0.54 -> Accuracy Train: 90.46 % ( 2020-07-15_16.57.41 )
+15 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.00683014220132124 -> Accuracy Test: 89.31 % -> Loss Test: 0.61 -> Accuracy Train: 94.89 % ( 2020-07-10_18.55.29 )
+16 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.0070874861572535995 -> Accuracy Test: 90.3 % -> Loss Test: 0.64 -> Accuracy Train: 95.84 % ( 2020-07-09_22.23.52 )
+17 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.007598434262030855 -> Accuracy Test: 86.86 % -> Loss Test: 0.66 -> Accuracy Train: 93.27 % ( 2020-07-10_15.35.54 )
+18 ) log_resnet_nohumidityds_categoricalcrossentropy_adam 
+	-> Ratio: 0.0076058974959045175 -> Accuracy Test: 85.46 % -> Loss Test: 0.65 -> Accuracy Train: 86.93 % ( 2020-07-11_06.59.40 )
+19 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.007920343969223807 -> Accuracy Test: 88.38 % -> Loss Test: 0.7 -> Accuracy Train: 94.61 % ( 2020-07-09_17.53.36 )
+20 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.008253401739906314 -> Accuracy Test: 89.66 % -> Loss Test: 0.74 -> Accuracy Train: 95.14 % ( 2020-07-11_03.58.58 )
+21 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.008276643990929705 -> Accuracy Test: 88.2 % -> Loss Test: 0.73 -> Accuracy Train: 94.06 % ( 2020-07-09_20.09.36 )
+22 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.0087205966724039 -> Accuracy Test: 87.15 % -> Loss Test: 0.76 -> Accuracy Train: 93.41 % ( 2020-07-10_17.17.42 )
+23 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.008729050279329608 -> Accuracy Test: 85.92 % -> Loss Test: 0.75 -> Accuracy Train: 91.12 % ( 2020-07-11_10.12.30 )
+24 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.008964143426294821 -> Accuracy Test: 90.36 % -> Loss Test: 0.81 -> Accuracy Train: 96.19 % ( 2020-07-16_08.09.41 )
+25 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.009035097880227036 -> Accuracy Test: 86.33 % -> Loss Test: 0.78 -> Accuracy Train: 91.19 % ( 2020-07-11_12.28.16 )
+26 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized 
+	-> Ratio: 0.009150932468435076 -> Accuracy Test: 86.33 % -> Loss Test: 0.79 -> Accuracy Train: 91.57 % ( 2020-07-11_14.46.19 )
+27 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional 
+	-> Ratio: 0.009188731713214849 -> Accuracy Test: 82.71 % -> Loss Test: 0.76 -> Accuracy Train: 89.86 % ( 2020-07-10_14.25.29 )
+28 ) log_resnet_fullds_categoricalcrossentropy_adam 
+	-> Ratio: 0.009211628185189617 -> Accuracy Test: 83.59 % -> Loss Test: 0.77 -> Accuracy Train: 85.67 % ( 2020-07-11_04.34.43 )
+29 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.00949136042832806 -> Accuracy Test: 82.18 % -> Loss Test: 0.78 -> Accuracy Train: 88.86 % ( 2020-07-10_13.37.55 )
+30 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam 
+	-> Ratio: 0.009832272990167727 -> Accuracy Test: 86.45 % -> Loss Test: 0.85 -> Accuracy Train: 93.52 % ( 2020-07-11_03.46.35 )
+31 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.010441767068273091 -> Accuracy Test: 87.15 % -> Loss Test: 0.91 -> Accuracy Train: 94.16 % ( 2020-07-11_03.34.19 )
+32 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.010499328531314859 -> Accuracy Test: 81.91 % -> Loss Test: 0.86 -> Accuracy Train: 90.26 % ( 2020-07-11_04.23.34 )
+33 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization 
+	-> Ratio: 0.010742960533755511 -> Accuracy Test: 88.43 % -> Loss Test: 0.95 -> Accuracy Train: 94.22 % ( 2020-07-19_02.25.02 )
+34 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.010915706488781079 -> Accuracy Test: 82.45 % -> Loss Test: 0.9 -> Accuracy Train: 90.43 % ( 2020-07-10_02.45.45 )
+35 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization 
+	-> Ratio: 0.011023079572855666 -> Accuracy Test: 87.09 % -> Loss Test: 0.96 -> Accuracy Train: 95.11 % ( 2020-07-18_15.50.54 )
+36 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.012055383146335641 -> Accuracy Test: 83.78 % -> Loss Test: 1.01 -> Accuracy Train: 90.16 % ( 2020-07-17_17.12.37 )
+37 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.01497985901309164 -> Accuracy Test: 79.44 % -> Loss Test: 1.19 -> Accuracy Train: 91.9 % ( 2020-07-10_00.35.17 )
+38 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.017642446419236804 -> Accuracy Test: 76.52 % -> Loss Test: 1.35 -> Accuracy Train: 88.57 % ( 2020-07-10_20.36.11 )
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.018086276426738362 -> Accuracy Test: 81.83 % -> Loss Test: 1.48 -> Accuracy Train: 92.63 % ( 2020-07-17_00.26.30 )
+40 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.01920614596670935 -> Accuracy Test: 78.1 % -> Loss Test: 1.5 -> Accuracy Train: 87.97 % ( 2020-07-11_03.21.57 )
+41 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam 
+	-> Ratio: 0.020689655172413793 -> Accuracy Test: 75.4 % -> Loss Test: 1.56 -> Accuracy Train: 82.48 % ( 2020-07-11_09.12.45 )
+42 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization 
+	-> Ratio: 0.023495465787304205 -> Accuracy Test: 72.78 % -> Loss Test: 1.71 -> Accuracy Train: 80.64 % ( 2020-07-11_17.04.35 )
+43 ) log_decisiontree_fullds 
+	-> Ratio: 100 -> Accuracy Test: 91.18 % -> Loss Test: 100 -> Accuracy Train: 95.84 % ( 2020-07-10_04.54.57 )
+44 ) log_decisiontree_nohumidityds 
+	-> Ratio: 100 -> Accuracy Test: 91.65 % -> Loss Test: 100 -> Accuracy Train: 95.84 % ( 2020-07-10_04.54.57 )
+45 ) log_decisiontree_nohumiditydsreduced 
+	-> Ratio: 100 -> Accuracy Test: 85.9 % -> Loss Test: 100 -> Accuracy Train: 97.47 % ( 2020-07-10_04.54.58 )
+
+Sorted by accuracy test:
+
+1 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  72.78 % ( 2020-07-11_17.04.35 )
+2 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with  75.4 % ( 2020-07-11_09.12.45 )
+3 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  76.52 % ( 2020-07-10_20.36.11 )
+4 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  78.1 % ( 2020-07-11_03.21.57 )
+5 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  79.44 % ( 2020-07-10_00.35.17 )
+6 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  81.83 % ( 2020-07-17_00.26.30 )
+7 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with  81.91 % ( 2020-07-11_04.23.34 )
+8 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  82.18 % ( 2020-07-10_13.37.55 )
+9 ) log_mlp_nohumiditydsreduced_meansquarederror_adam  with  82.18 % ( 2020-07-11_04.29.09 )
+10 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with  82.45 % ( 2020-07-10_02.45.45 )
+11 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with  82.71 % ( 2020-07-10_14.25.29 )
+12 ) log_resnet_fullds_categoricalcrossentropy_adam  with  83.59 % ( 2020-07-11_04.34.43 )
+13 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  83.78 % ( 2020-07-17_17.12.37 )
+14 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with  85.46 % ( 2020-07-11_06.59.40 )
+15 ) log_cnn_fullds_categoricalcrossentropy_adam  with  85.86 % ( 2020-07-10_03.42.09 )
+16 ) log_decisiontree_nohumiditydsreduced  with  85.9 % ( 2020-07-10_04.54.58 )
+17 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  85.92 % ( 2020-07-11_10.12.30 )
+18 ) log_mlp_nohumidityds_meansquarederror_adam  with  86.27 % ( 2020-07-11_04.11.14 )
+19 ) log_lstm_fullds_categoricalcrossentropy_adam  with  86.33 % ( 2020-07-10_06.39.01 )
+20 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  86.33 % ( 2020-07-11_12.28.16 )
+21 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with  86.33 % ( 2020-07-11_14.46.19 )
+22 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with  86.45 % ( 2020-07-11_03.46.35 )
+23 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with  86.57 % ( 2020-07-10_08.20.49 )
+24 ) log_mlp_fullds_meansquarederror_adam  with  86.74 % ( 2020-07-11_02.57.02 )
+25 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  86.86 % ( 2020-07-10_15.35.54 )
+26 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with  86.92 % ( 2020-07-10_22.10.19 )
+27 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with  87.03 % ( 2020-07-11_03.09.32 )
+28 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  87.09 % ( 2020-07-18_15.50.54 )
+29 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with  87.09 % ( 2020-07-09_15.38.19 )
+30 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with  87.15 % ( 2020-07-18_00.55.13 )
+31 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  87.15 % ( 2020-07-10_17.17.42 )
+32 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  87.15 % ( 2020-07-11_03.34.19 )
+33 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with  87.21 % ( 2020-07-10_04.54.58 )
+34 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with  87.44 % ( 2020-07-10_10.59.38 )
+35 ) log_mlp_fullds_categoricalcrossentropy_adam  with  87.44 % ( 2020-07-11_02.44.46 )
+36 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with  88.14 % ( 2020-07-15_16.57.41 )
+37 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  88.2 % ( 2020-07-09_20.09.36 )
+38 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  88.38 % ( 2020-07-09_17.53.36 )
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  88.43 % ( 2020-07-19_02.25.02 )
+40 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  89.31 % ( 2020-07-10_18.55.29 )
+41 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with  89.66 % ( 2020-07-11_03.58.58 )
+42 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with  90.3 % ( 2020-07-09_22.23.52 )
+43 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  90.36 % ( 2020-07-16_08.09.41 )
+44 ) log_decisiontree_fullds  with  91.18 % ( 2020-07-10_04.54.57 )
+45 ) log_decisiontree_nohumidityds  with  91.65 % ( 2020-07-10_04.54.57 )
+
+Sorted by accuracy average accuracy test:
+
+1 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  23.21 % ( 2020-07-11_17.04.35 )
+2 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  23.36 % ( 2020-07-11_10.12.30 )
+3 ) log_resnet_fullds_categoricalcrossentropy_adam  with  24.18 % ( 2020-07-11_04.34.43 )
+4 ) log_resnet_nohumiditydsreduced_categoricalcrossentropy_adam  with  26.2 % ( 2020-07-11_09.12.45 )
+5 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_normalized  with  26.27 % ( 2020-07-11_14.46.19 )
+6 ) log_resnet_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  26.64 % ( 2020-07-11_12.28.16 )
+7 ) log_resnet_nohumidityds_categoricalcrossentropy_adam  with  26.8 % ( 2020-07-11_06.59.40 )
+8 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  77.57 % ( 2020-07-11_03.21.57 )
+9 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  77.66 % ( 2020-07-10_20.36.11 )
+10 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  81.37 % ( 2020-07-10_00.35.17 )
+11 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_smaller_normalization  with  82.0 % ( 2020-07-17_00.26.30 )
+12 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam_bidirectional  with  83.43 % ( 2020-07-10_14.25.29 )
+13 ) log_cnn+lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  83.59 % ( 2020-07-17_17.12.37 )
+14 ) log_mlp_nohumiditydsreduced_categoricalcrossentropy_adam  with  83.7 % ( 2020-07-11_04.23.34 )
+15 ) log_cnn_nohumiditydsreduced_categoricalcrossentropy_adam  with  83.86 % ( 2020-07-10_02.45.45 )
+16 ) log_lstm_nohumiditydsreduced_categoricalcrossentropy_adam  with  83.91 % ( 2020-07-10_13.37.55 )
+17 ) log_mlp_nohumiditydsreduced_meansquarederror_adam  with  83.96 % ( 2020-07-11_04.29.09 )
+18 ) log_decisiontree_nohumiditydsreduced  with  84.41 % ( 2020-07-10_04.54.58 )
+19 ) log_lstm_fullds_categoricalcrossentropy_adam  with  85.84 % ( 2020-07-10_06.39.01 )
+20 ) log_cnn_nohumidityds_categoricalcrossentropy_adam  with  86.03 % ( 2020-07-09_15.38.19 )
+21 ) log_cnn_fullds_categoricalcrossentropy_adam  with  86.09 % ( 2020-07-10_03.42.09 )
+22 ) log_lstm_fullds_categoricalcrossentropy_adam_bidirectional  with  86.32 % ( 2020-07-10_08.20.49 )
+23 ) log_mlp_nohumidityds_meansquarederror_adam  with  86.33 % ( 2020-07-11_04.11.14 )
+24 ) log_lstm_nohumidityds_categoricalcrossentropy_adam  with  86.36 % ( 2020-07-10_04.54.58 )
+25 ) log_mlp_fullds_meansquarederror_adam  with  86.61 % ( 2020-07-11_02.57.02 )
+26 ) log_mlp_fullds_categoricalcrossentropy_adam  with  86.68 % ( 2020-07-11_02.44.46 )
+27 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  86.69 % ( 2020-07-10_15.35.54 )
+28 ) log_mlp_nohumidityds_categoricalcrossentropy_adam  with  86.75 % ( 2020-07-11_03.09.32 )
+29 ) log_lstm_nohumidityds_categoricalcrossentropy_three_layer_adam  with  86.81 % ( 2020-07-10_22.10.19 )
+30 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  86.86 % ( 2020-07-18_15.50.54 )
+31 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam  with  86.87 % ( 2020-07-15_16.57.41 )
+32 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_bidirectional  with  86.94 % ( 2020-07-10_10.59.38 )
+33 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  86.95 % ( 2020-07-11_03.34.19 )
+34 ) log_cnn+lstm_fullds_categoricalcrossentropy_adam  with  87.11 % ( 2020-07-18_00.55.13 )
+35 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  87.15 % ( 2020-07-10_17.17.42 )
+36 ) log_mlp_nohumidityds_categoricalcrossentropy_greatest_normalization_adam  with  87.15 % ( 2020-07-11_03.46.35 )
+37 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization  with  87.58 % ( 2020-07-09_17.53.36 )
+38 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  87.71 % ( 2020-07-09_20.09.36 )
+39 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization  with  87.79 % ( 2020-07-19_02.25.02 )
+40 ) log_mlp_nohumidityds_categoricalcrossentropy_adam_normalized  with  89.0 % ( 2020-07-11_03.58.58 )
+41 ) log_lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  89.22 % ( 2020-07-10_18.55.29 )
+42 ) log_cnn+lstm_nohumidityds_categoricalcrossentropy_adam_normalized  with  90.75 % ( 2020-07-16_08.09.41 )
+43 ) log_cnn_nohumidityds_categoricalcrossentropy_adam_normalized  with  90.79 % ( 2020-07-09_22.23.52 )
+44 ) log_decisiontree_fullds  with  91.41 % ( 2020-07-10_04.54.57 )
+45 ) log_decisiontree_nohumidityds  with  91.47 % ( 2020-07-10_04.54.57 )
