@@ -39,8 +39,8 @@ matplotlib.use('TkAgg')
 
 n_classes = 4
 n_header = 10
-number_of_splits = 10
-n_epochs = 110
+number_of_splits = 5
+n_epochs = 512
 n_batch_size = 64
 verbose_value = 2
 shuffle_value = False
@@ -197,7 +197,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
         print(f'Training for fold {fold_no} ...')
 
         # Fit data to model
-        keras_model.fit(X_train2, y_train, epochs=n_epochs, batch_size=n_batch_size, verbose=verbose_value,
+        model.fit(X_train2, y_train, epochs=n_epochs, batch_size=n_batch_size, verbose=verbose_value,
                         shuffle=shuffle_value,
                         validation_split=validation_split_value)
 
