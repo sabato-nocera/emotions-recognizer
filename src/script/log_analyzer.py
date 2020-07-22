@@ -313,7 +313,7 @@ sys.stdout = output_file
 
 files_content = merge_per_folder("../../logs/past")
 
-print("past-110.64.10KFCV")
+print("past-512.64.5KFCV")
 
 files_content = files_content[:-1]
 files_content = "[" + files_content + "]"
