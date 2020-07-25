@@ -175,7 +175,6 @@ y_test = test_dataset[:, n_header]
 scaler = MinMaxScaler(feature_range=(-1, 1))
 X_test = scaler.fit_transform(X_test)
 
-
 encoder = LabelEncoder()
 encoder.fit(y_test)
 encoded_Y = encoder.transform(y_test)

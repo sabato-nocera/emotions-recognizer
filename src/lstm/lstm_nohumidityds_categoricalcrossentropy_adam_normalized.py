@@ -150,7 +150,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('Score per fold')
     for i in range(0, len(test_acc_per_fold)):
         print('------------------------------------------------------------------------')
-        print("Score for fold", i+1)
+        print("Score for fold", i + 1)
         print("Accuracy_Train: %.2f%%" % (train_acc_per_fold[i]))
         print("Accuracy_Test: %.2f%%" % (test_acc_per_fold[i]))
         print("Loss_Train: %.2f" % (train_loss_per_fold[i]))
@@ -173,8 +173,8 @@ keras_model = baseline_model()
 print('\nStart computation...\n')
 
 history = keras_model.fit(X_train2, y_train, epochs=n_epochs, batch_size=n_batch_size, verbose=verbose_value,
-                                shuffle=shuffle_value,
-                                validation_split=validation_split_value)
+                          shuffle=shuffle_value,
+                          validation_split=validation_split_value)
 print("\nFit: epochs=", n_epochs, ", batch_size=", n_batch_size, ", verbose=", verbose_value, ", shuffle=",
       shuffle_value, ", validation_split=", validation_split_value, "\n")
 print(keras_model.summary())

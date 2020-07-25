@@ -48,5 +48,3 @@ exec(open("../resnet/resnet_nohumidityds_categoricalcrossentropy_adam_greatest_n
 # exec(open("../cnn+lstm/cnn+lstm_fullds_categoricalcrossentropy_adam.py").read())
 # exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greater_normalization.py").read())
 # exec(open("../cnn+lstm/cnn+lstm_nohumidityds_categoricalcrossentropy_adam_greatest_normalization.py").read())
-
-

@@ -95,7 +95,6 @@ print("Numero dati esaminati: %d" % len(X_test))
 print("True Positive %d" % countPositive)
 print("False Positive %d" % countNegative)
 
-
 lw = 2
 
 fpr = dict()

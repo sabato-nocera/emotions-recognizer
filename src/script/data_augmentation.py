@@ -1,8 +1,10 @@
-import numpy
-import pandas
 import random
 
+import numpy
+import pandas
+
 n_header = 10
+
 
 def tuples_crossover(first_tuple, second_tuple):
     if first_tuple[10] != second_tuple[10]:
@@ -48,9 +50,9 @@ def first_data_augmentation_technique():
 
     new_tuples = numpy.array([])
 
-    for i in range(len(dataset)-1):
+    for i in range(len(dataset) - 1):
         example_one = numpy.array(dataset[i])
-        example_two = numpy.array(dataset[i+1])
+        example_two = numpy.array(dataset[i + 1])
 
         if example_one[10] == example_two[10]:
             for j in range(len(example_one) - 1):
@@ -97,9 +99,9 @@ def second_data_augmentation_technique():
 
     new_tuples = numpy.array([])
 
-    for i in range(len(dataset)-1):
+    for i in range(len(dataset) - 1):
         example_one = numpy.array(dataset[i])
-        example_two = numpy.array(dataset[i+1])
+        example_two = numpy.array(dataset[i + 1])
 
         if example_one[10] == example_two[10]:
             tmp_new_tuples = tuples_crossover(example_one, example_two)

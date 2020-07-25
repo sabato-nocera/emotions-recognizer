@@ -3,6 +3,7 @@ import glob
 import sys
 from datetime import datetime
 
+
 # return the content of interest of a file
 def read_file_content(file):
     file_content = "{"
@@ -106,6 +107,7 @@ def print_sorted_by_accuracy_test(list_of_dicts):
     for tmp in sorted_by_accuracy:
         print(rank, ")", tmp["file_name"], " with ", tmp["accuracy_test"], "%", "(", tmp["date"], ")")
         rank += 1
+
 
 def print_sorted_by_accuracy_test_without_augmented(list_of_dicts):
     sorted_by_accuracy = sorted(list_of_dicts, key=lambda k: k['accuracy_test'])
@@ -291,6 +293,7 @@ def max_accuracy_for_each_type_of_neural_network(list_of_dicts):
         print("\t", tmp)
         rank += 1
 
+
 def print_sorted_by_average_accuracy_test(list_of_dicts):
     sorted_by_accuracy = sorted(list_of_dicts, key=lambda k: k['average_accuracy_test'])
 
@@ -299,6 +302,7 @@ def print_sorted_by_average_accuracy_test(list_of_dicts):
     for tmp in sorted_by_accuracy:
         print(rank, ")", tmp["file_name"], " with ", tmp["average_accuracy_test"], "%", "(", tmp["date"], ")")
         rank += 1
+
 
 now = datetime.now()
 output_file_name = "../../logs/log_analyzer_" + str(now)

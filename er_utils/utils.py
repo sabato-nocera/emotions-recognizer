@@ -1,4 +1,5 @@
 from datetime import datetime
+
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
@@ -39,6 +40,7 @@ def models_name(name):
 
     return json_file_name, hdf5_file_name
 
+
 def calculate(x, i, j):
     temp = []
     for i in range(i, j):
@@ -70,6 +72,7 @@ def normalize(x):
 
     return g
 
+
 def smaller_normalization(x):
     init = 0
     end = 40
@@ -91,6 +94,7 @@ def smaller_normalization(x):
 
     return g
 
+
 def greatest_normalization(x):
     init = 0
     end = 214
@@ -111,6 +115,7 @@ def greatest_normalization(x):
         end = end + 214
 
     return g
+
 
 def greater_normalization(x):
     init = 0
