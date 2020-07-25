@@ -18,8 +18,8 @@ from sklearn.preprocessing import MinMaxScaler
 
 from er_utils import utils
 
-models_name = "../../models/mlp_for_augmentation_first_model_"
-logs_name = "../../logs/log_mlp_for_augmentation_first_adam_"
+models_name = "../../models/mlp_for_augmentation_third_model_"
+logs_name = "../../logs/log_mlp_for_augmentation_third_"
 
 output_model_accuracy, output_model_loss, output_roc_curve_one, output_roc_curve_two, output_file_name = utils.files_name(
     logs_name)
@@ -135,7 +135,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('------------------------------------------------------------------------')
 
 
-train_dataset_name = "../../datasets/other/train_dataset_for_augmentation_first.csv"
+train_dataset_name = "../../datasets/other/train_dataset_for_augmentation_third.csv"
 train_dataframe = pandas.read_csv(train_dataset_name, header=0, sep=",", skiprows=0)
 print("Dataset used:", train_dataset_name, "\n")
 print(train_dataframe.head())
