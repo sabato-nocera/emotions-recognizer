@@ -24,7 +24,7 @@ La directory del progetto è stata suddivisa nel seguente modo:
 				<i><b>full_dataset_without_humidity.csv</b></i>, il quale rappresenta il dataset originale senza la feature "Humidity", in quanto è stata evidenziata l'inaccuratezza del sensore utilizzato per il campionamento dell'umidità. Rispetto al <i> full_dataset.csv </i>, non sono stati riscontrati miglioramenti.			
 			</li>
 			<li>
-				<i><b>full_dataset_without_humidity_reduced.csv</b></i>, il quale rappresenta risulta essere una copia ridotta del dataset <i> full_dataset_without_humidity.csv </i>, costituito dalle prime prime 47 * 80 osservazioni ( = 3760) di quest'ultimo. Usare tale dataset porta a risultati nettamente peggiori: drastica riduzione della test accuracy in tutti i modelli, aumento della loss nelle reti neurali che utilizzano la loss function <i> categorical crossentropy </i> e presenza di overfitting in tutte le reti neurali (ad eccezione delle CNN).
+				<i><b>full_dataset_without_humidity_reduced.csv</b></i>, il quale rappresenta risulta essere una copia ridotta del dataset <i> full_dataset_without_humidity.csv </i>, costituito dalle prime prime 47 * 80 osservazioni ( = 3760) di quest'ultimo.
 			</li>
 		</ul>		
 	</li>
