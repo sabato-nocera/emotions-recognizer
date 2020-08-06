@@ -6,9 +6,13 @@
 # exec(open("../cnn/cnn_nohumidityds_categoricalcrossentropy_adam_greater_normalization.py").read())
 # exec(open("../cnn/cnn_nohumidityds_categoricalcrossentropy_adam_greatest_normalization.py").read())
 #
-# exec(open("../decisiontree/decisiontree_fullds.py").read())
-# exec(open("../decisiontree/decisiontree_nohumidityds.py").read())
-# exec(open("../decisiontree/decisiontree_nohumiditydsreduced.py").read())
+exec(open("../decisiontree/decisiontree_fullds.py").read())
+exec(open("../decisiontree/decisiontree_nohumidityds.py").read())
+exec(open("../decisiontree/decisiontree_nohumiditydsreduced.py").read())
+exec(open("../decisiontree/decisiontree_nohumidityds_smaller_normalization.py").read())
+exec(open("../decisiontree/decisiontree_nohumidityds_normalized.py").read())
+exec(open("../decisiontree/decisiontree_nohumidityds_greatest_normalization.py").read())
+exec(open("../decisiontree/decisiontree_nohumidityds_greater_normalization.py").read())
 #
 # exec(open("../lstm/lstm_nohumidityds_categoricalcrossentropy_adam.py").read())
 # exec(open("../lstm/lstm_fullds_categoricalcrossentropy_adam.py").read())

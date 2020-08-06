@@ -19,7 +19,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 from er_utils import utils
 
-logs_name = "../../logs/log_decisiontree_nohumiditydsreduced_"
+logs_name = "../../logs/log_decisiontree_nohumidityds_smaller_normalization_"
 
 output_model_accuracy, output_model_loss, output_roc_curve_one, output_roc_curve_two, output_file_name = utils.files_name(
     logs_name)
@@ -96,7 +96,7 @@ def kfold_cross_validation(X_train_kfold, X_test_kfold, y_train_kfold, y_test_kf
     print('------------------------------------------------------------------------')
 
 
-dataset_name = "../../datasets/full_dataset_without_humidity_reduced.csv"
+dataset_name = "../../datasets/full_dataset_without_humidity.csv"
 dataframe = pandas.read_csv(dataset_name, header=0, sep=";", skiprows=0)
 print("Dataset used:", dataset_name, "\n")
 print(dataframe.head())
@@ -109,7 +109,7 @@ X = X.astype('float32')
 
 Y = dataset[:, n_header]
 scaler = MinMaxScaler(feature_range=(-1, 1))
-dummy_x = scaler.fit_transform(X)
+dummy_x = utils.smaller_normalization(X)
 
 encoder = LabelEncoder()
 encoder.fit(Y)

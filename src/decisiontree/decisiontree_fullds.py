@@ -32,7 +32,7 @@ matplotlib.use('TkAgg')
 
 n_classes = 4
 n_header = 11
-number_of_splits = 5
+number_of_splits = 10
 verbose_value = 2
 shuffle_value = False
 validation_split_value = 0.2

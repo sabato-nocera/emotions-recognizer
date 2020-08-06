@@ -16,7 +16,13 @@ Max depth: 4194304
 Start computation...
 
 Fitted estimator:
- DecisionTreeClassifier(max_depth=4194304)
+ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=4194304, max_features=None,
+                       max_leaf_nodes=None, min_impurity_decrease=0.0,
+                       min_impurity_split=None, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       presort='deprecated', random_state=None,
+                       splitter='best')
 Classes:
 	 [0. 1.]
 	 [0. 1.]
@@ -28,7 +34,7 @@ The inferred value of max_features: None
 The number of classes: [2 2 2 2]
 The number of features: 10
 The number of outputs: 4
-The underlying Tree object: <sklearn.tree._tree.Tree object at 0x1a0528a40>
+The underlying Tree object: <sklearn.tree._tree.Tree object at 0x0000022FD79963B0>
 
 Accuracy Train: 97.47%
 Accuracy Test: 85.90%
@@ -50,31 +56,61 @@ Training for fold 4 ...
 ------------------------------------------------------------------------
 Training for fold 5 ...
 ------------------------------------------------------------------------
+Training for fold 6 ...
+------------------------------------------------------------------------
+Training for fold 7 ...
+------------------------------------------------------------------------
+Training for fold 8 ...
+------------------------------------------------------------------------
+Training for fold 9 ...
+------------------------------------------------------------------------
+Training for fold 10 ...
+------------------------------------------------------------------------
 Score per fold
 ------------------------------------------------------------------------
 Score for fold 1
-Accuracy_Train: 97.97%
-Accuracy_Test: 84.18%
+Accuracy_Train: 97.52%
+Accuracy_Test: 88.03%
 ------------------------------------------------------------------------
 Score for fold 2
-Accuracy_Train: 97.64%
-Accuracy_Test: 84.04%
+Accuracy_Train: 97.87%
+Accuracy_Test: 82.18%
 ------------------------------------------------------------------------
 Score for fold 3
-Accuracy_Train: 97.67%
-Accuracy_Test: 87.63%
+Accuracy_Train: 97.31%
+Accuracy_Test: 85.37%
 ------------------------------------------------------------------------
 Score for fold 4
-Accuracy_Train: 97.84%
-Accuracy_Test: 82.45%
+Accuracy_Train: 98.11%
+Accuracy_Test: 84.31%
 ------------------------------------------------------------------------
 Score for fold 5
-Accuracy_Train: 97.31%
+Accuracy_Train: 97.64%
+Accuracy_Test: 88.30%
+------------------------------------------------------------------------
+Score for fold 6
+Accuracy_Train: 97.70%
+Accuracy_Test: 85.37%
+------------------------------------------------------------------------
+Score for fold 7
+Accuracy_Train: 97.81%
+Accuracy_Test: 85.64%
+------------------------------------------------------------------------
+Score for fold 8
+Accuracy_Train: 97.99%
 Accuracy_Test: 83.78%
 ------------------------------------------------------------------------
+Score for fold 9
+Accuracy_Train: 97.49%
+Accuracy_Test: 88.56%
+------------------------------------------------------------------------
+Score for fold 10
+Accuracy_Train: 97.58%
+Accuracy_Test: 86.17%
+------------------------------------------------------------------------
 Average scores for all folds:
-Average_Accuracy_Train: 97.69%
-	-> (+- 0.22409972801000527 )
-Average_Accuracy_Test: 84.41%
-	-> (+- 1.722369665818313 )
+Average_Accuracy_Train: 97.70%
+	-> (+- 0.23298349106887764 )
+Average_Accuracy_Test: 85.77%
+	-> (+- 1.9697017512005872 )
 ------------------------------------------------------------------------
