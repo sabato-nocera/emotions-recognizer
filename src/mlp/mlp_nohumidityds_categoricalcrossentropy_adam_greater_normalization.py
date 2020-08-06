@@ -148,7 +148,7 @@ X = X.astype('float32')
 
 Y = dataset[:, n_header]
 scaler = MinMaxScaler(feature_range=(-1, 1))
-dummy_x = utils.greatest_normalization(X)
+dummy_x = utils.greater_normalization()
 
 encoder = LabelEncoder()
 encoder.fit(Y)
