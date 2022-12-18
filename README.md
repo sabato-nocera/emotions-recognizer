@@ -3,26 +3,26 @@
 </h1>
 
 <h5>
-    Progetto svolto nell'ambito del tirocinio curriculare <i>(Laurea Triennale in Informatica)</i>
+    Project carried out as part of the curricular internship <i>(Bachelor's Degree in Computer Science)</i>
 </h5>
 
 <hr/>
 
 <p>
-	L'obiettivo dell'attività svolta è stato confrontare l'accuracy raggiunta da diversi modelli di machine learning, atti al riconoscimento delle emozioni basato su sensor-data; nello specifico, ai fini della classificazione sono stati considerati parametri fisiologici (frequenza cardiaca, temperatura) e comportamentali (movimento del braccio, movimento della mano, tono della voce).
+	The goal of the project was to compare the accuracy achieved by different machine learning models designed for sensor-data-based emotion recognition; specifically, physiological (heart rate, temperature) and behavioral (arm movement, hand movement, tone of voice) parameters were considered for classification purposes.
 	
 </p>	
 
-Le emozioni prese in considerazione sono state quattro: 
+Four emotions were considered: 
 	
 <ul>
-	<li>Felicità</li>
-	<li>Tristezza</li>
-	<li>Rabbia</li>
-	<li>Paura</li>
+	<li>Happiness</li>
+	<li>Sadness</li>
+	<li>Anger</li>
+	<li>Fear</li>
 </ul>
 
-I modelli di machine learning utilizzati sono stati:
+The machine learning models employed were:
 
 <ul>
 	<li>Decision tree</li>
@@ -36,28 +36,28 @@ I modelli di machine learning utilizzati sono stati:
 </ul>
 
 <p>
-	Per ciascuna tipologia di modello di machine learning sono state previste diverse implementazioni, ciascuna delle quali prevedeva una diversa strategia per la normalizzazione dei dati ed un diverso dataset per l'addestramento. Il modello di machine learning che ha raggiunto l'accuracy maggiore è stato il decision tree con un valore pari al <b>91.47%</b>.
+	Different configurations were implemented for each type of machine learning model, each with a different strategy for data normalization and a different dataset for training. The machine learning model that achieved the highest accuracy was the <b>decision tree</b> with a value of <b>91.47%</b>.
 
 <hr/>
 
-La directory del progetto è stata suddivisa nel seguente modo:
+The project directory was divided as follows:
 
 </p>
 
 <ul>
 	<li>
-		<b>datasets</b>, al cui interno sono presenti i seguenti dataset utilizzati;	
+		<b>datasets</b>, containing the datasets used;
 	</li>
 	<li>
-		<b>er_utils</b>, il quale costituisce un package con all'interno funzioni di utility;
+		<b>er_utils</b>, which constitutes a package with utility functions;
 	</li>
 	<li>
-		<b>logs</b>, al cui interno sono presenti gli output prodotti dell'esecuzione sorgenti, in modo tale da poter essere sempre consultati e comparati con facilità;	
+		<b>logs</b>, within which are the outputs produced by the source execution, so that they can always be consulted and compared with ease;	
 	</li>
 	<li>
-		<b>models</b>, al cui interno sono presenti i modelli risultanti dal training delle reti neurali;	
+		<b>models</b>, within which are the patterns resulting from the training of neural networks;	
 	</li>
 	<li>
-		<b>src</b>, contenente i sorgenti implementati, in particolare le directory denominate con il nome di un modello di machine learning presentano al loro interno  varie configurazioni di quest'ultimo.
+		<b>src</b>, containing the source code of the implemented models -- in particular, directories named after a machine learning model have various configurations of that model within them.
 	</li>
 </ul>
